@@ -1,116 +1,142 @@
-/*{
-	"DESCRIPTION": "Creates a simple zooming feedback loop",
-	"CREDIT": "",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize", "Retro"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "preShift",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0,
-				0
-			]
-		},
-		{
-			"NAME": "feedbackLevel",
-			"TYPE": "float",
-			"DEFAULT": 0.9,
-			"MIN": 0.0,
-			"MAX": 1.0
-		},
-		{
-			"NAME": "rotateAngle",
-			"TYPE": "float",
-			"DEFAULT": 0.5,
-			"MIN": 0.0,
-			"MAX": 1.0
-		},
-		{
-			"NAME": "zoomLevel",
-			"TYPE": "float",
-			"DEFAULT": 1.2,
-			"MIN": 0.25,
-			"MAX": 2.0
-		},
-		{
-			"NAME": "zoomCenter",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0,
-				0
-			]
-		},
-		{
-			"NAME": "feedbackShift",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0,
-				0
-			]
-		},
-		{
-			"NAME": "invert",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "blendMode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5
-			],
-			"LABELS": [
-				"Add",
-				"Over Black",
-				"Over Alpha",
-				"Max",
-				"Under Black",
-				"Under Alpha"
-			],
-			"DEFAULT": 3
-		},
-		{
-			"NAME": "blackThresh",
-			"TYPE": "float",
-			"DEFAULT": 0.1,
-			"MIN": 0.0,
-			"MAX": 1.0
-		},
-		{
-			"NAME": "satLevel",
-			"TYPE": "float",
-			"DEFAULT": 1.0,
-			"MIN": 0.0,
-			"MAX": 2.0
-		},
-		{
-			"NAME": "colorShift",
-			"TYPE": "float",
-			"DEFAULT": 0.0,
-			"MIN": 0.0,
-			"MAX": 1.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET":"feedbackBuffer",
-			"PERSISTENT": true
-		}
-	]
-	
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Stylize",
+    "Retro"
+  ],
+  "DESCRIPTION" : "Creates a simple zooming feedback loop",
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "preShift",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "feedbackLevel",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0.9,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "rotateAngle",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0.5,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "zoomLevel",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 1.2,
+      "MIN" : 0.25
+    },
+    {
+      "NAME" : "zoomCenter",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "feedbackShift",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "invert",
+      "TYPE" : "bool",
+      "DEFAULT" : 0
+    },
+    {
+      "VALUES" : [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "NAME" : "blendMode",
+      "TYPE" : "long",
+      "DEFAULT" : 3,
+      "LABELS" : [
+        "Add",
+        "Over Black",
+        "Over Alpha",
+        "Max",
+        "Under Black",
+        "Under Alpha"
+      ]
+    },
+    {
+      "NAME" : "blackThresh",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0.10000000000000001,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "satLevel",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 1,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "colorShift",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0,
+      "MIN" : 0
+    }
+  ],
+  "PASSES" : [
+    {
+      "TARGET" : "feedbackBuffer",
+      "PERSISTENT" : true
+    }
+  ],
+  "CREDIT" : ""
+}
+*/
 
 
 const float pi = 3.14159265359;
@@ -138,7 +164,7 @@ vec3 hsv2rgb(vec3 c)	{
 
 void main()	{
 	vec2		loc = isf_FragNormCoord;
-	vec4		inputPixelColor = IMG_NORM_PIXEL(inputImage,loc + (0.5 - (preShift / RENDERSIZE)));
+	vec4		inputPixelColor = IMG_NORM_PIXEL(inputImage,loc + (0.5 - (preShift)));
 	
 	vec4		feedbackPixelColor = vec4(0.0);
 	
@@ -152,10 +178,10 @@ void main()	{
 	
 	loc = loc / RENDERSIZE + vec2(0.5);
 	
-	vec2		modifiedCenter = zoomCenter / RENDERSIZE;
+	vec2		modifiedCenter = zoomCenter;
 	loc.x = (loc.x - modifiedCenter.x)*(1.0/zoomLevel) + modifiedCenter.x;
 	loc.y = (loc.y - modifiedCenter.y)*(1.0/zoomLevel) + modifiedCenter.y;
-	loc += (0.5 - (feedbackShift / RENDERSIZE));
+	loc += (0.5 - (feedbackShift));
 	
 	if ((loc.x < 0.0)||(loc.y < 0.0)||(loc.x > 1.0)||(loc.y > 1.0))	{
 		feedbackPixelColor = vec4(0.0);

@@ -1,50 +1,59 @@
-/*{
-	"DESCRIPTION": "Wraps the video into a circular shape",
-	"CREDIT": "VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "inputAngle",
-			"TYPE": "float",
-			"DEFAULT": 0.5,
-			"MIN": 0.0,
-			"MAX": 1.0
-		},
-		{
-			"NAME": "inputRadius",
-			"TYPE": "float",
-			"DEFAULT": 1.0,
-			"MIN": 0.0,
-			"MAX": 2.0
-		},
-		{
-			"NAME": "inputCenter",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0,
-				0
-			]
-		},
-		{
-			"NAME": "mirror",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "correctAspect",
-			"TYPE": "bool",
-			"DEFAULT": true
-		}
-	]
-	
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Distortion Effect"
+  ],
+  "DESCRIPTION" : "Wraps the video into a circular shape",
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "inputAngle",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0.5,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "inputRadius",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 1,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "inputCenter",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "mirror",
+      "TYPE" : "bool",
+      "DEFAULT" : false
+    },
+    {
+      "NAME" : "correctAspect",
+      "TYPE" : "bool",
+      "DEFAULT" : true
+    }
+  ],
+  "CREDIT" : "VIDVOX"
+}
+*/
 
 
 const float tau = 6.28318530718;
@@ -57,7 +66,7 @@ void main()	{
 	if (inputRadius > 0.0)	{
 	
 		vec2		loc = isf_FragNormCoord.xy;
-		vec2		center = inputCenter / RENDERSIZE.xy;
+		vec2		center = inputCenter;
 	
 		//	account for aspect ratio so we stay circle
 		if (correctAspect)	{
