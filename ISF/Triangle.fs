@@ -1,56 +1,82 @@
-/*{
-	"CREDIT": "by Carter Rosenberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Generator"
-	],
-	"INPUTS": [
-		{
-			"NAME": "pt1",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.0,
-				0.0
-			]
-		},
-		{
-			"NAME": "pt2",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				1.0
-			]
-		},
-		{
-			"NAME": "pt3",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				1.0,
-				0.0
-			]
-		},
-		{
-			"NAME": "fillColor",
-			"TYPE": "color",
-			"DEFAULT": [
-				1.0,
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"NAME": "bgColor",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.0,
-				0.0,
-				0.0,
-				0.0
-			]
-		}
-	]
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Generator"
+  ],
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "pt1",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0,
+        0
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "pt2",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        1
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "pt3",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        1,
+        0
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "fillColor",
+      "TYPE" : "color",
+      "DEFAULT" : [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "NAME" : "bgColor",
+      "TYPE" : "color",
+      "DEFAULT" : [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "CREDIT" : "by Carter Rosenberg"
+}
+*/
 
 
 //	functions via http://stackoverflow.com/questions/2049582/how-to-determine-a-point-in-a-triangle
@@ -75,9 +101,9 @@ bool PointInTriangle(vec2 pt, vec2 v1, vec2 v2, vec2 v3)
 void main() {
 	vec2 loc = isf_FragNormCoord;
 	vec4 outColor = vec4(0.0);
-	vec2 point1 = pt1 / RENDERSIZE;
-	vec2 point2 = pt2 / RENDERSIZE;
-	vec2 point3 = pt3 / RENDERSIZE;
+	vec2 point1 = pt1;
+	vec2 point2 = pt2;
+	vec2 point3 = pt3;
 	
 	//	determine if we are inside or outside of the triangle
 	

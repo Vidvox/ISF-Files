@@ -1,136 +1,146 @@
-/*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Masking"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "maskShapeMode",
-			"LABEL": "Mask Shape Mode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2,
-				3
-			],
-			"LABELS": [
-				"Rectangle",
-				"Triangle",
-				"Circle",
-				"Diamond"
-			],
-			"DEFAULT": 1
-		},
-		{
-			"NAME": "shapeWidth",
-			"LABEL": "Shape Width",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "shapeHeight",
-			"LABEL": "Shape Height",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		},
-		{
-			"NAME": "invertMask",
-			"LABEL": "Invert Mask",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "horizontalRepeat",
-			"LABEL": "Horizontal Repeat",
-			"TYPE": "long",
-			"VALUES": [
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9
-			],
-			"LABELS": [
-				"1",
-				"2",
-				"3",
-				"4",
-				"5",
-				"6",
-				"7",
-				"8",
-				"9"
-			],
-			"DEFAULT": 1
-		},
-		{
-			"NAME": "verticalRepeat",
-			"LABEL": "Vertical Repeat",
-			"TYPE": "long",
-			"VALUES": [
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9
-			],
-			"LABELS": [
-				"1",
-				"2",
-				"3",
-				"4",
-				"5",
-				"6",
-				"7",
-				"8",
-				"9"
-			],
-			"DEFAULT": 1
-		},
-		{
-			"NAME": "maskApplyMode",
-			"LABEL": "Apply Mask",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2
-			],
-			"LABELS": [
-				"Apply Mask",
-				"Set Alpha",
-				"Show Mask"
-			],
-			"DEFAULT": 0
-		}
-	]
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Masking"
+  ],
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "VALUES" : [
+        0,
+        1,
+        2,
+        3
+      ],
+      "NAME" : "maskShapeMode",
+      "TYPE" : "long",
+      "DEFAULT" : 1,
+      "LABEL" : "Mask Shape Mode",
+      "LABELS" : [
+        "Rectangle",
+        "Triangle",
+        "Circle",
+        "Diamond"
+      ]
+    },
+    {
+      "NAME" : "shapeWidth",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 0.5,
+      "LABEL" : "Shape Width",
+      "MIN" : 0
+    },
+    {
+      "NAME" : "shapeHeight",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 0.5,
+      "LABEL" : "Shape Height",
+      "MIN" : 0
+    },
+    {
+      "NAME" : "center",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    },
+    {
+      "NAME" : "invertMask",
+      "TYPE" : "bool",
+      "DEFAULT" : false,
+      "LABEL" : "Invert Mask"
+    },
+    {
+      "VALUES" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "NAME" : "horizontalRepeat",
+      "TYPE" : "long",
+      "DEFAULT" : 1,
+      "LABEL" : "Horizontal Repeat",
+      "LABELS" : [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "VALUES" : [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "NAME" : "verticalRepeat",
+      "TYPE" : "long",
+      "DEFAULT" : 1,
+      "LABEL" : "Vertical Repeat",
+      "LABELS" : [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ]
+    },
+    {
+      "VALUES" : [
+        0,
+        1,
+        2
+      ],
+      "NAME" : "maskApplyMode",
+      "TYPE" : "long",
+      "DEFAULT" : 0,
+      "LABEL" : "Apply Mask",
+      "LABELS" : [
+        "Apply Mask",
+        "Set Alpha",
+        "Show Mask"
+      ]
+    }
+  ],
+  "CREDIT" : "by VIDVOX"
+}
+*/
 
 
 
@@ -254,7 +264,7 @@ float isPointInShape(vec2 pt, int shape, vec4 shapeCoordinates)	{
 
 void main() {
 	vec4		srcPixel = IMG_THIS_PIXEL(inputImage);
-	vec2		centerPt = center;
+	vec2		centerPt = RENDERSIZE * center;
 	vec2		tmpVec = RENDERSIZE * vec2(shapeWidth,shapeHeight) / 2.0;
 	vec4		patternRect = vec4(vec2(centerPt - tmpVec),tmpVec * 2.0);
 	vec2		thisPoint = RENDERSIZE * isf_FragNormCoord;

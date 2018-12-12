@@ -75,7 +75,9 @@ void main()	{
 	int			depth = int(repetitions);
 	vec2		loc = isf_FragNormCoord;
 	
-	for (int i = 0;i < depth;++i)	{
+	for (int i = 0;i < 15;++i)	{
+		if (i >= depth)
+			break;
 		vec2		tmpSeed = vec2((1.12+float(i))*randomSeed+1.37,(1.92+float(i))*randomSeed+1.37);
 		float		modOpacity = (randomizeOpacity) ? 0.25+0.75*rand(tmpSeed) : 1.0;
 		loc = randomPaddedZoomedPositionWithSeed(isf_FragNormCoord,tmpSeed);
@@ -90,6 +92,7 @@ void main()	{
 				break;
 			}
 		}
+		
 	}
 	
 	gl_FragColor = inputPixelColor;

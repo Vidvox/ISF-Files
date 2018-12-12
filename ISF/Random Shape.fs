@@ -1,55 +1,146 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Generator"
-	],
-	"INPUTS": [
-		{
-			"NAME": "pointCount",
-			"LABEL": "Point Count",
-			"TYPE": "float",
-			"MIN": 3.0,
-			"MAX": 90.0,
-			"DEFAULT": 5.0
-		},
-		{
-			"NAME": "randomSeed",
-			"LABEL": "Random Seed",
-			"TYPE": "float",
-			"MIN": 0.01,
-			"MAX": 1.0,
-			"DEFAULT": 0.125
-		},
-		{
-			"NAME": "colorSaturation",
-			"LABEL": "Saturation",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "randomizeBrightness",
-			"LABEL": "Random Shades",
-			"TYPE": "bool",
-			"DEFAULT": true
-		},
-		{
-			"NAME": "randomizeAlpha",
-			"LABEL": "Random Alpha",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "randomizeAllPoints",
-			"LABEL": "Triangle Shapes",
-			"TYPE": "bool",
-			"DEFAULT": false
-		}
-	]
+  "CREDIT": "by VIDVOX",
+  "CATEGORIES": [
+    "Generator"
+  ],
+  ISFVSN" : "2",
+  "INPUTS": [
+    {
+      "NAME": "pointCount",
+      "LABEL": "Point Count",
+      "TYPE": "float",
+      "MIN": 3,
+      "MAX": 90,
+      "DEFAULT": 15
+    },
+    {
+      "NAME": "randomSeed",
+      "LABEL": "Random Seed",
+      "TYPE": "float",
+      "MIN": 0.01,
+      "MAX": 1,
+      "DEFAULT": 0.125
+    },
+    {
+      "NAME": "wobbleAmount",
+      "LABEL": "Wobble Amount",
+      "TYPE": "float",
+      "MIN": 0,
+      "MAX": 0.25,
+      "DEFAULT": 0
+    },
+    {
+      "NAME": "zoomStart",
+      "LABEL": "Zoom Start",
+      "TYPE": "float",
+      "MIN": 0.001,
+      "MAX": 4,
+      "DEFAULT": 0.75
+    },
+    {
+      "NAME": "zoomEnd",
+      "LABEL": "Zoom End",
+      "TYPE": "float",
+      "MIN": 0.001,
+      "MAX": 4,
+      "DEFAULT": 1
+    },
+    {
+      "NAME": "rotationStart",
+      "LABEL": "Winding Start",
+      "TYPE": "float",
+      "MIN": -4,
+      "MAX": 4,
+      "DEFAULT": 0
+    },
+    {
+      "NAME": "rotationEnd",
+      "LABEL": "Winding End",
+      "TYPE": "float",
+      "MIN": -4,
+      "MAX": 4,
+      "DEFAULT": 0
+    },
+    {
+      "NAME": "colorSaturation",
+      "LABEL": "Saturation",
+      "TYPE": "float",
+      "MIN": 0,
+      "MAX": 1,
+      "DEFAULT": 1
+    },
+    {
+      "NAME": "hueBase",
+      "LABEL": "Hue Base",
+      "TYPE": "float",
+      "MIN": 0,
+      "MAX": 1,
+      "DEFAULT": 0.2
+    },
+    {
+      "NAME": "hueRange",
+      "LABEL": "Hue Range",
+      "TYPE": "float",
+      "MIN": 0,
+      "MAX": 1,
+      "DEFAULT": 0.2
+    },
+    {
+      "NAME": "offsetEnd",
+      "TYPE": "point2D",
+      "DEFAULT": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "NAME": "randomizeBrightness",
+      "LABEL": "Randomize Brightness",
+      "TYPE": "bool",
+      "DEFAULT": true
+    },
+    {
+      "NAME": "randomizeAlpha",
+      "LABEL": "Randomize Alpha",
+      "TYPE": "bool",
+      "DEFAULT": false
+    },
+    {
+      "NAME": "randomizeAllPoints",
+      "LABEL": "Randomize Points",
+      "TYPE": "bool",
+      "DEFAULT": false
+    }
+  ]
 }*/
 
+
+
+const float pi = 3.14159265359;
+
+
+
+vec2 rotatePoint(vec2 pt, float angle, vec2 center)
+{
+	vec2 returnMe;
+	float s = sin(angle * pi);
+	float c = cos(angle * pi);
+
+	returnMe = pt;
+
+	// translate point back to origin:
+	returnMe.x -= center.x;
+	returnMe.y -= center.y;
+
+	// rotate point
+	float xnew = returnMe.x * c - returnMe.y * s;
+	float ynew = returnMe.x * s + returnMe.y * c;
+
+	// translate point back:
+	returnMe.x = xnew + center.x;
+	returnMe.y = ynew + center.y;
+	return returnMe;
+}
 
 
 vec3 rgb2hsv(vec3 c)	{
@@ -95,17 +186,37 @@ void main() {
 	vec2		thisPoint = isf_FragNormCoord;
 	vec3		colorHSL;
 	vec2		pt1, pt2, pt3;
+	vec2		offsetIncrement = (4.0 * (offsetEnd / RENDERSIZE - vec2(0.5)) / (pointCount - 2.0));
+	float		rotationIncrement = (rotationEnd - rotationStart) / pointCount;
+	float		zoomIncrement = (zoomEnd - zoomStart) / pointCount;
 	
-	colorHSL.x = rand(vec2(floor(pointCount)+randomSeed, 1.0));
+	thisPoint = rotatePoint(thisPoint, rotationStart, RENDERSIZE/2.0);
+	thisPoint = thisPoint / RENDERSIZE;
+	thisPoint = (thisPoint - vec2(0.5)) / zoomStart + vec2(0.5);
+	
+	colorHSL.x = hueBase;
 	colorHSL.y = colorSaturation;
 	colorHSL.z = 1.0;
 	if (randomizeBrightness)	{
 		colorHSL.z = rand(vec2(floor(pointCount)+randomSeed * 3.72, randomSeed + pointCount * 0.649));
 	}
 	
+	vec2 wobbleVector = vec2(0.0);
+	
 	pt1 = vec2(rand(vec2(floor(pointCount)+randomSeed*1.123,randomSeed*1.321)),rand(vec2(randomSeed*2.123,randomSeed*3.325)));
 	pt2 = vec2(rand(vec2(floor(pointCount)+randomSeed*5.317,randomSeed*2.591)),rand(vec2(randomSeed*1.833,randomSeed*4.916)));
 	pt3 = vec2(rand(vec2(floor(pointCount)+randomSeed*3.573,randomSeed*6.273)),rand(vec2(randomSeed*9.253,randomSeed*7.782)));
+	
+	if (wobbleAmount > 0.0)	{
+		wobbleVector = wobbleAmount * vec2(rand(vec2(TIME*1.123,TIME*3.239)),rand(vec2(TIME*3.321,TIME*2.131))) - vec2(wobbleAmount / 2.0);
+		pt1 = pt1 + wobbleVector;
+		
+		wobbleVector = wobbleAmount * vec2(rand(vec2(TIME*6.423,TIME*1.833)),rand(vec2(TIME*2.436,TIME*7.532))) - vec2(wobbleAmount / 2.0);
+		pt2 = pt2 + wobbleVector;
+		
+		wobbleVector = wobbleAmount * vec2(rand(vec2(TIME*3.951,TIME*3.538)),rand(vec2(TIME*8.513,TIME*6.335))) - vec2(wobbleAmount / 2.0);
+		pt3 = pt3 + wobbleVector;
+	}
 	
 	if (PointInTriangle(thisPoint,pt1,pt2,pt3))	{
 		float newAlpha = 1.0;
@@ -118,7 +229,7 @@ void main() {
 		result.a = result.a + newAlpha;
 	}
 	
-	for (float i = 0.0; i < 60.0; ++i)	{
+	for (float i = 0.0; i < 90.0; ++i)	{
 		if (result.a > 0.75)
 			break;
 		if (i > pointCount - 3.0)
@@ -126,12 +237,29 @@ void main() {
 		if (randomizeAllPoints)	{
 			pt1 = vec2(rand(vec2(i+randomSeed*1.123,i*floor(pointCount)+randomSeed*1.321)),rand(vec2(i*floor(pointCount)+randomSeed*2.123,i+randomSeed*1.325)));
 			pt2 = vec2(rand(vec2(i*floor(pointCount)+randomSeed*5.317,randomSeed*2.591)),rand(vec2(i+randomSeed*1.833,i*floor(pointCount)+randomSeed*4.916)));
+			
+			if (wobbleAmount > 0.0)	{
+				wobbleVector = wobbleAmount * vec2(rand(vec2(i*floor(pointCount)+TIME*3.123,i*floor(pointCount)+TIME*3.239)),rand(vec2(i*floor(pointCount)+TIME*3.321,i*floor(pointCount)+TIME*2.131))) - vec2(wobbleAmount / 2.0);
+				pt1 = pt1 + wobbleVector;
+			
+				wobbleVector = wobbleAmount * vec2(rand(vec2(i*floor(pointCount)+TIME*6.423,i*floor(pointCount)+TIME*1.833)),rand(vec2(i*floor(pointCount)+TIME*2.436,i*floor(pointCount)+TIME*7.532))) - vec2(wobbleAmount / 2.0);
+				pt2 = pt2 + wobbleVector;
+			}
 		}
 		else	{
 			pt1 = pt2;
 			pt2 = pt3;
 		}
 		pt3 = vec2(rand(vec2(i*floor(pointCount)+randomSeed*3.573,i+randomSeed*6.273)),rand(vec2(i+randomSeed*9.253,i+randomSeed*7.782)));
+		pt3 = (pt3 - vec2(0.5)) * (zoomStart + zoomIncrement * i) + vec2(0.5);
+		pt3 = rotatePoint(pt3, rotationStart + rotationIncrement * i, vec2(0.5));
+		pt3 = pt3 + offsetIncrement * i;
+		
+		if (wobbleAmount > 0.0)	{
+			wobbleVector = wobbleAmount * vec2(rand(vec2(i*floor(pointCount)+TIME*3.573,i+randomSeed*6.273)),rand(vec2(i+TIME*9.253,i+TIME*7.782))) - vec2(wobbleAmount / 2.0);
+			pt3 = pt3 + wobbleVector;
+		}
+		
 		if (PointInTriangle(thisPoint,pt1,pt2,pt3))	{
 			//result = vec4(1.0);
 			float newAlpha = 1.0;
@@ -140,18 +268,14 @@ void main() {
 				newAlpha = 0.1 + 0.25 * rand(vec2(i + floor(pointCount)+randomSeed * 1.938, randomSeed * pointCount * 1.541));
 			}
 			
-			colorHSL.x = rand(vec2(floor(pointCount)+randomSeed, i));
+			colorHSL.x = mod(hueBase + hueRange * rand(vec2(floor(pointCount)+randomSeed, i)), 1.0);
 			if (randomizeBrightness)	{
-				colorHSL.z = 0.15 + 0.85 * rand(vec2(i + floor(pointCount)+randomSeed * 2.78, randomSeed + pointCount * 0.249));
+				colorHSL.z = 0.25 + 0.85 * rand(vec2(i + floor(pointCount)+randomSeed * 2.78, randomSeed + pointCount * 0.249));
 			}
-			result.rgb = hsv2rgb(colorHSL);
+			result.rgb = result.rgb + hsv2rgb(colorHSL) * newAlpha;
 			result.a = result.a + newAlpha;
 		}
 	}
-		
-	//result.rgb = result.rgb * hsv2rgb(colorHSL);
 	
 	gl_FragColor = result;
 }
-
-	

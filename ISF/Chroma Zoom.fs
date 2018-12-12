@@ -1,59 +1,70 @@
-/*{
-	"CREDIT": "by toneburst",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Toneburst", "Stylize"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "master_zoom",
-			"TYPE": "float",
-			"MIN": 0.1,
-			"MAX": 2.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "red_zoom",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 1.5,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "green_zoom",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 1.5,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "blue_zoom",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 1.5,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Toneburst",
+    "Stylize"
+  ],
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "master_zoom",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 1,
+      "MIN" : 0.1
+    },
+    {
+      "NAME" : "red_zoom",
+      "TYPE" : "float",
+      "MAX" : 1.5,
+      "DEFAULT" : 1,
+      "MIN" : 1
+    },
+    {
+      "NAME" : "green_zoom",
+      "TYPE" : "float",
+      "MAX" : 1.5,
+      "DEFAULT" : 1,
+      "MIN" : 1
+    },
+    {
+      "NAME" : "blue_zoom",
+      "TYPE" : "float",
+      "MAX" : 1.5,
+      "DEFAULT" : 1,
+      "MIN" : 1
+    },
+    {
+      "NAME" : "center",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    }
+  ],
+  "CREDIT" : "by toneburst"
+}
+*/
 
 void main() {
 	vec2		loc;
 	vec2		modifiedCenter;
 	
 	loc = isf_FragNormCoord;
-	modifiedCenter = center / RENDERSIZE;
+	modifiedCenter = center;
 	
 	vec2 locR = (loc - modifiedCenter)*(1.0/(red_zoom*master_zoom)) + modifiedCenter;
 	vec2 locG = (loc - modifiedCenter)*(1.0/(green_zoom*master_zoom)) + modifiedCenter;

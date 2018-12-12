@@ -1,33 +1,41 @@
 /*{
-	"CREDIT": "by carter rosenberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "level",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 100.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
+  "CREDIT": "by carter rosenberg",
+  "CATEGORIES": [
+    "Distortion Effect"
+  ],
+  "INPUTS": [
+    {
+      "NAME": "inputImage",
+      "TYPE": "image"
+    },
+    {
+      "NAME": "level",
+      "TYPE": "float",
+      "MIN": 0,
+      "MAX": 100,
+      "DEFAULT": 1
+    },
+    {
+      "NAME" : "center",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    }
+  ]
 }*/
 
 const float pi = 3.14159265359;
+
 
 #ifndef GL_ES
 float distance (vec2 center, vec2 pt)
@@ -37,12 +45,13 @@ float distance (vec2 center, vec2 pt)
 }
 #endif
 
+
 void main() {
 	vec2		loc;
 	vec2		modifiedCenter;
 
 	loc = isf_FragNormCoord;
-	modifiedCenter = center / RENDERSIZE;
+	modifiedCenter = center;
    
 	// lens distortion coefficient
 	float k = -0.15;

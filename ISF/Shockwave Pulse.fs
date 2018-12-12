@@ -1,67 +1,76 @@
-/*{
-	"DESCRIPTION": "",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "pulse",
-			"TYPE": "event"
-		},
-		{
-			"NAME": "rate",
-			"LABEL": "rate",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 4.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "magnitude",
-			"LABEL": "magnitude",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.2,
-			"DEFAULT": 0.08
-		},
-		{
-			"NAME": "distortion",
-			"LABEL": "distortion",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 20.0,
-			"DEFAULT": 10.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.0,
-				0.0
-			]
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET":"lastTime",
-			"WIDTH": "1",
-			"HEIGHT": "1",
-			"FLOAT": true,
-			"PERSISTENT": true,
-			"DESCRIPTION": "this buffer stores the last frame's time offset in the first component of its only pixel- note that it's requesting a FLOAT target buffer..."
-		},
-		{
-			
-		}
-	]
-	
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Distortion Effect"
+  ],
+  "DESCRIPTION" : "",
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "pulse",
+      "TYPE" : "event"
+    },
+    {
+      "NAME" : "rate",
+      "TYPE" : "float",
+      "MAX" : 4,
+      "DEFAULT" : 1,
+      "LABEL" : "rate",
+      "MIN" : 0
+    },
+    {
+      "NAME" : "magnitude",
+      "TYPE" : "float",
+      "MAX" : 0.20000000000000001,
+      "DEFAULT" : 0.080000000000000002,
+      "LABEL" : "magnitude",
+      "MIN" : 0
+    },
+    {
+      "NAME" : "distortion",
+      "TYPE" : "float",
+      "MAX" : 20,
+      "DEFAULT" : 10,
+      "LABEL" : "distortion",
+      "MIN" : 0
+    },
+    {
+      "NAME" : "center",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    }
+  ],
+  "PASSES" : [
+    {
+      "PERSISTENT" : true,
+      "WIDTH" : "1",
+      "DESCRIPTION" : "this buffer stores the last frame's time offset in the first component of its only pixel- note that it's requesting a FLOAT target buffer...",
+      "HEIGHT" : "1",
+      "TARGET" : "lastTime",
+      "FLOAT" : true
+    },
+    {
+
+    }
+  ],
+  "CREDIT" : "by VIDVOX"
+}
+*/
 
 
 
@@ -78,7 +87,7 @@ void main()
 	else	{
 		vec2 uv = isf_FragNormCoord.xy;
 		vec2 texCoord = uv;
-		vec2 mod_center = center / RENDERSIZE;
+		vec2 mod_center = center;
 		float distance = distance(uv, mod_center);
 		vec4 lastPosVector = IMG_PIXEL(lastTime,vec2(0.5));
 		float adustedTime = lastPosVector.r * (1.0+length(distance));

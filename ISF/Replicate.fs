@@ -103,7 +103,9 @@ void main()	{
 	float		paddingIncrement = (depth < 2) ? 0.0 : (endPadding - startPadding)/float(depth-1);
 	float		opacityIncrement = (depth < 2) ? 0.0 : (endOpacity - startOpacity)/float(depth-1);
 	
-	for (int i = 0;i < depth;++i)	{
+	for (int i = 0;i < 15;++i)	{
+		if (i >= depth)
+			break;
 		float	modZoom = startZoomLevel + zoomIncrement * float(i);
 		vec2	modCenter = startCenter + centerIncrement * float(i);
 		float	modPad = startPadding + paddingIncrement * float(i);

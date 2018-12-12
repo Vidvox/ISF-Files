@@ -1,38 +1,48 @@
-/*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "radius",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.75,
-			"DEFAULT": 0.125
-		},
-		{
-			"NAME": "streaks",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Distortion Effect"
+  ],
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "radius",
+      "TYPE" : "float",
+      "MAX" : 0.75,
+      "DEFAULT" : 0.125,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "streaks",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "center",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    }
+  ],
+  "CREDIT" : "by VIDVOX"
+}
+*/
 
 
 
@@ -53,7 +63,7 @@ void main() {
 	vec2 texSize = RENDERSIZE;
 	vec2 tc = uv * texSize;
 	vec2 tc2 = uv * texSize;
-	vec2 modifiedCenter = center;
+	vec2 modifiedCenter = center * texSize;
 	float r = distance(modifiedCenter, tc);
 	float render_length = length(RENDERSIZE);
 	float a = atan ((tc.y-modifiedCenter.y),(tc.x-modifiedCenter.x));
