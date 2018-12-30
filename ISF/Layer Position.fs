@@ -16,6 +16,14 @@
 			"DEFAULT": [
 				0.5,
 				0.5
+			],
+			"MIN": [
+				0.0,
+				0.0
+			],
+			"MAX": [
+				1.0,
+				1.0
 			]
 		},
 		{
@@ -32,7 +40,7 @@ void main()	{
 	vec2		newLoc = offset;
 	vec2		topSize = RENDERSIZE;
 	
-	newLoc = offset;
+	newLoc = offset * RENDERSIZE;
 	newLoc.x = topSize.x - newLoc.x;
 	newLoc.y = topSize.y - newLoc.y;
 	newLoc = (gl_FragCoord.xy + 2.0*newLoc) - topSize;

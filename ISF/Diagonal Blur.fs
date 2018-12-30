@@ -64,11 +64,15 @@ void main() {
 		p2 = loc + width * RENDERSIZE * vector;
 		
 		//	now we have the two points to smear between,
-		float i;
+		//float i;
 		float count = clamp(width * max(RENDERSIZE.x,RENDERSIZE.y) / float(quality), 5.0, 125.0);
+		//float count = 10.0;
 		vec2 diff = p2 - p1;
-		for (i = 0.0; i < count; ++i)	{
-			returnMe = returnMe + IMG_PIXEL(inputImage, p1 + diff * (i / (count - 1.0))) / count;
+		for (float i = 0.0; i < 125.0; ++i)	{
+			if (i > float(count))
+				break;
+			float tmp = (i / (count - 1.0));
+			returnMe = returnMe + IMG_PIXEL(inputImage, p1 + diff * tmp) / count;
 		}
 	}
 	else	{

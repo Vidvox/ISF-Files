@@ -6,65 +6,49 @@
   "ISFVSN" : "2",
   "INPUTS" : [
     {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
       "NAME" : "width",
       "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.125,
-      "LABEL" : "Size",
-      "MIN" : 0
+      "DEFAULT" : 0.125
     },
     {
-      "NAME" : "maskOffset",
+      "NAME" : "offset",
       "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
       "DEFAULT" : [
         0,
         0
-      ],
-      "MIN" : [
-        0,
-        0
-      ],
-      "LABEL" : "Mask Offset"
+      ]
     },
     {
       "NAME" : "alpha1",
       "TYPE" : "float",
       "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : 0,
-      "LABEL" : "Alpha 1"
+      "DEFAULT" : 0,
+      "MIN" : 0
     },
     {
       "NAME" : "alpha2",
       "TYPE" : "float",
       "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0,
-      "LABEL" : "Alpha 2"
+      "DEFAULT" : 1,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "seed1",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0.241,
+      "MIN" : 0
     },
     {
       "NAME" : "randomThreshold",
       "TYPE" : "float",
       "MAX" : 1,
       "DEFAULT" : 0.5,
-      "MIN" : 0,
-      "LABEL" : "Threshold"
-    },
-    {
-      "NAME" : "seed1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.24391,
-      "MIN" : 0,
-      "LABEL" : "Random Seed"
+      "MIN" : 0
     }
   ],
   "CREDIT" : "by VIDVOX"
@@ -80,22 +64,27 @@ float rand(vec2 co){
 
 
 void main() {
+	//	determine if we are on an even or odd line
+	//	math goes like..
+	//	mod(((coord+offset) / width),2)
+	
 	
 	vec4 out_color = IMG_THIS_NORM_PIXEL(inputImage);
 	float alphaAdjust = alpha2;
 	vec2 coord = isf_FragNormCoord * RENDERSIZE;
-	vec2 shift = maskOffset * RENDERSIZE;
-	float size = width * max(RENDERSIZE.x,RENDERSIZE.y);
+	vec2 shift = offset;
+	float size = width * RENDERSIZE.x;
 	vec2 gridIndex = vec2(0.0);
 
 	if (size == 0.0)	{
-		size = 1.0 / max(RENDERSIZE.x,RENDERSIZE.y);
-	}
-	
-	gridIndex = floor((shift + coord) / size);
-	float value = rand(fract((0.1247+seed1)*gridIndex));
-	if (value < randomThreshold)
 		alphaAdjust = alpha1;
+	}
+	else {
+		gridIndex = floor((offset + coord) / size);
+		float value = rand(seed1*gridIndex);
+		if (value < randomThreshold)
+			alphaAdjust = alpha1;
+	}
 	
 	out_color.a *= alphaAdjust;
 	

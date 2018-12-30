@@ -1,133 +1,130 @@
 /*{
-	"DESCRIPTION": "Creates variations on a base color using a given algorithm.",
-	"CREDIT": "by VIDVOX",
-	"CATEGORIES": [
-		"Color Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"LABEL": "Sample Mode",
-			"NAME": "sampleMode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2
-			],
-			"LABELS": [
-				"Base Color",
-				"Pixel Follow",
-				"Color Average"
-			],
-			"DEFAULT": 0
-		},
-		{
-			"LABEL": "Color Mode",
-			"NAME": "colorModeOverride",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6
-			],
-			"LABELS": [
-				"Basic Complementary",
-				"Split Complementary",
-				"Compound Complementary",
-				"Spectrum",
-				"Shades",
-				"Analogous",
-				"Compound Analogous"
-			],
-			"DEFAULT": 1
-		},
-		{
-			"LABEL": "Color Count",
-			"NAME": "colorCount",
-			"TYPE": "long",
-			"VALUES": [
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8,
-				9,
-				10,
-				11,
-				12,
-				13,
-				14,
-				15,
-				16
-			],
-			"LABELS": [
-				"2",
-				"3",
-				"4",
-				"5",
-				"6",
-				"7",
-				"8",
-				"9",
-				"10",
-				"11",
-				"12",
-				"13",
-				"14",
-				"15",
-				"16"
-			],
-			"DEFAULT": 7
-		},
-		{
-			"LABEL": "Base Color",
-			"NAME": "baseColor",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.25,
-				0.59,
-				0.9,
-				1.0
-			]
-		},
-		{
-			"LABEL": "Pixel Point",
-			"NAME": "pixelFollowLocation",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	],
-	"PERSISTENT_BUFFERS": [
-		"autoColorBuffer"
-	],
-	"PASSES": [
-		{
-			"TARGET": "bufferPassA",
-			"WIDTH": "$WIDTH / 100.0",
-			"HEIGHT": "$HEIGHT / 100.0"
-		},
-		{
-			"TARGET":"autoColorBuffer",
-			"WIDTH": "1.0",
-			"HEIGHT": "1.0"
-		},
-		{
-			
-		}
-	]
+  "DESCRIPTION": "Creates variations on a base color using a given algorithm.",
+  "CREDIT": "by VIDVOX",
+  "CATEGORIES": [
+    "Color Effect"
+  ],
+  "ISFVSN": "2",
+  "INPUTS": [
+    {
+      "NAME": "inputImage",
+      "TYPE": "image"
+    },
+    {
+      "LABEL": "Sample Mode",
+      "NAME": "sampleMode",
+      "TYPE": "long",
+      "VALUES": [
+        0,
+        1,
+        2
+      ],
+      "LABELS": [
+        "Base Color",
+        "Pixel Follow",
+        "Color Average"
+      ],
+      "DEFAULT": 0
+    },
+    {
+      "LABEL": "Color Mode",
+      "NAME": "colorModeOverride",
+      "TYPE": "long",
+      "VALUES": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "LABELS": [
+        "Basic Complementary",
+        "Split Complementary",
+        "Compound Complementary",
+        "Spectrum",
+        "Shades",
+        "Analogous",
+        "Compound Analogous"
+      ],
+      "DEFAULT": 1
+    },
+    {
+      "LABEL": "Color Count",
+      "NAME": "colorCount",
+      "TYPE": "long",
+      "VALUES": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "LABELS": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16"
+      ],
+      "DEFAULT": 7
+    },
+    {
+      "LABEL": "Base Color",
+      "NAME": "baseColor",
+      "TYPE": "color",
+      "DEFAULT": [
+        0.25,
+        0.59,
+        0.9,
+        1
+      ]
+    },
+    {
+      "LABEL": "Pixel Point",
+      "NAME": "pixelFollowLocation",
+      "TYPE": "point2D",
+      "DEFAULT": [
+        0.5,
+        0.5
+      ]
+    }
+  ],
+  "PASSES": [
+    {
+      "TARGET": "bufferPassA",
+      "WIDTH": "$WIDTH / 100.0",
+      "HEIGHT": "$HEIGHT / 100.0"
+    },
+    {
+      "TARGET": "autoColorBuffer",
+      "WIDTH": "1.0",
+      "HEIGHT": "1.0",
+      "persistent": true
+    },
+    {}
+  ]
 }*/
 
 
@@ -158,11 +155,11 @@ float gray(vec4 c)	{
 void main()
 {
 	if (PASSINDEX == 0)	{
-		vec4 		inputColor = IMG_NORM_PIXEL(inputImage, vv_FragNormCoord);
+		vec4 		inputColor = IMG_NORM_PIXEL(inputImage, isf_FragNormCoord);
 		gl_FragColor = inputColor;
 	}
 	else if (PASSINDEX == 1)	{
-		vec4 		inputColor = IMG_NORM_PIXEL(bufferPassA, vv_FragNormCoord);
+		vec4 		inputColor = IMG_NORM_PIXEL(bufferPassA, isf_FragNormCoord);
 		vec4 		oldColor = IMG_NORM_PIXEL(autoColorBuffer, vec2(0.5,0.5));
 		gl_FragColor = mix(inputColor, oldColor, 0.8);
 	}
@@ -170,7 +167,7 @@ void main()
 		vec4 		inputColor = IMG_THIS_PIXEL(inputImage);
 		vec4		inColor = baseColor;
 		float		index = floor(gray(inputColor) * float(colorCount));	
-		//float		index = floor(vv_FragNormCoord.x * float(colorCount));
+		//float		index = floor(isf_FragNormCoord.x * float(colorCount));
 		float		variation = 0.3236;	//	1/5 the golden ratio
 		int			colorMode = colorModeOverride;
 

@@ -67,8 +67,11 @@ void main() {
 		float i;
 		float count = clamp(width * max(RENDERSIZE.x,RENDERSIZE.y) / float(quality), 5.0, 75.0);
 		vec2 diff = p2 - p1;
-		for (i = 0.0; i < count; ++i)	{
-			returnMe = returnMe + IMG_PIXEL(inputImage, p1 + diff * (i / (count - 1.0))) / count;
+		for (float i = 0.0; i < 75.0; ++i)	{
+			if (i > float(count))
+				break;
+			float tmp = (i / (count - 1.0));
+			returnMe = returnMe + IMG_PIXEL(inputImage, p1 + diff * tmp) / count;
 		}
 		
 		vector = vec2(cos(pi * (0.5+ angle)),sin(pi * (0.5+ angle)));
@@ -77,8 +80,11 @@ void main() {
 		
 		//	now we have the two points to smear between,
 		diff = p2 - p1;
-		for (i = 0.0; i < count; ++i)	{
-			returnMe = returnMe + IMG_PIXEL(inputImage, p1 + diff * (i / (count - 1.0))) / count;
+		for (float i = 0.0; i < 75.0; ++i)	{
+			if (i > float(count))
+				break;
+			float tmp = (i / (count - 1.0));
+			returnMe = returnMe + IMG_PIXEL(inputImage, p1 + diff * tmp) / count;
 		}
 		returnMe = returnMe / 2.0;
 	}

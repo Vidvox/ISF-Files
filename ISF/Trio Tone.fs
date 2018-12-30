@@ -48,7 +48,8 @@
 
 void main ()	{
 	vec4 pixcol = IMG_THIS_PIXEL(inputImage);
-	
+	/*
+	//	this method doesn't work nicely on certain gpu / os releases due to arrays?
 	vec4 colors[4];
 	colors[0] = vec4(0.0,0.0,0.0,1.0);
 	colors[1] = darkColor;
@@ -67,6 +68,28 @@ void main ()	{
 	}
 	
 	vec4 thermal = mix(colors[ix],colors[ix+1],(lum-float(ix)*0.33)/0.33);
+	*/
+	vec4 color1 = vec4(0.0,0.0,0.0,1.0);
+	vec4 color2 = darkColor;
+	int ix = 0;
+	
+	const vec4 	lumacoeff = vec4(0.2126, 0.7152, 0.0722, 0.0);
+	float		lum = dot(pixcol, lumacoeff);
+
+
+	if (lum > 0.66)	{
+		color1 = midColor;
+		color2 = brightColor;
+		ix = 2;
+	}
+	else if (lum > 0.33)	{
+		color1 = darkColor;
+		color2 = midColor;
+		ix = 1;
+	}
+	
+	vec4 thermal = mix(color1,color2,(lum-float(ix)*0.33)/0.33);
+	
 	gl_FragColor = vec4(thermal.rgb, pixcol.a);
 
 }

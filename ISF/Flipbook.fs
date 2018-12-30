@@ -77,7 +77,7 @@ void main()	{
 		inputPixelColor.g = inputPixelColor.g + flipRate;
 		inputPixelColor.b = 1.0;
 		inputPixelColor.a = 1.0;
-		if (inputPixelColor.g > 1.0 + flipRate)	{
+		if (inputPixelColor.g >= 1.0 + flipRate)	{
 			//inputPixelColor.g = 0.0;
 			if (inputPixelColor.r >= holdTime)	{
 				inputPixelColor.b = 0.0;
