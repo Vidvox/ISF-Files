@@ -1,52 +1,62 @@
-/*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Halftone Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "sharpness",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 10.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "offset",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "scale",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "colorize",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
-}*/
+/*
+{
+  "CATEGORIES" : [
+    "Halftone Effect"
+  ],
+  "ISFVSN" : "2",
+  "INPUTS" : [
+    {
+      "NAME" : "inputImage",
+      "TYPE" : "image"
+    },
+    {
+      "NAME" : "sharpness",
+      "TYPE" : "float",
+      "MAX" : 10,
+      "DEFAULT" : 1,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "offset",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "scale",
+      "TYPE" : "float",
+      "MAX" : 2,
+      "DEFAULT" : 1,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "colorize",
+      "TYPE" : "float",
+      "MAX" : 1,
+      "DEFAULT" : 0,
+      "MIN" : 0
+    },
+    {
+      "NAME" : "center",
+      "TYPE" : "point2D",
+      "MAX" : [
+        1,
+        1
+      ],
+      "DEFAULT" : [
+        0.5,
+        0.5
+      ],
+      "MIN" : [
+        0,
+        0
+      ]
+    }
+  ],
+  "CREDIT" : "by VIDVOX"
+}
+*/
 
 varying vec2 left_coord;
 varying vec2 right_coord;
@@ -65,7 +75,7 @@ float pattern() {
 	float c = 1.0;
 	vec2 tex = isf_FragNormCoord * RENDERSIZE;
 	vec2 point = vec2( c * tex.x - s * tex.y, s * tex.x + c * tex.y );
-	float d = distance(point, center) * max(scale,0.001);
+	float d = distance(point, center * RENDERSIZE) * max(scale,0.001);
 	return ( sin(d + offset * tau) ) * 4.0;
 }
 
