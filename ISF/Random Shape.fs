@@ -3,7 +3,7 @@
   "CATEGORIES": [
     "Generator"
   ],
-  ISFVSN" : "2",
+  "ISFVSN" : "2",
   "INPUTS": [
     {
       "NAME": "pointCount",

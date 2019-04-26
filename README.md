@@ -10,5 +10,5 @@ This repository is home to our collection of ISF generators and filters.  There 
 
 Installation Instructions:
 * **MacOS**- ISF files should be installed in `/Library/Graphics/ISF` (if you want them to be available for all users on your system) or `~/Library/Graphics/ISF` (if you only want them to be available to your user account).  ISF files installed in either of these locations will be available to all applications: application-specific ISFs should be installed in `/Library/Application Support/<app name>` or `~/Library/Application Support/<app name>`.
-* **Windows**- Please consult the instructions for your software package.
+* **Windows**- Ideally, ISFs should be placed in `/ProgramData/ISF`, but different apps may check different locations.
 * **.nix**- Haven't targeted this platform yet, interested parties please get in touch!
