@@ -3,7 +3,7 @@
 	"CREDIT": "by Carter Rosenberg",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Distortion", "Glitch"
+		"Distortion Effect", "Glitch"
 	],
 	"INPUTS": [
 		{
