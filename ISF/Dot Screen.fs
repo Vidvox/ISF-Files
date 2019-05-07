@@ -1,52 +1,63 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Halftone Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "sharpness",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 10.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "angle",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "scale",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "colorize",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Halftone Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "sharpness",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "scale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 varying vec2 left_coord;
 varying vec2 right_coord;
@@ -62,7 +73,7 @@ const float tau = 6.28318530718;
 
 float pattern() {
 	float s = sin( angle * tau ), c = cos( angle * tau );
-	vec2 tex = isf_FragNormCoord * RENDERSIZE - center;
+	vec2 tex = (isf_FragNormCoord - center) * RENDERSIZE;
 	vec2 point = vec2( c * tex.x - s * tex.y, s * tex.x + c * tex.y ) * max(scale,0.001);
 	return ( sin( point.x ) * sin( point.y ) ) * 4.0;
 }

@@ -1,47 +1,57 @@
 /*{
-	"DESCRIPTION": "adapted from https://github.com/neilmendoza/ofxPostProcessing/blob/master/src/GodRaysPass.cpp",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "lightDirDOTviewDir",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "lightPositionOnScreen",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		},
-		{
-			"NAME": "quality",
-			"VALUES": [
-				5,
-				10,
-				25
-			],
-			"LABELS": [
-				"Low",
-				"Mid",
-				"High"
-			],
-			"DEFAULT": 10,
-			"TYPE": "long"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Stylize"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "adapted from https://github.com/neilmendoza/ofxPostProcessing/blob/master/src/GodRaysPass.cpp",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "lightDirDOTviewDir",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "lightPositionOnScreen",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 10,
+            "LABELS": [
+                "Low",
+                "Mid",
+                "High"
+            ],
+            "NAME": "quality",
+            "TYPE": "long",
+            "VALUES": [
+                5,
+                10,
+                25
+            ]
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 
 void main(void)
@@ -61,7 +71,7 @@ void main(void)
 		normSrcCoord.x = isf_FragNormCoord[0];
 		normSrcCoord.y = isf_FragNormCoord[1];
 
-		vec2 deltaTextCoord = vec2(normSrcCoord.st - lightPositionOnScreen/RENDERSIZE);
+		vec2 deltaTextCoord = vec2(normSrcCoord.st - lightPositionOnScreen);
 		vec2 textCoo = normSrcCoord;
 		deltaTextCoord *= 1.0 / float(NUM_SAMPLES) * density;
 

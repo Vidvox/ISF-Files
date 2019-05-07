@@ -1,38 +1,38 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment"
-  ],
-  "DESCRIPTION" : "Warps an image to fit in a circle by fitting the height of the image to the height of a circle",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "radius",
-      "TYPE" : "float",
-      "MAX" : 0.5,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "width",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resultRotation",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Warps an image to fit in a circle by fitting the height of the image to the height of a circle",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "radius",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "width",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "resultRotation",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
 }
 */
 

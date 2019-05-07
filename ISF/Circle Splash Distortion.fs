@@ -47,13 +47,13 @@
 
 
 
-//	Pretty simple – if we're inside the radius, draw as normal
+//	Pretty simple ‚Äì¬ if we're inside the radius, draw as normal
 //	If we're outside the circle grab the last color along the angle
 
 #ifndef GL_ES
-float distance (vec2 center, vec2 pt)
+float distance (vec2 inCenter, vec2 pt)
 {
-	float tmp = pow(center.x-pt.x,2.0)+pow(center.y-pt.y,2.0);
+	float tmp = pow(inCenter.x-pt.x,2.0)+pow(inCenter.y-pt.y,2.0);
 	return pow(tmp,0.5);
 }
 #endif

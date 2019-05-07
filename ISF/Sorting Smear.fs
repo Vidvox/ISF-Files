@@ -34,13 +34,13 @@
       "NAME" : "horizontalSort",
       "TYPE" : "bool",
       "DEFAULT" : 1,
-      "LABEL" : "H Sort",
+      "LABEL" : "H Sort"
     },
  	{
       "NAME" : "verticalSort",
       "TYPE" : "bool",
       "DEFAULT" : 1,
-      "LABEL" : "V Sort",
+      "LABEL" : "V Sort"
     }
   ],
   "PASSES" : [

@@ -19,7 +19,7 @@
 	"PASSES": [
 		{
 			"TARGET":"freezeBuffer",
-			"PERSISTENT": true,
+			"PERSISTENT": true
 		}
 	]
 	

@@ -1,38 +1,49 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "radius",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 5.0
-		},
-		{
-			"NAME": "amount",
-			"TYPE": "float",
-			"MIN": -10.0,
-			"MAX": 10.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "radius",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 10,
+            "MIN": -10,
+            "NAME": "amount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 
 const float pi = 3.14159265359;
@@ -44,7 +55,7 @@ void main (void)
 	vec2 texSize = RENDERSIZE;
 	vec2 tc = uv * texSize;
 	float radius_sized = radius * max(RENDERSIZE.x,RENDERSIZE.y);
-	tc -= center;
+	tc -= (center * RENDERSIZE);
 	float dist = length(tc);
 	if (dist < radius_sized) 	{
 		float percent = (radius_sized - dist) / radius_sized;
@@ -53,7 +64,7 @@ void main (void)
 		float c = cos(theta);
 		tc = vec2(dot(tc, vec2(c, -s)), dot(tc, vec2(s, c)));
 	}
-	tc += center;
+	tc += (center * RENDERSIZE);
 	vec2 loc = tc / texSize;
 	vec4 color = IMG_NORM_PIXEL(inputImage, loc);
 

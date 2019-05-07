@@ -1,60 +1,61 @@
-/*
-{
-  "CATEGORIES" : [
-    "Halftone Effect"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "sharpness",
-      "TYPE" : "float",
-      "MAX" : 10,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "offset",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "scale",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "colorize",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "center",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Halftone Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "sharpness",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "offset",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "scale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
 }
 */
 
@@ -75,7 +76,7 @@ float pattern() {
 	float c = 1.0;
 	vec2 tex = isf_FragNormCoord * RENDERSIZE;
 	vec2 point = vec2( c * tex.x - s * tex.y, s * tex.x + c * tex.y );
-	float d = distance(point, center * RENDERSIZE) * max(scale,0.001);
+	float d = distance(point, center*RENDERSIZE) * max(scale,0.001);
 	return ( sin(d + offset * tau) ) * 4.0;
 }
 

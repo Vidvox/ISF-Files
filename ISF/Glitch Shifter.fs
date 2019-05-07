@@ -1,71 +1,82 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "glitch_size",
-			"LABEL": "Size",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.5,
-			"DEFAULT": 0.1
-		},
-		{
-			"NAME": "glitch_horizontal",
-			"LABEL": "Horizontal Amount",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.2
-		},
-		{
-			"NAME": "glitch_vertical",
-			"LABEL": "Vertical Amount",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "randomize_size",
-			"LABEL": "Randomize Size",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "randomize_zoom",
-			"LABEL": "Randomize Zoom",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "use_alt_image",
-			"LABEL": "Use Alt Image",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "altImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "offset",
-			"LABEL": "Offset",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0,
-				0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Glitch"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Size",
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "glitch_size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.2,
+            "LABEL": "Horizontal Amount",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "glitch_horizontal",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Vertical Amount",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "glitch_vertical",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Randomize Size",
+            "NAME": "randomize_size",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Randomize Zoom",
+            "NAME": "randomize_zoom",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Use Alt Image",
+            "NAME": "use_alt_image",
+            "TYPE": "bool"
+        },
+        {
+            "NAME": "altImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "LABEL": "Offset",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "offset",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 float rand(vec2 co){
     return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);
@@ -117,7 +128,7 @@ void main()
 	
 	//	if doing a horizontal glitch do a random shift
 	if ((random.x < glitch_horizontal)&&(random.y < glitch_vertical))	{
-		vec2 shift = (offset / RENDERSIZE - 0.5);
+		vec2 shift = (offset - 0.5);
 		shift = shift * rand(shift + random);
 		xy.x = mod(xy.x + random.x, 1.0);
 		xy.y = mod(xy.y + random.y, 1.0);
@@ -125,13 +136,13 @@ void main()
 		shifted = true;
 	}
 	else if (random.x < glitch_horizontal)	{
-		vec2 shift = (offset / RENDERSIZE - 0.5);
+		vec2 shift = (offset - 0.5);
 		shift = shift * rand(shift + random);
 		xy = mod(xy + vec2(0.0, random.x) + shift, 1.0);
 		shifted = true;
 	}
 	else if (random.y < glitch_vertical)	{
-		vec2 shift = (offset / RENDERSIZE - 0.5);
+		vec2 shift = (offset - 0.5);
 		shift = shift * rand(shift + random);
 		xy = mod(xy + vec2(random.y, 0.0) + shift, 1.0);
 		shifted = true;

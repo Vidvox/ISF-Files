@@ -137,7 +137,7 @@
 const float pi = 3.14159265359;
 
 
-vec2 rotatePoint(vec2 pt, float angle, vec2 center)
+vec2 rotatePoint(vec2 pt, float angle, vec2 inCenter)
 {
 	vec2 returnMe;
 	float s = sin(angle * pi);
@@ -146,16 +146,16 @@ vec2 rotatePoint(vec2 pt, float angle, vec2 center)
 	returnMe = pt;
 
 	// translate point back to origin:
-	returnMe.x -= center.x;
-	returnMe.y -= center.y;
+	returnMe.x -= inCenter.x;
+	returnMe.y -= inCenter.y;
 
 	// rotate point
 	float xnew = returnMe.x * c - returnMe.y * s;
 	float ynew = returnMe.x * s + returnMe.y * c;
 
 	// translate point back:
-	returnMe.x = xnew + center.x;
-	returnMe.y = ynew + center.y;
+	returnMe.x = xnew + inCenter.x;
+	returnMe.y = ynew + inCenter.y;
 	return returnMe;
 }
 
@@ -175,7 +175,7 @@ bool PointInTriangle(vec2 pt, vec2 v1, vec2 v2, vec2 v3)
 	return ((b1 == b2) && (b2 == b3));
 }
 
-bool RotatedPointInTriangle(vec2 pt, vec2 v1, vec2 v2, vec2 v3, vec2 center)
+bool RotatedPointInTriangle(vec2 pt, vec2 v1, vec2 v2, vec2 v3, vec2 inCenter)
 {
 	bool b1, b2, b3;
 	

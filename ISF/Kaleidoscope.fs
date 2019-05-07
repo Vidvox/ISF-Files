@@ -1,53 +1,64 @@
-
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize", "Tile Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "sides",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 32.0,
-			"DEFAULT": 6.0
-		},
-		{
-			"NAME": "angle",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "slidex",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "slidey",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0,
-				0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Stylize",
+        "Tile Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 6,
+            "MAX": 32,
+            "MIN": 1,
+            "NAME": "sides",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "angle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "slidex",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "slidey",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 
 const float tau = 6.28318530718;
@@ -58,8 +69,8 @@ const float tau = 6.28318530718;
 void main() {
   // normalize to the center
 	vec2 loc = RENDERSIZE * vec2(isf_FragNormCoord[0],isf_FragNormCoord[1]);
-	float r = distance(center, loc);
-	float a = atan ((loc.y-center.y),(loc.x-center.x));
+	float r = distance(center*RENDERSIZE, loc);
+	float a = atan ((loc.y-center.y*RENDERSIZE.y),(loc.x-center.x*RENDERSIZE.x));
 	
 	// kaleidoscope
 	a = mod(a, tau/sides);
@@ -68,7 +79,7 @@ void main() {
 	loc.x = r * cos(a + tau * angle);
 	loc.y = r * sin(a + tau * angle);
 	
-	loc = (center + loc) / RENDERSIZE;
+	loc = (center*RENDERSIZE + loc) / RENDERSIZE;
 	
 	loc.x = mod(loc.x + slidex, 1.0);
 	loc.y = mod(loc.y + slidey, 1.0);

@@ -1,87 +1,95 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Film"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "uBias",
-			"LABEL": "Bias",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 0.0,
-			"DEFAULT": -0.5
-		},
-		{
-			"NAME": "uScale",
-			"LABEL": "Scale",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "uGhosts",
-			"LABEL": "Ghosts",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 5.0,
-			"DEFAULT": 5.0
-		},
-		{
-			"NAME": "uGhostDispersal",
-			"LABEL": "Ghost Dispersal",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.1,
-			"DEFAULT": 0.0125
-		},
-		{
-			"NAME": "uAdditive",
-			"LABEL": "Additive Mode",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "uDirection",
-			"LABEL": "Direction",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		},
-		{
-			"NAME": "uLensColor",
-			"LABEL": "Lens Color",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.9,
-				0.8,
-				0.7,
-				1.0
-			]
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "downsampleAndThresholdImage",
-			"WIDTH": "floor($WIDTH/1.0)",
-			"HEIGHT": "floor($HEIGHT/1.0)",
-			"DESCRIPTION": "Downsample and threshold"
-		},
-		{
-
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Film"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": -0.5,
+            "LABEL": "Bias",
+            "MAX": 0,
+            "MIN": -1,
+            "NAME": "uBias",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Scale",
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "uScale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 5,
+            "LABEL": "Ghosts",
+            "MAX": 5,
+            "MIN": 0,
+            "NAME": "uGhosts",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.0125,
+            "LABEL": "Ghost Dispersal",
+            "MAX": 0.1,
+            "MIN": 0,
+            "NAME": "uGhostDispersal",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Additive Mode",
+            "NAME": "uAdditive",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "LABEL": "Direction",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "uDirection",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                0.9,
+                0.8,
+                0.7,
+                1
+            ],
+            "LABEL": "Lens Color",
+            "NAME": "uLensColor",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "DESCRIPTION": "Downsample and threshold",
+            "HEIGHT": "floor($HEIGHT/1.0)",
+            "TARGET": "downsampleAndThresholdImage",
+            "WIDTH": "floor($WIDTH/1.0)"
+        },
+        {
+        }
+    ],
+    "VSN": null
+}
+*/
 
 
 
@@ -96,7 +104,7 @@ void main()
 	else if (PASSINDEX == 1)	{
 		vec2 texcoord = isf_FragNormCoord;
 		vec2 texelSize = 1.0 / RENDERSIZE;
-		vec2 direction = vec2(1.0) - uDirection / RENDERSIZE;
+		vec2 direction = vec2(1.0) - uDirection;
 		vec2 ghostVec = (direction - texcoord) * uGhostDispersal;
 		//vec2 direction = vec2(0.5,0.5);
 		vec4 result = vec4(0.0);

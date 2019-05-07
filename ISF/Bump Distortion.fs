@@ -1,57 +1,68 @@
 /*{
-	"CREDIT": "by carter rosenberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "level",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "radius",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "by carter rosenberg",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "level",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "radius",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 const float pi = 3.14159265359;
 
 #ifndef GL_ES
-float distance (vec2 center, vec2 pt)
+float distance (vec2 inCenter, vec2 pt)
 {
-	float tmp = pow(center.x-pt.x,2.0)+pow(center.y-pt.y,2.0);
+	float tmp = pow(inCenter.x-pt.x,2.0)+pow(inCenter.y-pt.y,2.0);
 	return pow(tmp,0.5);
 }
 #endif
 
 void main() {
-	vec2 uv = vec2(isf_FragNormCoord[0],isf_FragNormCoord[1]);
-	vec2 texSize = RENDERSIZE;
-	vec2 tc = uv * texSize;
-	vec2 modifiedCenter = center;
-	float r = distance(modifiedCenter, tc);
-	float a = atan ((tc.y-modifiedCenter.y),(tc.x-modifiedCenter.x));
-	float radius_sized = radius * length(RENDERSIZE);
+	vec2		uv = isf_FragNormCoord.xy;
+	vec2		texSize = RENDERSIZE.xy;
+	vec2		tc = uv * texSize;
+	vec2		modifiedCenter = center * texSize;
+	float		r = distance(modifiedCenter, tc);
+	float		a = atan ((tc.y-modifiedCenter.y),(tc.x-modifiedCenter.x));
+	float		radius_sized = radius * length(RENDERSIZE);
 	
 	tc -= modifiedCenter;
 

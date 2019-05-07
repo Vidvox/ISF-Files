@@ -49,18 +49,16 @@ void main() {
 	//	mod(((coord+offset) / width),2)
 	
 	
-	vec4 out_color = color2;
-	vec2 coord = isf_FragNormCoord * RENDERSIZE;
-	vec2 shift = offset;
-	float size = width * RENDERSIZE.x;
+	vec4		out_color = color2;
+	float		size = width * RENDERSIZE.x;
 
 	if (size == 0.0)	{
 		out_color = color1;
 	}
-	else if ((mod(((coord.x+shift.x) / size),2.0) < 1.0)&&(mod(((coord.y+shift.y) / size),2.0) > 1.0))	{
+	else if ((mod(((gl_FragCoord.x+offset.x) / size),2.0) < 1.0)&&(mod(((gl_FragCoord.y+offset.y) / size),2.0) > 1.0))	{
 		out_color = color1;
 	}
-	else if ((mod(((coord.x+shift.x) / size),2.0) > 1.0)&&(mod(((coord.y+shift.y) / size),2.0) < 1.0))	{
+	else if ((mod(((gl_FragCoord.x+offset.x) / size),2.0) > 1.0)&&(mod(((gl_FragCoord.y+offset.y) / size),2.0) < 1.0))	{
 		out_color = color1;
 	}
 	

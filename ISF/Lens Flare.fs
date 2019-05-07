@@ -1,128 +1,136 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Film"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "uBias",
-			"LABEL": "Bias",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 0.0,
-			"DEFAULT": -0.67
-		},
-		{
-			"NAME": "uScale",
-			"LABEL": "Scale",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 10.0,
-			"DEFAULT": 1.25
-		},
-		{
-			"NAME": "uSource",
-			"LABEL": "Source Gain",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "uChromatic",
-			"LABEL": "Chromatic Distortion",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.75,
-				0.875,
-				1.0,
-				0.75
-			]
-		},
-		{
-			"NAME": "uGhosts",
-			"LABEL": "Ghosts",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 5.0,
-			"DEFAULT": 3.0
-		},
-		{
-			"NAME": "uGhostDispersal",
-			"LABEL": "Ghost Dispersal",
-			"TYPE": "float",
-			"MIN": 0.125,
-			"MAX": 0.75,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "uLensColor",
-			"LABEL": "Lens Color",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.67,
-				0.5,
-				0.75,
-				1.0
-			]
-		},
-		{
-			"NAME": "uHaloWidth",
-			"LABEL": "Halo Width",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.33
-		},
-		{
-			"NAME": "uNoise",
-			"LABEL": "Dirt",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "uCenter",
-			"LABEL": "Center",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "downsampleAndThresholdImage",
-			"WIDTH": "floor($WIDTH/2.0)",
-			"HEIGHT": "floor($HEIGHT/2.0)",
-			"DESCRIPTION": "Downsample and threshold"
-		},
-		{
-			"TARGET": "featureGenerationImage",
-			"WIDTH": "floor($WIDTH/2.0)",
-			"HEIGHT": "floor($HEIGHT/2.0)",
-			"DESCRIPTION": "Feature generation"
-		},
-		{
-			"TARGET": "blurredImage",
-			"WIDTH": "floor($WIDTH/4.0)",
-			"HEIGHT": "floor($HEIGHT/4.0)",
-			"DESCRIPTION": "Blur"
-		},
-		{
-			
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Film"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": -0.67,
+            "LABEL": "Bias",
+            "MAX": 0,
+            "MIN": -1,
+            "NAME": "uBias",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1.25,
+            "LABEL": "Scale",
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "uScale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Source Gain",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "uSource",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.75,
+                0.875,
+                1,
+                0.75
+            ],
+            "LABEL": "Chromatic Distortion",
+            "NAME": "uChromatic",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 3,
+            "LABEL": "Ghosts",
+            "MAX": 5,
+            "MIN": 0,
+            "NAME": "uGhosts",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "Ghost Dispersal",
+            "MAX": 0.75,
+            "MIN": 0.125,
+            "NAME": "uGhostDispersal",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.67,
+                0.5,
+                0.75,
+                1
+            ],
+            "LABEL": "Lens Color",
+            "NAME": "uLensColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0.33,
+            "LABEL": "Halo Width",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "uHaloWidth",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "Dirt",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "uNoise",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "LABEL": "Center",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "uCenter",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "DESCRIPTION": "Downsample and threshold",
+            "HEIGHT": "floor($HEIGHT/2.0)",
+            "TARGET": "downsampleAndThresholdImage",
+            "WIDTH": "floor($WIDTH/2.0)"
+        },
+        {
+            "DESCRIPTION": "Feature generation",
+            "HEIGHT": "floor($HEIGHT/2.0)",
+            "TARGET": "featureGenerationImage",
+            "WIDTH": "floor($WIDTH/2.0)"
+        },
+        {
+            "DESCRIPTION": "Blur",
+            "HEIGHT": "floor($HEIGHT/4.0)",
+            "TARGET": "blurredImage",
+            "WIDTH": "floor($WIDTH/4.0)"
+        },
+        {
+        }
+    ],
+    "VSN": null
+}
+*/
 
 
 //	as a guide, http://john-chapman-graphics.blogspot.co.uk/2013/02/pseudo-lens-flare.html
@@ -162,7 +170,7 @@ void main()
 	}
 	else if (PASSINDEX == 1)	{
 		//	flip the coordinates on this pass
-		vec2 centerVec = uCenter/RENDERSIZE - vec2(1.0);
+		vec2 centerVec = uCenter - vec2(1.0);
 		vec2 texcoord = vec2(1.0) - isf_FragNormCoord;
 		vec2 texelSize = 1.0 / RENDERSIZE;
 		vec2 ghostVec = (vec2(0.5) - texcoord + centerVec) * uGhostDispersal;

@@ -1,71 +1,82 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Generator"
-	],
-	"INPUTS": [
-		{
-			"NAME": "size",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "rotation",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "angle",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "shift",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.5,
-				0.5
-			]
-		},
-		{
-			"NAME": "xcolor",
-			"TYPE": "color",
-			"DEFAULT": [
-				1.0,
-				0.5,
-				0.0,
-				1.0
-			]
-		},
-		{
-			"NAME": "ycolor",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.0,
-				0.5,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"NAME": "background",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.0,
-				0.0,
-				0.0,
-				0.0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Generator"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "rotation",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "shift",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0.5,
+                0,
+                1
+            ],
+            "NAME": "xcolor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0.5,
+                1,
+                1
+            ],
+            "NAME": "ycolor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "NAME": "background",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 
 
@@ -81,7 +92,7 @@ vec2 pattern() {
 	vec2 tex = isf_FragNormCoord;
 	float scale = 1.0 / max(size,0.001);
 	vec2 point = vec2( c * tex.x - s * tex.y, s * tex.x + c * tex.y ) * scale;
-	point = point - scale * shift / RENDERSIZE;
+	point = point - scale * shift;
 	//	do the sine distort
 	point = 0.5 + 0.5 * vec2( sin(scale * point.x), sin(scale * point.y));
 	
