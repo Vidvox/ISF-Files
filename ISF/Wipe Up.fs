@@ -3,7 +3,8 @@
   "CATEGORIES" : [
     "Transition"
   ],
-  "DESCRIPTION" : "Automatically converted from https:\/\/gl-transitions.com\/",
+  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/wipeUp.glsl",
+  "DESCRIPTION": "",
   "ISFVSN" : "2",
   "INPUTS" : [
     {

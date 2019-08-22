@@ -21,7 +21,8 @@
   "CATEGORIES" : [
     "Transition"
   ],
-  "DESCRIPTION" : "Automatically converted from https:\/\/gl-transitions.com\/"
+  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/InvertedPageCurl.glsl",
+  "DESCRIPTION" : "Automatically converted from https://gl-transitions.com/"
 }
 */
 

@@ -25,7 +25,8 @@
       "TYPE" : "image"
     }
   ],
-  "DESCRIPTION" : "Automatically converted from https:\/\/gl-transitions.com\/"
+  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/luma.glsl",
+  "DESCRIPTION" : "Automatically converted from https://gl-transitions.com/"
 }
 */
 

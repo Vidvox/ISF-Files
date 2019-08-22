@@ -1,6 +1,7 @@
 /*
 {
-  "DESCRIPTION" : "Automatically converted from https:\/\/gl-transitions.com\/",
+  "DESCRIPTION": "",
+  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/CrossZoom.glsl",
   "ISFVSN" : "2",
   "CATEGORIES" : [
     "Transition"

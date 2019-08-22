@@ -1,27 +1,28 @@
-/*
-{
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "startImage",
-      "TYPE" : "image"
-    },
-    {
-      "TYPE" : "image",
-      "NAME" : "endImage"
-    },
-    {
-      "TYPE" : "float",
-      "NAME" : "progress",
-      "MIN" : 0,
-      "MAX" : 1,
-      "DEFAULT" : 0
-    }
-  ],
-  "CATEGORIES" : [
-    "Transition"
-  ],
-  "DESCRIPTION" : "Automatically converted from https:\/\/gl-transitions.com\/"
+/*{
+    "CATEGORIES": [
+        "Transition"
+    ],
+    "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/BowTieVertical.glsl",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "startImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "endImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "progress",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
 }
 */
 
