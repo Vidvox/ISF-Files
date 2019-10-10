@@ -170,7 +170,7 @@ void main()
 	}
 	else if (PASSINDEX == 1)	{
 		//	flip the coordinates on this pass
-		vec2 centerVec = uCenter - vec2(1.0);
+		vec2 centerVec = 2.0*(uCenter - vec2(0.5));
 		vec2 texcoord = vec2(1.0) - isf_FragNormCoord;
 		vec2 texelSize = 1.0 / RENDERSIZE;
 		vec2 ghostVec = (vec2(0.5) - texcoord + centerVec) * uGhostDispersal;
