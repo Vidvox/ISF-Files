@@ -2,7 +2,7 @@
 {
   "ISFVSN" : "2",
   "CATEGORIES" : [
-    "Transition"
+    "Dissolve"
   ],
   "INPUTS" : [
     {

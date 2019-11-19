@@ -1,6 +1,7 @@
 /*{
 	"CREDIT": "original implementation as v002.blur in QC by anton marini and tom butterworth, ported by zoidberg",
 	"ISFVSN": "2",
+	"DESCRIPTION": "Performs a deep blur",
 	"CATEGORIES": [
 		"Blur"
 	],

@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Gradient", "Color", "Synthesis"
   ],
   "DESCRIPTION" : "Generates a gradient that fades between four different colors.",
   "ISFVSN" : "2",

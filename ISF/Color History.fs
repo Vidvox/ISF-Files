@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Visualizer"
   ],
   "DESCRIPTION" : "Displays Data Over Time",
   "ISFVSN" : "2",

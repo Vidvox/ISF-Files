@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Utility"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

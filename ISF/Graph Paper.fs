@@ -1,9 +1,9 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Pattern"
   ],
-  "DESCRIPTION" : "Draws basic graph paper",
+  "DESCRIPTION" : "Draws basic graph paper pattern",
   "ISFVSN" : "2",
   "INPUTS" : [
     {

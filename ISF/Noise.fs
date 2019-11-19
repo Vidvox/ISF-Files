@@ -1,63 +1,63 @@
+
 /*{
-    "CATEGORIES": [
-        "Pattern", "Noise"
-    ],
-    "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
-    "INPUTS": [
-        {
-            "DEFAULT": 0.5,
-            "LABEL": "Random Seed",
-            "MAX": 1,
-            "MIN": 0.01,
-            "NAME": "seed",
-            "TYPE": "float"
-        },
-        {
-            "DEFAULT": 0.125,
-            "LABEL": "Cell Size",
-            "MAX": 0.5,
-            "MIN": 0,
-            "NAME": "cell_size",
-            "TYPE": "float"
-        },
-        {
-            "DEFAULT": 0,
-            "LABEL": "Threshold",
-            "MAX": 1,
-            "MIN": 0,
-            "NAME": "threshold",
-            "TYPE": "float"
-        },
-        {
-            "DEFAULT": 1,
-            "LABEL": "Animated",
-            "NAME": "use_time",
-            "TYPE": "bool"
-        },
-        {
-            "DEFAULT": 2,
-            "LABEL": "Color Mode",
-            "LABELS": [
-                "B&W",
-                "Alpha",
-                "RGB",
-                "RGBA"
-            ],
-            "NAME": "color_mode",
-            "TYPE": "long",
-            "VALUES": [
-                0,
-                1,
-                2,
-                3
-            ]
-        }
-    ],
-    "ISFVSN": "2",
-    "VSN": null
-}
-*/
+	"CREDIT": "by VIDVOX",
+	"ISFVSN": "2",
+	"CATEGORIES": [
+		"Noise",
+		"Synthesis",
+		"Color"
+	],
+	"INPUTS": [
+		{
+			"NAME": "seed",
+			"LABEL": "Random Seed",
+			"TYPE": "float",
+			"MIN": 0.01,
+			"MAX": 1.0,
+			"DEFAULT": 0.5
+		},
+		{
+			"NAME": "cell_size",
+			"LABEL": "Cell Size",
+			"TYPE": "float",
+			"MIN": 0.0,
+			"MAX": 0.5,
+			"DEFAULT": 0.125
+		},
+		{
+			"NAME": "threshold",
+			"LABEL": "Threshold",
+			"TYPE": "float",
+			"MIN": 0.0,
+			"MAX": 1.0,
+			"DEFAULT": 0.0
+		},
+		{
+			"NAME": "use_time",
+			"LABEL": "Animated",
+			"TYPE": "bool",
+			"DEFAULT": 1.0
+		},
+		{
+			"NAME": "color_mode",
+			"LABEL": "Color Mode",
+			"TYPE": "long",
+			"VALUES": [
+				0,
+				1,
+				2,
+				3
+			],
+			"LABELS": [
+				"B&W",
+				"Alpha",
+				"RGB",
+				"RGBA"
+			],
+			"DEFAULT": 2
+		}
+	]
+}*/
 
 float rand(vec2 co){
     return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);

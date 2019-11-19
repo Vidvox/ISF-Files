@@ -1,8 +1,9 @@
 /*{
 	"CREDIT": "by zoidberg",
 	"ISFVSN": "2",
+	"DESCRIPTION": "Inverts the RGB channels of the input",
 	"CATEGORIES": [
-		"Color Effect"
+		"Color Effect", "Utility"
 	],
 	"INPUTS": [
 		{

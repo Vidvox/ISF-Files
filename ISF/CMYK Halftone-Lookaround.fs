@@ -2,7 +2,7 @@
 	"CREDIT": "by zoidberg",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Halftone Effect"
+		"Halftone Effect", "Stylize"
 	],
 	"INPUTS": [
 		{

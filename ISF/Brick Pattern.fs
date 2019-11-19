@@ -1,8 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator",
-    "Duotone"
+    "Pattern", "Color"
   ],
   "DESCRIPTION" : "Generates a basic brick pattern",
   "ISFVSN" : "2",

@@ -3,7 +3,7 @@
 	"CREDIT": "by VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Generator"
+		"Color", "Pattern", "Synthesis"
 	],
 	"INPUTS": [
 		{

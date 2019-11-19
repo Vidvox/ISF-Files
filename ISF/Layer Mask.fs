@@ -3,7 +3,7 @@
 	"ISFVSN": "2",
 	"DESCRIPTION": "Takes a mask image and applies it to the input image's alpha channel.",
 	"CATEGORIES": [
-		"Color Effect", "Masking"
+		"Color Effect", "Masking", "Utility"
 	],
 	"INPUTS": [
 		{

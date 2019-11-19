@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Transition"
+    "Wipe"
   ],
   "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/BowTieHorizontal.glsl",
   "DESCRIPTION" : "Automatically converted from https://gl-transitions.com/",

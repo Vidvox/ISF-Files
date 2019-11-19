@@ -1,8 +1,9 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator",
-    "Colors"
+    "Instrument",
+    "Synthesis",
+    "Color"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",

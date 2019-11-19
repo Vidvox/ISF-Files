@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Visualizer"
   ],
   "DESCRIPTION" : "Draw images one pixel at a time",
   "ISFVSN" : "2",

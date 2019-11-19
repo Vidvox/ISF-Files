@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Gradient"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

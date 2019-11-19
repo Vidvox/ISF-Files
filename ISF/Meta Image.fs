@@ -2,7 +2,7 @@
 	"CREDIT": "by Toneburst",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Toneburst", "Tile Effect"
+		"Stylize", "Tile Effect"
 	],
 	"INPUTS": [
 		{

@@ -1,97 +1,98 @@
-/*
-{
-  "CATEGORIES" : [
-    "Generator"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "pointInput",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0,
-        0
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "startColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0.95969659090042114,
-        0.58172662733405645,
-        0.17662368847084817,
-        1
-      ]
-    },
-    {
-      "NAME" : "endColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0.9623754620552063,
-        0.90235523208372492,
-        0.28796788144265206,
-        1
-      ]
-    },
-    {
-      "NAME" : "startSize",
-      "TYPE" : "float",
-      "MAX" : 0.5,
-      "DEFAULT" : 0.1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "endSize",
-      "TYPE" : "float",
-      "MAX" : 0.5,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "trailCount",
-      "TYPE" : "float",
-      "MAX" : 32,
-      "DEFAULT" : 16,
-      "MIN" : 1
-    },
-    {
-      "NAME" : "strokeSize",
-      "TYPE" : "float",
-      "MAX" : 0.1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "strokeColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        1
-      ]
-    }
-  ],
-  "PASSES" : [
-    {
-      "PERSISTENT" : true,
-      "WIDTH" : "$trailCount",
-      "HEIGHT" : "1",
-      "TARGET" : "pointsBuffer"
-    },
-    {
-      "DESCRIPTION" : "this empty pass is rendered at the same rez as whatever you are running the ISF filter at- the previous step rendered an image at one-sixteenth the res, so this step ensures that the output is full-size"
-    }
-  ]
+/*{
+    "CATEGORIES": [
+        "Particles"
+    ],
+    "CREDIT": null,
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pointInput",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                0.9596965909004211,
+                0.5817266273340564,
+                0.17662368847084817,
+                1
+            ],
+            "NAME": "startColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0.9623754620552063,
+                0.9023552320837249,
+                0.28796788144265206,
+                1
+            ],
+            "NAME": "endColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0.1,
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "startSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "endSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 16,
+            "MAX": 32,
+            "MIN": 1,
+            "NAME": "trailCount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 0.1,
+            "MIN": 0,
+            "NAME": "strokeSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "NAME": "strokeColor",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "HEIGHT": "1",
+            "PERSISTENT": true,
+            "TARGET": "pointsBuffer",
+            "WIDTH": "$trailCount"
+        },
+        {
+            "DESCRIPTION": "this empty pass is rendered at the same rez as whatever you are running the ISF filter at- the previous step rendered an image at one-sixteenth the res, so this step ensures that the output is full-size"
+        }
+    ],
+    "VSN": ""
 }
 */
 

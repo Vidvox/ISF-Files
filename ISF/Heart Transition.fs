@@ -2,7 +2,7 @@
 {
   "ISFVSN" : "2",
   "CATEGORIES" : [
-    "Transition"
+    "Graphic"
   ],
   "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/heart.glsl",
   "DESCRIPTION": "",

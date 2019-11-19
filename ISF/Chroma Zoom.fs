@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Toneburst",
+    "Color Effect",
     "Stylize"
   ],
   "ISFVSN" : "2",

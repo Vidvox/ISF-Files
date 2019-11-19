@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Transition"
+        "Dissolve"
     ],
     "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/crosshatch.glsl",
     "DESCRIPTION": "",
@@ -49,7 +49,7 @@
         }
     ],
     "ISFVSN": "2",
-    "VSN": null
+    "VSN": ""
 }
 */
 

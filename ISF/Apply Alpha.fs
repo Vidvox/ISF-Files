@@ -2,7 +2,7 @@
 	"CREDIT": "by VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Color Adjustment"
+		"Color Adjustment", "Masking", "Utility"
 	],
 	"INPUTS": [
 		{

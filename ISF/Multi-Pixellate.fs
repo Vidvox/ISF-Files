@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Stylize"
+    "Stylize", "Glitch"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

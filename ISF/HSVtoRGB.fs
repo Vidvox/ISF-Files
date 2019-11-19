@@ -3,7 +3,7 @@
 	"CREDIT": "by zoidberg",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Glitch","Color Effect"
+		"Glitch","Color Effect","Utility"
 	],
 	"INPUTS": [
 		{

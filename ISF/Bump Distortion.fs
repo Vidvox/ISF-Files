@@ -3,7 +3,7 @@
         "Distortion Effect"
     ],
     "CREDIT": "by carter rosenberg",
-    "DESCRIPTION": null,
+    "DESCRIPTION": "Bends and distorts the image",
     "INPUTS": [
         {
             "NAME": "inputImage",

@@ -2,7 +2,7 @@
 	"CREDIT": "by zoidberg",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Geometry Adjustment"
+		"Geometry Adjustment", "Utility"
 	],
 	"INPUTS": [
 		{
