@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Glitch", "Mask"
+        "Glitch", "Masking"
     ],
     "CREDIT": "by VIDVOX",
     "DESCRIPTION": "Pixels update only if within range of the specified lines to create a slit scan style",
