@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Distortion Effect"
+    "Distortion Effect", "Noise"
   ],
   "DESCRIPTION" : "Displaces image randomly",
   "ISFVSN" : "2",

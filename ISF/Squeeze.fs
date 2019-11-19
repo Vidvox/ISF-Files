@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Transition"
+        "Wipe"
     ],
     "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/squeeze.glsl",
     "DESCRIPTION": "",

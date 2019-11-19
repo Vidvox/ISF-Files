@@ -3,7 +3,7 @@
 	"CREDIT": "VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Generator"
+		"Synthesis", "Geometry"
 	],
 	"INPUTS": [
 		{
@@ -112,7 +112,7 @@ bool is_point_above_line(vec2 pt, float slope, float intercept)	{
 	return returnMe;
 }
 
-//	returns two values – distrance from the line and the percentage of the way on the line
+//	returns two values – distrance from the line and the percentage of the way on the line
 float distance_from_point_to_line(vec2 pt, vec2 l1, vec2 l2){
 	float returnMe = 0.0;
 	float a = (l2.y - l1.y);

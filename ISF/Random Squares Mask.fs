@@ -16,6 +16,14 @@
       "DEFAULT" : [
         0,
         0
+      ],
+      "MIN": [
+      	0,
+      	0
+      ],
+      "MAX": [
+      	1,
+      	1
       ]
     },
     {
@@ -72,7 +80,7 @@ void main() {
 	vec4 out_color = IMG_THIS_NORM_PIXEL(inputImage);
 	float alphaAdjust = alpha2;
 	vec2 coord = isf_FragNormCoord * RENDERSIZE;
-	vec2 shift = offset;
+	vec2 shift = offset * RENDERSIZE;
 	float size = width * RENDERSIZE.x;
 	vec2 gridIndex = vec2(0.0);
 
@@ -80,7 +88,7 @@ void main() {
 		alphaAdjust = alpha1;
 	}
 	else {
-		gridIndex = floor((offset + coord) / size);
+		gridIndex = floor((shift + coord) / size);
 		float value = rand(seed1*gridIndex);
 		if (value < randomThreshold)
 			alphaAdjust = alpha1;

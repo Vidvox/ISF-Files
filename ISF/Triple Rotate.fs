@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Geometry Adjustment"
+    "Geometry Adjustment", "Stylize"
   ],
   "DESCRIPTION" : "Performs three different rotations",
   "ISFVSN" : "2",

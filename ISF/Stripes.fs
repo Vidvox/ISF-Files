@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Abstract", "Synthesis", "Geometry"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

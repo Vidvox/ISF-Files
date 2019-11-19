@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Synthesis"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",

@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Geometry Adjustment"
+    "Geometry Adjustment", "Distortion Effect"
   ],
   "DESCRIPTION" : "Maps video onto a sphere",
   "ISFVSN" : "2",

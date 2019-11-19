@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "icalvin102", "Generator"
+    "icalvin102", "Synthesis"
   ],
 	"DESCRIPTION" : "Generates a radial audiospectrogram from fft-input",
   "ISFVSN" : "2",

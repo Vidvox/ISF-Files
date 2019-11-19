@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Masking"
+    "Masking", "Geometry"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

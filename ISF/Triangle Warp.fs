@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Geometry Adjustment"
+    "Geometry Adjustment", "Distortion Effect"
   ],
   "DESCRIPTION" : "Warps an image to fit in a triangle by fitting the height of the image to the height of a triangle",
   "ISFVSN" : "2",

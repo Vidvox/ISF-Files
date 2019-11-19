@@ -2,7 +2,7 @@
 	"CREDIT": "by v002",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Film", "v002"
+		"Film", "v002", "Color Effect"
 	],
 	"INPUTS": [
 		{
@@ -19,7 +19,7 @@
 	]
 }*/
 
-//	Based on v002 bleach bypass – https://github.com/v002/v002-Film-Effects/
+//	Based on v002 bleach bypass – https://github.com/v002/v002-Film-Effects/
 
 //constant variables.
 const vec4 one = vec4(1.0);	

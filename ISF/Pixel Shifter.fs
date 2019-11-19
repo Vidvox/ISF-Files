@@ -1,77 +1,80 @@
 /*{
-	"DESCRIPTION": "Shifts pixels up and down",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch", "Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "hPhase",
-			"LABEL": "Horizontal Phase",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "hFrequency",
-			"LABEL": "Horizontal Frequency",
-			"TYPE": "float",
-			"MIN": -16.0,
-			"MAX": 16.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "hRandom",
-			"LABEL": "Horizontal Random",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "vPhase",
-			"LABEL": "Vertical Phase",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "vFrequency",
-			"LABEL": "Vertical Frequency",
-			"TYPE": "float",
-			"MIN": -16.0,
-			"MAX": 16.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "vRandom",
-			"LABEL": "Vertical Random",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "doSin",
-			"LABEL": "Sinusoidal",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "mirror",
-			"LABEL": "Mirror",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Glitch",
+        "Distortion Effect", "Distortion"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Shifts pixels up and down",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Horizontal Phase",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "hPhase",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Horizontal Frequency",
+            "MAX": 16,
+            "MIN": -16,
+            "NAME": "hFrequency",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Horizontal Random",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "hRandom",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Vertical Phase",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "vPhase",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Vertical Frequency",
+            "MAX": 16,
+            "MIN": -16,
+            "NAME": "vFrequency",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Vertical Random",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "vRandom",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Sinusoidal",
+            "NAME": "doSin",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Mirror",
+            "NAME": "mirror",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
+}
+*/
 
 
 float		PI_CONST = 3.14159265359;

@@ -1,7 +1,7 @@
 /*{
   "CREDIT": "by Carter Rosenberg",
   "CATEGORIES": [
-    "Generator"
+    "Pattern", "Utility"
   ],
   "INPUTS": [
     {

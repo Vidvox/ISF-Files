@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Geometry Adjustment", "Tile Effect"
+    "Geometry Adjustment", "Tile Effect", "Kaleidoscope"
   ],
   "DESCRIPTION" : "Repllcates a radial slice of an image",
   "ISFVSN" : "2",

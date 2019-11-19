@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Transition"
+    "Dissolve"
   ],
   "INPUTS" : [
     {

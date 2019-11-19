@@ -3,7 +3,7 @@
 	"CREDIT": "by vade",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"v002", "Retro"
+		"v002", "Retro", "Distortion Effect"
 	],
 	"INPUTS": [
 		{

@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Pattern", "Geometry"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",

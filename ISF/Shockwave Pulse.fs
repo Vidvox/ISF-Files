@@ -80,7 +80,7 @@ void main()
 	if (PASSINDEX == 0)	{
 		vec4		srcPixel = IMG_PIXEL(lastTime,vec2(0.5));
 		//	i'm only using the X, which is the last render time we reset
-		srcPixel.r = (pulse) ? 0.0 : clamp(srcPixel.r + rate * 0.01,0.0,1.0);
+		srcPixel.r = (pulse && FRAMEINDEX>10) ? 0.0 : clamp(srcPixel.r + rate * 0.01,0.0,1.0);
 		gl_FragColor = srcPixel;
 	}
 	//	else this isn't the first pass- read the position value from the buffer which stores it

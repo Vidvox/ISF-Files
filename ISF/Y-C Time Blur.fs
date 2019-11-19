@@ -2,7 +2,6 @@
 {
   "CATEGORIES" : [
     "Blur",
-    "Color Effect",
     "Glitch"
   ],
   "DESCRIPTION" : "This converts to YIQ and does separate feedback blur on the Y and C channels",

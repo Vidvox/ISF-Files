@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Abstract", "Geometry"
   ],
   "KEYWORDS" : [
     "Abstract", "Geometric"

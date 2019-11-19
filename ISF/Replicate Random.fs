@@ -2,7 +2,8 @@
 {
   "CATEGORIES" : [
     "Glitch",
-    "Stylize"
+    "Stylize",
+    "Pattern"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",

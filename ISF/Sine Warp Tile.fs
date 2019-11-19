@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Tile Effect"
+        "Tile Effect", "Kaleidoscope"
     ],
     "CREDIT": "by VIDVOX",
     "DESCRIPTION": null,

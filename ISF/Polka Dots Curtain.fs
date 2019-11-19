@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Transition"
+        "Wipe", "Pattern"
     ],
     "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/PolkaDotsCurtain.glsl",
     "DESCRIPTION": "",

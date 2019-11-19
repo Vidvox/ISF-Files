@@ -1,59 +1,59 @@
-/*
-{
-  "CATEGORIES" : [
-    "Distortion Effect", "Audio Reactive"
-  ],
-  "DESCRIPTION" : "Displaces image with audio waveform",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "audio",
-      "TYPE" : "image",
-      "LABEL" : "Audio Waveform"
-    },
-    {
-      "NAME" : "displaceX",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "MIN" : 0,
-      "LABEL" : "Displace X"
-    },
-    {
-      "NAME" : "displaceY",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "MIN" : 0,
-      "LABEL" : "Displace Y"
-    },
-    {
-      "NAME" : "detailX",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0,
-      "LABEL" : "Detail X"
-    },
-    {
-      "NAME" : "detailY",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0,
-      "LABEL" : "Detail Y"
-    }
-  ],
-  "PASSES" : [
-    {
-      "DESCRIPTION" : "Renderpass 0"
-    }
-  ],
-  "CREDIT" : "icalvin102 (calvin@icalvin.de)"
+/*{
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "icalvin102 (calvin@icalvin.de)",
+    "DESCRIPTION": "Displaces image with audio waveform",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "LABEL": "Audio Waveform",
+            "NAME": "audio",
+            "TYPE": "audio"
+        },
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Displace X",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "displaceX",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Displace Y",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "displaceY",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Detail X",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "detailX",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Detail Y",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "detailY",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "DESCRIPTION": "Renderpass 0"
+        }
+    ],
+    "VSN": null
 }
 */
 

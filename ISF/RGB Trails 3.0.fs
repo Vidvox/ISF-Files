@@ -3,7 +3,7 @@
 	"ISFVSN": "2",
 	"DESCRIPTION": "a persistent buffer is used to maintain an image which is constantly updated.  Similar to VVMotionBlur, but each channel has its own weight",
 	"CATEGORIES": [
-		"Color Effect"
+		"Color Effect", "Blur"
 	],
 	"INPUTS": [
 		{

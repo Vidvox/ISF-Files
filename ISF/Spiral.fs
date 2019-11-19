@@ -2,7 +2,7 @@
 	"CREDIT": "by VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Generator"
+		"Abstract", "Synthesis"
 	],
 	"INPUTS": [
 		{

@@ -2,7 +2,7 @@
   "DESCRIPTION": "Power curves distortions with shifting",
   "CREDIT": "",
   "CATEGORIES": [
-    "Distortion Effect"
+    "Distortion Effect", "Distortion"
   ],
   "INPUTS": [
     {

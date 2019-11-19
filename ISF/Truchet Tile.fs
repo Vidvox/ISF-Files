@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Generator"
+    "Abstract", "Geometry"
   ],
   "DESCRIPTION" : "Creates a Truchet Tile pattern",
   "ISFVSN" : "2",

@@ -2,7 +2,7 @@
 	"CREDIT": "by v002",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"v002", "Film"
+		"v002", "Film", "Color Effect"
 	],
 	"INPUTS": [
 		{
@@ -35,7 +35,7 @@
 }*/
 
 
-//	Based on v002 technicolor – https://github.com/v002/v002-Film-Effects/
+//	Based on v002 technicolor – https://github.com/v002/v002-Film-Effects/
 
 const vec4 redfilter1 		= vec4(1.0, 0.0, 0.0, 1.0);
 const vec4 bluegreenfilter1 	= vec4(0.0, 1.0, 0.7, 1.0);

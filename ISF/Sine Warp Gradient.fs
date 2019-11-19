@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Generator"
+        "Gradient", "Synthesis"
     ],
     "CREDIT": "by VIDVOX",
     "DESCRIPTION": null,

@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Masking"
+    "Masking", "Geometry"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",

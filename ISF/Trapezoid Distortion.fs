@@ -3,7 +3,7 @@
 	"CREDIT": "VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Distortion Effect"
+		"Geometry adjustment", "Distortion Effect"
 	],
 	"INPUTS": [
 		{

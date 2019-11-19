@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Feedback"
+    "Feedback", "Stylize"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",
