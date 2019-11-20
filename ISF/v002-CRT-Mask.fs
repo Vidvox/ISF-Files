@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
         "Retro",
-        "Stylize",
         "v002"
     ],
     "CREDIT": "by vade",

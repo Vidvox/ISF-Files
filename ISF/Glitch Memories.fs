@@ -1,28 +1,28 @@
-/*
-{
-  "ISFVSN" : "2",
-  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/GlitchMemories.glsl",
-  "DESCRIPTION": "",
-  "CATEGORIES" : [
-    "Distortion"
-  ],
-  "INPUTS" : [
-    {
-      "NAME" : "startImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "endImage",
-      "TYPE" : "image"
-    },
-    {
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0,
-      "TYPE" : "float",
-      "NAME" : "progress"
-    }
-  ]
+/*{
+    "CATEGORIES": [
+        "Distortion",
+        "Glitch"
+    ],
+    "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/GlitchMemories.glsl",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "startImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "endImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "progress",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

@@ -1,77 +1,76 @@
-/*
-{
-  "CATEGORIES" : [
-    "Animation"
-  ],
-  "DESCRIPTION" : "Draw images one pixel at a time",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "moveUp",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "moveDown",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "moveLeft",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "moveRight",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "penColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0.5,
-        0.5,
-        0.5,
-        1
-      ]
-    },
-    {
-      "NAME" : "penSize",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.05,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resetPosition",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "clearBuffer",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "clearColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  ],
-  "PASSES" : [
-    {
-      "PERSISTENT" : true,
-      "WIDTH" : "1",
-      "HEIGHT" : "1",
-      "TARGET" : "currentPosition",
-      "FLOAT" : true
-    },
-    {
-      "TARGET" : "lastState",
-      "PERSISTENT" : true
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Drawing"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Draw images one pixel at a time",
+    "INPUTS": [
+        {
+            "NAME": "moveUp",
+            "TYPE": "event"
+        },
+        {
+            "NAME": "moveDown",
+            "TYPE": "event"
+        },
+        {
+            "NAME": "moveLeft",
+            "TYPE": "event"
+        },
+        {
+            "NAME": "moveRight",
+            "TYPE": "event"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5,
+                0.5,
+                1
+            ],
+            "NAME": "penColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0.05,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "penSize",
+            "TYPE": "float"
+        },
+        {
+            "NAME": "resetPosition",
+            "TYPE": "event"
+        },
+        {
+            "NAME": "clearBuffer",
+            "TYPE": "event"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "NAME": "clearColor",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "FLOAT": true,
+            "HEIGHT": "1",
+            "PERSISTENT": true,
+            "TARGET": "currentPosition",
+            "WIDTH": "1"
+        },
+        {
+            "PERSISTENT": true,
+            "TARGET": "lastState"
+        }
+    ]
 }
 */
 

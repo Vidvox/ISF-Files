@@ -1,6 +1,5 @@
 /*{
     "CATEGORIES": [
-        "Color Effect",
         "Utility"
     ],
     "CREDIT": "VIDVOX",

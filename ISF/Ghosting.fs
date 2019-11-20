@@ -1,6 +1,8 @@
 /*{
     "CATEGORIES": [
-        "Film"
+        "Stylize",
+        "Feedback",
+        "Color Effect"
     ],
     "CREDIT": "by VIDVOX",
     "DESCRIPTION": "",

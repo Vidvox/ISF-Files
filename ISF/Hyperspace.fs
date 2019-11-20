@@ -1,51 +1,50 @@
-/*
-{
-  "CATEGORIES" : [
-    "Stylize"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "centerX",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "scrollAmount",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "rightScrollOffset",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "midHeight",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0,
-      "IDENTITY" : 1
-    },
-    {
-      "NAME" : "seamless",
-      "TYPE" : "bool",
-      "DEFAULT" : 1
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "centerX",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "scrollAmount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "rightScrollOffset",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "IDENTITY": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "midHeight",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "seamless",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

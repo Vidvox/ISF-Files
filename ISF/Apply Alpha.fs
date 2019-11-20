@@ -1,16 +1,19 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Color Adjustment", "Masking", "Utility"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Color Adjustment",
+        "Masking",
+        "Utility"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 void main() {
 	vec4		srcPixel = IMG_THIS_PIXEL(inputImage);

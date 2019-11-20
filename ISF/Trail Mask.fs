@@ -1,66 +1,66 @@
 /*{
-	"DESCRIPTION": "Pixels update only based on the masking image",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch","Masking"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "maskImage",
-			"TYPE": "image",
-			"LABEL": "mask image"
-		},
-		{
-			"NAME": "maskSizingMode",
-			"LABEL": "mask size mode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2,
-				3
-			],
-			"LABELS": [
-				"Fit",
-				"Fill",
-				"Stretch",
-				"Copy"
-			],
-			"DEFAULT": 0
-		},
-		{
-			"NAME": "bright",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "contrast",
-			"TYPE": "float",
-			"MIN": -4.0,
-			"MAX": 4.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "RGB_mode",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET":"bufferVariableNameA",
-			"PERSISTENT": true
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Glitch"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Pixels update only based on the masking image",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "LABEL": "mask image",
+            "NAME": "maskImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "mask size mode",
+            "LABELS": [
+                "Fit",
+                "Fill",
+                "Stretch",
+                "Copy"
+            ],
+            "NAME": "maskSizingMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "bright",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 4,
+            "MIN": -4,
+            "NAME": "contrast",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "RGB_mode",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "PERSISTENT": true,
+            "TARGET": "bufferVariableNameA"
+        }
+    ]
+}
+*/
 
 
 

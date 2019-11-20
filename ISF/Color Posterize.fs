@@ -1,23 +1,25 @@
 /*{
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Color Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "levels",
-			"TYPE": "float",
-			"MIN": 2.0,
-			"MAX": 30.0,
-			"DEFAULT": 30.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Color Effect",
+        "Retro"
+    ],
+    "CREDIT": "by zoidberg",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 30,
+            "MAX": 30,
+            "MIN": 2,
+            "NAME": "levels",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 void main() {
 	//	get the src pixel, convert to HSL, posterize the 'L', convert back to RGB

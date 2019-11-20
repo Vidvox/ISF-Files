@@ -1,140 +1,139 @@
-/*
-{
-  "CATEGORIES" : [
-    "Stylize",
-    "Retro"
-  ],
-  "DESCRIPTION" : "Creates a simple zooming feedback loop",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "preShift",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "feedbackLevel",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.9,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "rotateAngle",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "zoomLevel",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1.2,
-      "MIN" : 0.25
-    },
-    {
-      "NAME" : "zoomCenter",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "feedbackShift",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "invert",
-      "TYPE" : "bool",
-      "DEFAULT" : 0
-    },
-    {
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ],
-      "NAME" : "blendMode",
-      "TYPE" : "long",
-      "DEFAULT" : 3,
-      "LABELS" : [
-        "Add",
-        "Over Black",
-        "Over Alpha",
-        "Max",
-        "Under Black",
-        "Under Alpha"
-      ]
-    },
-    {
-      "NAME" : "blackThresh",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.10000000000000001,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "satLevel",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "colorShift",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "feedbackBuffer",
-      "PERSISTENT" : true
-    }
-  ],
-  "CREDIT" : ""
+/*{
+    "CATEGORIES": [
+        "Retro",
+        "Feedback"
+    ],
+    "CREDIT": "",
+    "DESCRIPTION": "Creates a simple zooming feedback loop",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "preShift",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0.9,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "feedbackLevel",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "rotateAngle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1.2,
+            "MAX": 2,
+            "MIN": 0.25,
+            "NAME": "zoomLevel",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "zoomCenter",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "feedbackShift",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "invert",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 3,
+            "LABELS": [
+                "Add",
+                "Over Black",
+                "Over Alpha",
+                "Max",
+                "Under Black",
+                "Under Alpha"
+            ],
+            "NAME": "blendMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "DEFAULT": 0.1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "blackThresh",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "satLevel",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorShift",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "PERSISTENT": true,
+            "TARGET": "feedbackBuffer"
+        }
+    ]
 }
 */
 

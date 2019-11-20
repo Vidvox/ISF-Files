@@ -1,7 +1,8 @@
 /*{
     "CATEGORIES": [
-        "Color Effect",
+        "Stylize",
         "Film",
+        "Color Effect",
         "v002"
     ],
     "CREDIT": "by v002",

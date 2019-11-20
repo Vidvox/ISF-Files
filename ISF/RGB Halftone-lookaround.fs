@@ -1,7 +1,7 @@
 /*{
     "CATEGORIES": [
         "Halftone Effect",
-        "Stylize"
+        "Retro"
     ],
     "CREDIT": "by zoidberg",
     "INPUTS": [

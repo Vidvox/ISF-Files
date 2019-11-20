@@ -1,45 +1,43 @@
-/*
-{
-  "CATEGORIES" : [
-    "Noise", "Glitch"
-  ],
-  "DESCRIPTION" : "Pixels that change become noise until they match the input again",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "adaptRate",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "threshold",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.05,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "useRGBA",
-      "TYPE" : "bool",
-      "DEFAULT" : 1
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "adaptiveBuffer1",
-      "PERSISTENT" : true
-    },
-    {
-
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Noise"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Pixels that change become noise until they match the input again",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "adaptRate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.05,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "threshold",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "useRGBA",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "PERSISTENT": true,
+            "TARGET": "adaptiveBuffer1"
+        },
+        {
+        }
+    ]
 }
 */
 

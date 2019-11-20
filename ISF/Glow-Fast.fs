@@ -1,71 +1,71 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize",
-		"Blur"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "intensity",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "blurAmount",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 12.0,
-			"DEFAULT": 12.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "halfSizeBaseRender",
-			"WIDTH": "floor($WIDTH/2.0)",
-			"HEIGHT": "floor($HEIGHT/2.0)",
-			"DESCRIPTION": "Pass 0"
-		},
-		{
-			"TARGET": "quarterSizeBaseRender",
-			"WIDTH": "floor($WIDTH/4.0)",
-			"HEIGHT": "floor($HEIGHT/4.0)",
-			"DESCRIPTION": "Pass 1"
-		},
-		{
-			"TARGET": "eighthSizeBaseRender",
-			"WIDTH": "floor($WIDTH/8.0)",
-			"HEIGHT": "floor($HEIGHT/8.0)",
-			"DESCRIPTION": "Pass 2"
-		},
-		{
-			"TARGET": "quarterGaussA",
-			"WIDTH": "floor($WIDTH/4.0)",
-			"HEIGHT": "floor($HEIGHT/4.0)",
-			"DESCRIPTION": "Pass 3"
-		},
-		{
-			"TARGET": "quarterGaussB",
-			"WIDTH": "floor($WIDTH/4.0)",
-			"HEIGHT": "floor($HEIGHT/4.0)",
-			"DESCRIPTION": "Pass 4"
-		},
-		{
-			"TARGET": "fullGaussA",
-			"DESCRIPTION": "Pass 5"
-		},
-		{
-			"TARGET": "fullGaussB",
-			"DESCRIPTION": "Pass 6"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Stylize"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "intensity",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 12,
+            "MAX": 12,
+            "MIN": 0,
+            "NAME": "blurAmount",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "DESCRIPTION": "Pass 0",
+            "HEIGHT": "floor($HEIGHT/2.0)",
+            "TARGET": "halfSizeBaseRender",
+            "WIDTH": "floor($WIDTH/2.0)"
+        },
+        {
+            "DESCRIPTION": "Pass 1",
+            "HEIGHT": "floor($HEIGHT/4.0)",
+            "TARGET": "quarterSizeBaseRender",
+            "WIDTH": "floor($WIDTH/4.0)"
+        },
+        {
+            "DESCRIPTION": "Pass 2",
+            "HEIGHT": "floor($HEIGHT/8.0)",
+            "TARGET": "eighthSizeBaseRender",
+            "WIDTH": "floor($WIDTH/8.0)"
+        },
+        {
+            "DESCRIPTION": "Pass 3",
+            "HEIGHT": "floor($HEIGHT/4.0)",
+            "TARGET": "quarterGaussA",
+            "WIDTH": "floor($WIDTH/4.0)"
+        },
+        {
+            "DESCRIPTION": "Pass 4",
+            "HEIGHT": "floor($HEIGHT/4.0)",
+            "TARGET": "quarterGaussB",
+            "WIDTH": "floor($WIDTH/4.0)"
+        },
+        {
+            "DESCRIPTION": "Pass 5",
+            "TARGET": "fullGaussA"
+        },
+        {
+            "DESCRIPTION": "Pass 6",
+            "TARGET": "fullGaussB"
+        }
+    ]
+}
+*/
 
 
 //	original blur implementation as v002.blur in QC by anton marini and tom butterworth, ported by zoidberg

@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Masking",
-        "Geometry Adjustment"
+        "Masking"
     ],
     "CREDIT": "by VIDVOX",
     "INPUTS": [

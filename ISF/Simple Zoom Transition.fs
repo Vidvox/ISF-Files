@@ -1,5 +1,6 @@
 /*{
     "CATEGORIES": [
+        "Distortion",
         "Dissolve"
     ],
     "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/SimpleZoom.glsl",

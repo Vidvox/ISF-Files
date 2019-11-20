@@ -1,167 +1,166 @@
-/*
-{
-  "CATEGORIES" : [
-    "Feedback", "Stylize"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "maskRadius",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.25,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "feedbackRate",
-      "TYPE" : "float",
-      "MAX" : 16,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "mixPoint",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "LABELS" : [
-        "Circle",
-        "Triangle",
-        "Rect",
-        "Pentagram",
-        "Hexagon",
-        "Star1",
-        "Star2",
-        "Heart",
-        "Rays"
-      ],
-      "NAME" : "shape1",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
-    },
-    {
-      "LABELS" : [
-        "Circle",
-        "Triangle",
-        "Rect",
-        "Pentagram",
-        "Hexagon",
-        "Star1",
-        "Star2",
-        "Heart",
-        "Rays"
-      ],
-      "NAME" : "shape2",
-      "TYPE" : "long",
-      "DEFAULT" : 1,
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
-    },
-    {
-      "NAME" : "shapeWobble",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "twirlAmount",
-      "TYPE" : "float",
-      "MAX" : 0.25,
-      "DEFAULT" : 0,
-      "MIN" : -0.25
-    },
-    {
-      "NAME" : "fadeRate",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "centerFeedback",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "feedbackCenter",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "LABELS" : [
-        "Mask",
-        "CenteredMask",
-        "Scaled",
-        "Wrap",
-        "MirrorWrap",
-        "InvertedMask"
-      ],
-      "NAME" : "styleMode",
-      "TYPE" : "long",
-      "DEFAULT" : 2,
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5
-      ]
-    },
-    {
-      "NAME" : "clearBuffer",
-      "TYPE" : "event"
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "feedbackBuffer",
-      "PERSISTENT" : true
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Feedback"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "maskRadius",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 16,
+            "MIN": 0,
+            "NAME": "feedbackRate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "mixPoint",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "Circle",
+                "Triangle",
+                "Rect",
+                "Pentagram",
+                "Hexagon",
+                "Star1",
+                "Star2",
+                "Heart",
+                "Rays"
+            ],
+            "NAME": "shape1",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "LABELS": [
+                "Circle",
+                "Triangle",
+                "Rect",
+                "Pentagram",
+                "Hexagon",
+                "Star1",
+                "Star2",
+                "Heart",
+                "Rays"
+            ],
+            "NAME": "shape2",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "shapeWobble",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 0.25,
+            "MIN": -0.25,
+            "NAME": "twirlAmount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "fadeRate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "centerFeedback",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "feedbackCenter",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 2,
+            "LABELS": [
+                "Mask",
+                "CenteredMask",
+                "Scaled",
+                "Wrap",
+                "MirrorWrap",
+                "InvertedMask"
+            ],
+            "NAME": "styleMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+            ]
+        },
+        {
+            "NAME": "clearBuffer",
+            "TYPE": "event"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "PERSISTENT": true,
+            "TARGET": "feedbackBuffer"
+        }
+    ]
 }
 */
 

@@ -1,8 +1,8 @@
 /*{
     "CATEGORIES": [
         "Color Adjustment",
-        "v002",
-        "Film"
+        "Film",
+        "v002"
     ],
     "CREDIT": "by v002",
     "INPUTS": [

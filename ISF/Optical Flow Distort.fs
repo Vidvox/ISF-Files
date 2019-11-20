@@ -1,75 +1,74 @@
-/*
-{
-  "CATEGORIES" : [
-    "Distortion Effect"
-  ],
-  "DESCRIPTION" : "Uses an optical flow mask to create a distortion",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "amt",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "LABEL" : "Distortion Amount",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "maskHold",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.98,
-      "LABEL" : "Flow Persistence",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "inputScale",
-      "TYPE" : "float",
-      "MAX" : 10,
-      "DEFAULT" : 2,
-      "LABEL" : "Scale",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "inputOffset",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "LABEL" : "Offset",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "inputLambda",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "LABEL" : "Noise Removal",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resetNow",
-      "TYPE" : "event",
-      "LABEL" : "Restart"
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "maskBuffer",
-      "PERSISTENT" : true
-    },
-    {
-      "TARGET" : "delayBuffer",
-      "PERSISTENT" : true
-    },
-    {
-
-    }
-  ],
-  "CREDIT" : "by VIDVOX, based on original implementation by Andrew Benson and v002"
+/*{
+    "CATEGORIES": [
+        "Distortion Effect",
+        "Stylize"
+    ],
+    "CREDIT": "by VIDVOX, based on original implementation by Andrew Benson and v002",
+    "DESCRIPTION": "Uses an optical flow mask to create a distortion",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Distortion Amount",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "amt",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.98,
+            "LABEL": "Flow Persistence",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "maskHold",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 2,
+            "LABEL": "Scale",
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "inputScale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Offset",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "inputOffset",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Noise Removal",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "inputLambda",
+            "TYPE": "float"
+        },
+        {
+            "LABEL": "Restart",
+            "NAME": "resetNow",
+            "TYPE": "event"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "PERSISTENT": true,
+            "TARGET": "maskBuffer"
+        },
+        {
+            "PERSISTENT": true,
+            "TARGET": "delayBuffer"
+        },
+        {
+        }
+    ]
 }
 */
 

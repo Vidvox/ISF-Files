@@ -1,8 +1,7 @@
 /*{
     "CATEGORIES": [
-    	"Kaleidoscope",
-        "Stylize",
-        "Tile Effect"
+        "Kaleidoscope",
+        "Stylize"
     ],
     "CREDIT": "by VIDVOX",
     "INPUTS": [

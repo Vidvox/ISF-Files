@@ -1,16 +1,18 @@
 /*{
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Color Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Color Effect",
+        "Utility"
+    ],
+    "CREDIT": "by zoidberg",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 void main() {
 	vec4		srcPixel = IMG_THIS_PIXEL(inputImage);

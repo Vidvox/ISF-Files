@@ -1,28 +1,28 @@
-/*
-{
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "startImage",
-      "TYPE" : "image"
-    },
-    {
-      "TYPE" : "image",
-      "NAME" : "endImage"
-    },
-    {
-      "TYPE" : "float",
-      "NAME" : "progress",
-      "MIN" : 0,
-      "MAX" : 1,
-      "DEFAULT" : 0
-    }
-  ],
-  "CATEGORIES" : [
-    "Wipe"
-  ],
-  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/InvertedPageCurl.glsl",
-  "DESCRIPTION" : "Automatically converted from https://gl-transitions.com/"
+/*{
+    "CATEGORIES": [
+        "Wipe",
+        "Retro"
+    ],
+    "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/InvertedPageCurl.glsl",
+    "DESCRIPTION": "Automatically converted from https://gl-transitions.com/",
+    "INPUTS": [
+        {
+            "NAME": "startImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "endImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "progress",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

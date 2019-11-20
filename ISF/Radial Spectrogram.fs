@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Audiovisualizer"
+        "Audio Visualizer"
     ],
     "CREDIT": "icalvin102 (calvin@icalvin.de)",
     "DESCRIPTION": "Generates a radial audiospectrogram from fft-input",

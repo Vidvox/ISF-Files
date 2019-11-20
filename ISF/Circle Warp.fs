@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Geometry Adjustment"
+        "Distortion Effect"
     ],
     "CREDIT": "VIDVOX",
     "DESCRIPTION": "Warps an image to fit in a circle by fitting the height of the image to the height of a circle",

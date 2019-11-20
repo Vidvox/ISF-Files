@@ -1,7 +1,8 @@
 /*{
     "CATEGORIES": [
         "Retro",
-        "Stylize"
+        "Stylize",
+        "Color Effect"
     ],
     "CREDIT": "VIDVOX",
     "DESCRIPTION": "Posterizes an image",

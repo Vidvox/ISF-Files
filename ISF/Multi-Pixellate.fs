@@ -1,67 +1,66 @@
-/*
-{
-  "CATEGORIES" : [
-    "Stylize", "Glitch"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "cell_size",
-      "TYPE" : "float",
-      "MAX" : 0.5,
-      "DEFAULT" : 0.125,
-      "MIN" : 0.001
-    },
-    {
-      "NAME" : "min_cell_size",
-      "TYPE" : "float",
-      "MAX" : 0.5,
-      "DEFAULT" : 0.05000000074505806,
-      "MIN" : 0.001
-    },
-    {
-      "NAME" : "rSeed",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.25,
-      "MIN" : 0
-    },
-    {
-      "VALUES" : [
-        0,
-        1
-      ],
-      "NAME" : "shape",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "LABELS" : [
-        "Square",
-        "Rectangle"
-      ]
-    },
-    {
-      "VALUES" : [
-        0,
-        2,
-        3,
-        5
-      ],
-      "NAME" : "round_to_divisions",
-      "TYPE" : "long",
-      "DEFAULT" : 2,
-      "LABELS" : [
-        "Off",
-        "2",
-        "3",
-        "5"
-      ]
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Stylize"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.125,
+            "MAX": 0.5,
+            "MIN": 0.001,
+            "NAME": "cell_size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.05000000074505806,
+            "MAX": 0.5,
+            "MIN": 0.001,
+            "NAME": "min_cell_size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "rSeed",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "Square",
+                "Rectangle"
+            ],
+            "NAME": "shape",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1
+            ]
+        },
+        {
+            "DEFAULT": 2,
+            "LABELS": [
+                "Off",
+                "2",
+                "3",
+                "5"
+            ],
+            "NAME": "round_to_divisions",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                2,
+                3,
+                5
+            ]
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

@@ -1,46 +1,47 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Utility", "Color"
-	],
-	"INPUTS": [
-		{
-			"NAME": "gridCols",
-			"LABEL": "Grid Columns",
-			"TYPE": "float",
-			"DEFAULT": 16.0,
-			"MIN": 1.0,
-			"MAX": 32.0
-		},
-		{
-			"NAME": "gridRows",
-			"LABEL": "Grid Rows",
-			"TYPE": "float",
-			"DEFAULT": 9.0,
-			"MIN": 1.0,
-			"MAX": 32.0
-		},
-		{
-			"NAME": "colorShift",
-			"LABEL": "Color Shift",
-			"TYPE": "float",
-			"DEFAULT": 0.0,
-			"MIN": 0.0,
-			"MAX": 1.0
-		},
-		{
-			"NAME": "colorRange",
-			"LABEL": "Color Range",
-			"TYPE": "float",
-			"DEFAULT": 1.0,
-			"MIN": 0.0,
-			"MAX": 1.0
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Color",
+        "Utility"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "DEFAULT": 16,
+            "LABEL": "Grid Columns",
+            "MAX": 32,
+            "MIN": 1,
+            "NAME": "gridCols",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 9,
+            "LABEL": "Grid Rows",
+            "MAX": 32,
+            "MIN": 1,
+            "NAME": "gridRows",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Color Shift",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorShift",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Color Range",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorRange",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 

@@ -1,33 +1,35 @@
 /*{
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Color Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "intensity",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "color",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.6,
-				0.45,
-				0.3,
-				1.0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Color Effect",
+        "Retro"
+    ],
+    "CREDIT": "by zoidberg",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "intensity",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.6,
+                0.45,
+                0.3,
+                1
+            ],
+            "NAME": "color",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 //const vec4		lumcoeff = vec4(0.299, 0.587, 0.114, 0.0);

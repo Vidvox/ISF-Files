@@ -1,6 +1,5 @@
 /*{
     "CATEGORIES": [
-        "Distortion Effect",
         "Geometry Adjustment"
     ],
     "CREDIT": "by VIDVOX",

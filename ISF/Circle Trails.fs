@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Animation"
+        "Drawing"
     ],
     "DESCRIPTION": "",
     "INPUTS": [

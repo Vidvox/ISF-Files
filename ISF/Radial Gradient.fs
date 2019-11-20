@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Color",
-        "Utility"
+        "Color"
     ],
     "CREDIT": "by Carter Rosenberg",
     "INPUTS": [

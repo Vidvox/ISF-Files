@@ -1,75 +1,78 @@
 /*{
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"DESCRIPTION": "Takes a mask image and applies it to the input image's alpha channel.",
-	"CATEGORIES": [
-		"Color Effect", "Masking", "Utility"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "maskImage",
-			"TYPE": "image",
-			"LABEL": "mask image"
-		},
-		{
-			"NAME": "maskSizingMode",
-			"LABEL": "mask size mode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2,
-				3
-			],
-			"LABELS": [
-				"Fit",
-				"Fill",
-				"Stretch",
-				"Copy"
-			],
-			"DEFAULT": 0
-		},
-		{
-			"NAME": "bright",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "contrast",
-			"TYPE": "float",
-			"MIN": -4.0,
-			"MAX": 4.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "alphaMode",
-			"LABEL": "Alpha Mode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2
-			],
-			"LABELS": [
-				"Additive",
-				"Multiply",
-				"Replace"
-			],
-			"DEFAULT": 2
-		},
-		{
-			"NAME": "applyAlpha",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Masking",
+        "Color Effect",
+        "Utility"
+    ],
+    "CREDIT": "by zoidberg",
+    "DESCRIPTION": "Takes a mask image and applies it to the input image's alpha channel.",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "LABEL": "mask image",
+            "NAME": "maskImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "mask size mode",
+            "LABELS": [
+                "Fit",
+                "Fill",
+                "Stretch",
+                "Copy"
+            ],
+            "NAME": "maskSizingMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "bright",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 4,
+            "MIN": -4,
+            "NAME": "contrast",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 2,
+            "LABEL": "Alpha Mode",
+            "LABELS": [
+                "Additive",
+                "Multiply",
+                "Replace"
+            ],
+            "NAME": "alphaMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "applyAlpha",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 const vec4		lumcoeff = vec4(0.299, 0.587, 0.114, 0.0);
 

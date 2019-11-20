@@ -1,34 +1,33 @@
-/*
-{
-  "CATEGORIES" : [
-    "Stylize", "Color Effect"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "intensity",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : -1
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "pass1"
-    },
-    {
-      "TARGET" : "pass2"
-    },
-    {
-      "TARGET" : "pass3"
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Color Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "intensity",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "TARGET": "pass1"
+        },
+        {
+            "TARGET": "pass2"
+        },
+        {
+            "TARGET": "pass3"
+        }
+    ]
 }
 */
 

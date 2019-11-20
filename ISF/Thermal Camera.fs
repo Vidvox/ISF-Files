@@ -1,16 +1,18 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Stylize",
+        "Color Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 //	partly adapted from http://coding-experiments.blogspot.com/2010/10/thermal-vision-pixel-shader.html

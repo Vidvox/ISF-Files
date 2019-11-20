@@ -1,42 +1,41 @@
-
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Geometry Adjustment", "Glitch"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "seed",
-			"TYPE": "float",
-			"MIN": 0.01,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "cell_size",
-			"TYPE": "float",
-			"MIN": 0.01,
-			"MAX": 1.0,
-			"DEFAULT": 0.125
-		},
-		{
-			"NAME": "allow_flips_h",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "allow_flips_v",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		}
-		
-	]
-}*/
+    "CATEGORIES": [
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0.01,
+            "NAME": "seed",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.125,
+            "MAX": 1,
+            "MIN": 0.01,
+            "NAME": "cell_size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "allow_flips_h",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "allow_flips_v",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 float rand(vec2 co){
     return fract(sin(dot(co.xy ,vec2(12.9898,78.233))) * 43758.5453);

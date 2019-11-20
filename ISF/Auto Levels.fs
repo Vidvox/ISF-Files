@@ -1,77 +1,76 @@
 /*{
-	"DESCRIPTION": "Auto Levels",
-	"CREDIT": "by Carter Rosenberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Color Adjustment"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "min_threshold",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "mid_point",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "max_threshold",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "adapt_rate",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "bufferPassA",
-			"WIDTH": "$WIDTH / 2.0",
-			"HEIGHT": "$HEIGHT / 2.0"
-		},
-		{
-			"TARGET": "bufferPassB",
-			"WIDTH": "max($WIDTH / 27.0, 1.0)",
-			"HEIGHT": "max($HEIGHT / 27.0, 1.0)"
-		},
-		{
-			"TARGET": "bufferPassC",
-			"WIDTH": "max($WIDTH / 3.0, 1.0)",
-			"HEIGHT": "max($HEIGHT / 3.0, 1.0)"
-		},
-		{
-			"TARGET": "bufferPassD",
-			"WIDTH": "max($WIDTH / 243.0, 1.0)",
-			"HEIGHT": "max($HEIGHT / 243.0, 1.0)"
-		},
-		{
-			"TARGET": "bufferVariableNameA",
-			"PERSISTENT": true,
-			"WIDTH": "max($WIDTH/486.0,1.0)",
-			"HEIGHT": "max($HEIGHT/486.0,1.0)"
-		},
-		{
-		
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Color Effect"
+    ],
+    "CREDIT": "by Carter Rosenberg",
+    "DESCRIPTION": "Auto Levels",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "min_threshold",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "mid_point",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "max_threshold",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "adapt_rate",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "HEIGHT": "$HEIGHT / 2.0",
+            "TARGET": "bufferPassA",
+            "WIDTH": "$WIDTH / 2.0"
+        },
+        {
+            "HEIGHT": "max($HEIGHT / 27.0, 1.0)",
+            "TARGET": "bufferPassB",
+            "WIDTH": "max($WIDTH / 27.0, 1.0)"
+        },
+        {
+            "HEIGHT": "max($HEIGHT / 3.0, 1.0)",
+            "TARGET": "bufferPassC",
+            "WIDTH": "max($WIDTH / 3.0, 1.0)"
+        },
+        {
+            "HEIGHT": "max($HEIGHT / 243.0, 1.0)",
+            "TARGET": "bufferPassD",
+            "WIDTH": "max($WIDTH / 243.0, 1.0)"
+        },
+        {
+            "HEIGHT": "max($HEIGHT/486.0,1.0)",
+            "PERSISTENT": true,
+            "TARGET": "bufferVariableNameA",
+            "WIDTH": "max($WIDTH/486.0,1.0)"
+        },
+        {
+        }
+    ]
+}
+*/
 
 #if __VERSION__ <= 120
 varying vec2 left_coord;

@@ -1,134 +1,133 @@
-/*
-{
-  "CATEGORIES" : [
-    "Utility"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "color",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3
-      ],
-      "NAME" : "maskShapeMode",
-      "TYPE" : "long",
-      "DEFAULT" : 1,
-      "LABEL" : "Mask Shape Mode",
-      "LABELS" : [
-        "Rectangle",
-        "Triangle",
-        "Circle",
-        "Diamond"
-      ]
-    },
-    {
-      "NAME" : "shapeWidth",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0.5,
-      "LABEL" : "Shape Width",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "shapeHeight",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0.5,
-      "LABEL" : "Shape Height",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "center",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "invertMask",
-      "TYPE" : "bool",
-      "DEFAULT" : false,
-      "LABEL" : "Invert Mask"
-    },
-    {
-      "VALUES" : [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "NAME" : "horizontalRepeat",
-      "TYPE" : "long",
-      "DEFAULT" : 1,
-      "LABEL" : "Horizontal Repeat",
-      "LABELS" : [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ]
-    },
-    {
-      "VALUES" : [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9
-      ],
-      "NAME" : "verticalRepeat",
-      "TYPE" : "long",
-      "DEFAULT" : 1,
-      "LABEL" : "Vertical Repeat",
-      "LABELS" : [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9"
-      ]
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "NAME": "color",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Mask Shape Mode",
+            "LABELS": [
+                "Rectangle",
+                "Triangle",
+                "Circle",
+                "Diamond"
+            ],
+            "NAME": "maskShapeMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Shape Width",
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "shapeWidth",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Shape Height",
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "shapeHeight",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Invert Mask",
+            "NAME": "invertMask",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Horizontal Repeat",
+            "LABELS": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "NAME": "horizontalRepeat",
+            "TYPE": "long",
+            "VALUES": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Vertical Repeat",
+            "LABELS": [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7",
+                "8",
+                "9"
+            ],
+            "NAME": "verticalRepeat",
+            "TYPE": "long",
+            "VALUES": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+            ]
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

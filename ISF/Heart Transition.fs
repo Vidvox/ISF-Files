@@ -1,28 +1,28 @@
-/*
-{
-  "ISFVSN" : "2",
-  "CATEGORIES" : [
-    "Wipe"
-  ],
-  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/heart.glsl",
-  "DESCRIPTION": "",
-  "INPUTS" : [
-    {
-      "NAME" : "startImage",
-      "TYPE" : "image"
-    },
-    {
-      "TYPE" : "image",
-      "NAME" : "endImage"
-    },
-    {
-      "MAX" : 1,
-      "NAME" : "progress",
-      "MIN" : 0,
-      "TYPE" : "float",
-      "DEFAULT" : 0
-    }
-  ]
+/*{
+    "CATEGORIES": [
+        "Wipe",
+        "Retro"
+    ],
+    "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/heart.glsl",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "startImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "endImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "progress",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

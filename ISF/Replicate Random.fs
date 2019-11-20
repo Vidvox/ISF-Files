@@ -1,6 +1,5 @@
 /*{
     "CATEGORIES": [
-        "Glitch",
         "Tile Effect"
     ],
     "CREDIT": "",

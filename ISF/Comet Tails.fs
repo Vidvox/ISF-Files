@@ -1,40 +1,38 @@
-/*
-{
-  "CATEGORIES" : [
-    "Blur",
-    "Retro",
-    "Glitch"
-  ],
-  "DESCRIPTION" : "This does a feedback motion blur based on the brightness of pixels to create an analog recording comet trails effect",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "absorptionRate",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "dischargeRate",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.02,
-      "MIN" : 0
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "feedbackBuffer",
-      "PERSISTENT" : true,
-      "FLOAT" : true
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Feedback",
+        "Glitch"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "This does a feedback motion blur based on the brightness of pixels to create an analog recording comet trails effect",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "absorptionRate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.02,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "dischargeRate",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "FLOAT": true,
+            "PERSISTENT": true,
+            "TARGET": "feedbackBuffer"
+        }
+    ]
 }
 */
 

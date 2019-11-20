@@ -1,173 +1,175 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Color Effect", "Masking"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"LABEL": "Key Color",
-			"NAME": "mask_color",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.24,
-				0.77,
-				0.38,
-				1.0
-			]
-		},
-		{
-			"LABEL": "Show Alpha",
-			"NAME": "showAlpha",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "applyAlpha",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		},
-		{
-			"LABEL": "Hard Cutoff",
-			"NAME": "applyCutOff",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "alphaMode",
-			"LABEL": "Alpha Mode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2
-			],
-			"LABELS": [
-				"Additive",
-				"Multiply",
-				"Replace"
-			],
-			"DEFAULT": 1
-		},
-		{
-			"LABEL": "Cutoff Thresh",
-			"NAME": "cutoffThresh",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"LABEL": "HUE- Tol.",
-			"NAME": "hueTol",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.25,
-			"DEFAULT": 0.0
-		},
-		{
-			"LABEL": "HUE- Min. Bracket",
-			"NAME": "hueMinBracket",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.5,
-			"DEFAULT": 0.25
-		},
-		{
-			"LABEL": "HUE- Max Bracket",
-			"NAME": "hueMaxBracket",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.5,
-			"DEFAULT": 0.25
-		},
-		{
-			"LABEL": "SAT- Tol.",
-			"NAME": "satTol",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.5,
-			"DEFAULT": 0.0
-		},
-		{
-			"LABEL": "SAT- Min. Bracket",
-			"NAME": "satMinBracket",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"LABEL": "SAT- Max Bracket",
-			"NAME": "satMaxBracket",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"LABEL": "VAL- Tol.",
-			"NAME": "valTol",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.5,
-			"DEFAULT": 0.0
-		},
-		{
-			"LABEL": "VAL- Min. Bracket",
-			"NAME": "valMinBracket",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"LABEL": "VAL- Max Bracket",
-			"NAME": "valMaxBracket",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"LABEL": "Dilate",
-			"NAME": "dilate",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 6.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"LABEL": "Blur",
-			"NAME": "blur",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 6.0,
-			"DEFAULT": 0.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "alphaPass"
-		},
-		{
-			"TARGET": "horizDilate"
-		},
-		{
-			"TARGET": "vertDilate"
-		},
-		{
-			"TARGET": "horizBlur"
-		},
-		{
-			"TARGET": "vertBlur"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Masking",
+        "Color Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": [
+                0.24,
+                0.77,
+                0.38,
+                1
+            ],
+            "LABEL": "Key Color",
+            "NAME": "mask_color",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Show Alpha",
+            "NAME": "showAlpha",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "applyAlpha",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Hard Cutoff",
+            "NAME": "applyCutOff",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Alpha Mode",
+            "LABELS": [
+                "Additive",
+                "Multiply",
+                "Replace"
+            ],
+            "NAME": "alphaMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Cutoff Thresh",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "cutoffThresh",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "HUE- Tol.",
+            "MAX": 0.25,
+            "MIN": 0,
+            "NAME": "hueTol",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "HUE- Min. Bracket",
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "hueMinBracket",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "HUE- Max Bracket",
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "hueMaxBracket",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "SAT- Tol.",
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "satTol",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "SAT- Min. Bracket",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "satMinBracket",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "SAT- Max Bracket",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "satMaxBracket",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "VAL- Tol.",
+            "MAX": 0.5,
+            "MIN": 0,
+            "NAME": "valTol",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "VAL- Min. Bracket",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "valMinBracket",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "VAL- Max Bracket",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "valMaxBracket",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Dilate",
+            "MAX": 6,
+            "MIN": 0,
+            "NAME": "dilate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Blur",
+            "MAX": 6,
+            "MIN": 0,
+            "NAME": "blur",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "TARGET": "alphaPass"
+        },
+        {
+            "TARGET": "horizDilate"
+        },
+        {
+            "TARGET": "vertDilate"
+        },
+        {
+            "TARGET": "horizBlur"
+        },
+        {
+            "TARGET": "vertBlur"
+        }
+    ]
+}
+*/
 
 
 

@@ -1,64 +1,62 @@
-/*
-{
-  "CATEGORIES" : [
-    "Animation", "Utility"
-  ],
-  "DESCRIPTION" : "Shows the current time of day or time since the composition started",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "colorInput",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        0.5899132640831176,
-        0,
-        1
-      ],
-      "LABEL" : "Color"
-    },
-    {
-      "VALUES" : [
-        0,
-        1,
-        2
-      ],
-      "NAME" : "clockMode",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "LABEL" : "Clock Mode",
-      "LABELS" : [
-        "Time",
-        "Countdown",
-        "Counter"
-      ]
-    },
-    {
-      "NAME" : "yOffset",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : -1,
-      "LABEL" : "Y Offset"
-    },
-    {
-      "NAME" : "blinkingColons",
-      "TYPE" : "bool",
-      "DEFAULT" : 1,
-      "LABEL" : "Blink"
-    },
-    {
-      "NAME" : "twentyFourHourStyle",
-      "TYPE" : "bool",
-      "LABEL" : "24 Hour"
-    }
-  ],
-  "PASSES" : [
-    {
-
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Utility"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Shows the current time of day or time since the composition started",
+    "INPUTS": [
+        {
+            "DEFAULT": [
+                1,
+                0.5899132640831176,
+                0,
+                1
+            ],
+            "LABEL": "Color",
+            "NAME": "colorInput",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Clock Mode",
+            "LABELS": [
+                "Time",
+                "Countdown",
+                "Counter"
+            ],
+            "NAME": "clockMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Y Offset",
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "yOffset",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Blink",
+            "NAME": "blinkingColons",
+            "TYPE": "bool"
+        },
+        {
+            "LABEL": "24 Hour",
+            "NAME": "twentyFourHourStyle",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+        }
+    ]
 }
 */
 

@@ -1,6 +1,7 @@
 /*{
     "CATEGORIES": [
-        "Halftone Effect"
+        "Halftone Effect",
+        "Retro"
     ],
     "CREDIT": "by VIDVOX",
     "INPUTS": [

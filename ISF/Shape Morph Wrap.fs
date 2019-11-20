@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Distortion Effect",
-        "Geometry Adjustment"
+        "Distortion Effect"
     ],
     "CREDIT": "VIDVOX",
     "DESCRIPTION": "Wraps an image into a shape that is created by morphing two primitive shapes together",

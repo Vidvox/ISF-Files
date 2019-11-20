@@ -1,49 +1,49 @@
-
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize", "Geometry Adjustment"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "hShift",
-			"LABEL": "H Shift",
-			"TYPE": "float",
-			"MIN": -0.05,
-			"MAX": 0.05,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "vShift",
-			"LABEL": "V Shift",
-			"TYPE": "float",
-			"MIN": -0.05,
-			"MAX": 0.05,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "mixAmount1",
-			"LABEL": "Shift Mix",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "mixAmount2",
-			"LABEL": "Original Mix",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Stylize"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "H Shift",
+            "MAX": 0.05,
+            "MIN": -0.05,
+            "NAME": "hShift",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "V Shift",
+            "MAX": 0.05,
+            "MIN": -0.05,
+            "NAME": "vShift",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Shift Mix",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "mixAmount1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Original Mix",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "mixAmount2",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 

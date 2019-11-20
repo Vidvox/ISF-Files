@@ -1,16 +1,17 @@
 /*{
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Geometry Adjustment", "Utility"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Utility"
+    ],
+    "CREDIT": "by zoidberg",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 const vec2		pointOffset = vec2(0.0, 1.0);
 

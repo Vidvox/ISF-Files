@@ -1,60 +1,61 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Geometry", "Pattern"
-	],
-	"INPUTS": [
-		{
-			"NAME": "spacing",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "line_width",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.05
-		},
-		{
-			"NAME": "angle",
-			"TYPE": "float",
-			"MIN": -1.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "shift",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "color1",
-			"TYPE": "color",
-			"DEFAULT": [
-				1.0,
-				1.0,
-				1.0,
-				1.0
-			]
-		},
-		{
-			"NAME": "color2",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.0,
-				0.0,
-				0.0,
-				1.0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "spacing",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.05,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "line_width",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "angle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "shift",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "NAME": "color1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "NAME": "color2",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 const float pi = 3.14159265359;

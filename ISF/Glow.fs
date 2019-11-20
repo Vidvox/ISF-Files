@@ -1,72 +1,71 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize",
-		"Blur"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "intensity",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 1.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "smallA",
-			"WIDTH": "floor($WIDTH*min((0.2),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.2),1.0))"
-		},
-		{
-			"TARGET": "smallB",
-			"WIDTH": "floor($WIDTH*min((0.2),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.2),1.0))"
-		},
-		{
-			"TARGET": "smallC",
-			"WIDTH": "floor($WIDTH*min((0.3),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.3),1.0))"
-		},
-		{
-			"TARGET": "smallD",
-			"WIDTH": "floor($WIDTH*min((0.3),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.3),1.0))"
-		},
-		{
-			"TARGET": "smallE",
-			"WIDTH": "floor($WIDTH*min((0.5),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.5),1.0))"
-		},
-		{
-			"TARGET": "smallF",
-			"WIDTH": "floor($WIDTH*min((0.5),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.5),1.0))"
-		},
-		{
-			"TARGET": "smallG",
-			"WIDTH": "floor($WIDTH*min((0.8),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.8),1.0))"
-		},
-		{
-			"TARGET": "smallH",
-			"WIDTH": "floor($WIDTH*min((0.8),1.0))",
-			"HEIGHT": "floor($HEIGHT*min((0.8),1.0))"
-		},
-		{
-			"TARGET": "smallI"
-		},
-		{
-			
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Stylize"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "intensity",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.2),1.0))",
+            "TARGET": "smallA",
+            "WIDTH": "floor($WIDTH*min((0.2),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.2),1.0))",
+            "TARGET": "smallB",
+            "WIDTH": "floor($WIDTH*min((0.2),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.3),1.0))",
+            "TARGET": "smallC",
+            "WIDTH": "floor($WIDTH*min((0.3),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.3),1.0))",
+            "TARGET": "smallD",
+            "WIDTH": "floor($WIDTH*min((0.3),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.5),1.0))",
+            "TARGET": "smallE",
+            "WIDTH": "floor($WIDTH*min((0.5),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.5),1.0))",
+            "TARGET": "smallF",
+            "WIDTH": "floor($WIDTH*min((0.5),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.8),1.0))",
+            "TARGET": "smallG",
+            "WIDTH": "floor($WIDTH*min((0.8),1.0))"
+        },
+        {
+            "HEIGHT": "floor($HEIGHT*min((0.8),1.0))",
+            "TARGET": "smallH",
+            "WIDTH": "floor($WIDTH*min((0.8),1.0))"
+        },
+        {
+            "TARGET": "smallI"
+        },
+        {
+        }
+    ]
+}
+*/
 
 
 //	original blur implementation as v002.blur in QC by anton marini and tom butterworth, ported by zoidberg

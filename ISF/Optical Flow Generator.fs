@@ -1,6 +1,7 @@
 /*{
     "CATEGORIES": [
-        "Masking"
+        "Masking",
+        "Utility"
     ],
     "CREDIT": "by VIDVOX / v002 / Andrew Benson",
     "DESCRIPTION": "Creates a raw optical flow mask from the input image",

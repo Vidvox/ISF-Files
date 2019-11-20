@@ -1,39 +1,41 @@
 /*{
-	"DESCRIPTION": "Bayer style dithering",
-	"CREDIT": "Hugh Kennedy, adapted by David Lublin",
-	"CATEGORIES": [
-		"Utility", "Color Effect","Halftone Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "colorize",
-			"TYPE": "float",
-			"DEFAULT": 0.0,
-			"MIN": 0.0,
-			"MAX": 1.0
-		},
-		{
-			"NAME": "matrixMode",
-			"TYPE": "long",
-			"VALUES": [
-				0,
-				1,
-				2
-			],
-			"LABELS": [
-				"2x2",
-				"4x4",
-				"8x8"
-			],
-			"DEFAULT": 2
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Halftone Effect",
+        "Retro"
+    ],
+    "CREDIT": "Hugh Kennedy, adapted by David Lublin",
+    "DESCRIPTION": "Bayer style dithering",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 2,
+            "LABELS": [
+                "2x2",
+                "4x4",
+                "8x8"
+            ],
+            "NAME": "matrixMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 

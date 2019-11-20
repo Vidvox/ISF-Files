@@ -1,30 +1,32 @@
 /*{
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Halftone Effect", "Stylize"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "gridSize",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 256.0,
-			"DEFAULT": 45.0
-		},
-		{
-			"NAME": "smoothing",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.15
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Halftone Effect",
+        "Retro"
+    ],
+    "CREDIT": "by zoidberg",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 45,
+            "MAX": 256,
+            "MIN": 1,
+            "NAME": "gridSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.15,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "smoothing",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 vec3		gridRot = vec3(15.0, 45.0, 75.0);
 

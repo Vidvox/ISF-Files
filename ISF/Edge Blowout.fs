@@ -1,78 +1,76 @@
-/*
-{
-  "CATEGORIES" : [
-    "Stylize",
-    "Glitch"
-  ],
-  "DESCRIPTION" : "Stretches the edges out a region of the video",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "MIN" : 0,
-      "IDENTITY" : 0,
-      "DEFAULT" : 0.25,
-      "LABEL" : "Left Edge",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "NAME" : "leftEdge"
-    },
-    {
-      "MIN" : 0,
-      "IDENTITY" : 1,
-      "DEFAULT" : 0.75,
-      "LABEL" : "Right Edge",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "NAME" : "rightEdge"
-    },
-    {
-      "MIN" : 0,
-      "IDENTITY" : 0,
-      "DEFAULT" : 0.25,
-      "LABEL" : "Bottom Edge",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "NAME" : "bottomEdge"
-    },
-    {
-      "MIN" : 0,
-      "IDENTITY" : 1,
-      "DEFAULT" : 0.75,
-      "LABEL" : "Top Edge",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "NAME" : "topEdge"
-    },
-    {
-      "NAME" : "doHorizontal",
-      "TYPE" : "bool",
-      "DEFAULT" : true,
-      "LABEL" : "Horizontal Bleed"
-    },
-    {
-      "NAME" : "doVertical",
-      "TYPE" : "bool",
-      "DEFAULT" : true,
-      "LABEL" : "Vertical Bleed"
-    },
-    {
-      "NAME" : "insideBleed",
-      "TYPE" : "bool",
-      "DEFAULT" : true,
-      "LABEL" : "Inside Bleed"
-    },
-    {
-      "NAME" : "outsideBleed",
-      "TYPE" : "bool",
-      "DEFAULT" : true,
-      "LABEL" : "Outside Bleed"
-    }
-  ],
-  "ISFVSN" : "2",
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Stylize"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Stretches the edges out a region of the video",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.25,
+            "IDENTITY": 0,
+            "LABEL": "Left Edge",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "leftEdge",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.75,
+            "IDENTITY": 1,
+            "LABEL": "Right Edge",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "rightEdge",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "IDENTITY": 0,
+            "LABEL": "Bottom Edge",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "bottomEdge",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.75,
+            "IDENTITY": 1,
+            "LABEL": "Top Edge",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "topEdge",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": true,
+            "LABEL": "Horizontal Bleed",
+            "NAME": "doHorizontal",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": true,
+            "LABEL": "Vertical Bleed",
+            "NAME": "doVertical",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": true,
+            "LABEL": "Inside Bleed",
+            "NAME": "insideBleed",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": true,
+            "LABEL": "Outside Bleed",
+            "NAME": "outsideBleed",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

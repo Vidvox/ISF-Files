@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
         "Glitch",
-        "Stylize",
         "Retro"
     ],
     "CREDIT": "David Lublin, original by Staffan Widegarn Åhlvik",

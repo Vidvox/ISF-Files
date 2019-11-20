@@ -1,56 +1,55 @@
 /*{
-	"DESCRIPTION": "Pixel with brightness levels below the threshold do not update.",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "thresh",
-			"LABEL": "Threshold",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "gain",
-			"LABEL": "Gain",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "hardCutoff",
-			"LABEL": "Hard Cutoff",
-			"TYPE": "bool",
-			"DEFAULT": true
-		},
-		{
-			"NAME": "invert",
-			"LABEL": "Invert",
-			"TYPE": "bool",
-			"DEFAULT": false
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET":"bufferVariableNameA",
-			"FLOAT": true,
-			"PERSISTENT": true
-		},
-		{
-		
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Feedback"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Pixel with brightness levels below the threshold do not update.",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Threshold",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "thresh",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Gain",
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "gain",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": true,
+            "LABEL": "Hard Cutoff",
+            "NAME": "hardCutoff",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Invert",
+            "NAME": "invert",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "FLOAT": true,
+            "PERSISTENT": true,
+            "TARGET": "bufferVariableNameA"
+        },
+        {
+        }
+    ]
+}
+*/
 
 void main()
 {

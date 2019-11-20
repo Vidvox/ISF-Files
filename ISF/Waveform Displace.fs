@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Audiovisualizer",
-        "Glitch",
+        "Audio Visualizer",
         "Distortion Effect"
     ],
     "CREDIT": "icalvin102 (calvin@icalvin.de)",

@@ -1,39 +1,38 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize",
-		"Blur"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "intensity",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "radius",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 15.0,
-			"DEFAULT": 2.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET": "firstPass"
-		},
-		{
-		
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Blur"
+    ],
+    "CREDIT": "by VIDVOX",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "intensity",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 2,
+            "MAX": 15,
+            "MIN": 1,
+            "NAME": "radius",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "TARGET": "firstPass"
+        },
+        {
+        }
+    ]
+}
+*/
 
 
 

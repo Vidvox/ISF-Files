@@ -1,39 +1,40 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "by Carter Rosenberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Film", "Retro"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "lineSize",
-			"LABEL": "Line Size",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 50.0,
-			"DEFAULT": 4.0
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET":"lastRow",
-			"WIDTH": "1",
-			"HEIGHT": "1",
-			"DESCRIPTION": "this buffer stores the last frame's odd / even state",
-			"PERSISTENT": true
-		},
-		{
-			"TARGET":"lastFrame",
-			"PERSISTENT": true
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Glitch",
+        "Retro"
+    ],
+    "CREDIT": "by Carter Rosenberg",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 4,
+            "LABEL": "Line Size",
+            "MAX": 50,
+            "MIN": 1,
+            "NAME": "lineSize",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "DESCRIPTION": "this buffer stores the last frame's odd / even state",
+            "HEIGHT": "1",
+            "PERSISTENT": true,
+            "TARGET": "lastRow",
+            "WIDTH": "1"
+        },
+        {
+            "PERSISTENT": true,
+            "TARGET": "lastFrame"
+        }
+    ]
+}
+*/
 
 void main()
 {

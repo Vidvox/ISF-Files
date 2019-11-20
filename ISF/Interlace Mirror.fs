@@ -1,30 +1,31 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "by Carter Rosenberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect", "Glitch"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "horizontal",
-			"LABEL": "Horizontal",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "vertical",
-			"LABEL": "Vertical",
-			"TYPE": "bool",
-			"DEFAULT": 0.0
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Glitch",
+        "Retro"
+    ],
+    "CREDIT": "by Carter Rosenberg",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Horizontal",
+            "NAME": "horizontal",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Vertical",
+            "NAME": "vertical",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 void main()
 {

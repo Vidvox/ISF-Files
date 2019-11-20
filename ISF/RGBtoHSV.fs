@@ -1,6 +1,7 @@
 /*{
     "CATEGORIES": [
-        "Color Effect"
+        "Color Effect",
+        "Utility"
     ],
     "CREDIT": "by zoidberg",
     "DESCRIPTION": "swizzles RGBA to BGRA and vice versa",

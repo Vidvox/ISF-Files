@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Glitch",
+        "Noise",
         "Geometry Adjustment"
     ],
     "CREDIT": "by VIDVOX",

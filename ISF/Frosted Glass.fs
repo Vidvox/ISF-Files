@@ -1,34 +1,35 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "geeks3d",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "magnitude",
-			"LABEL": "Magnitude",
-			"TYPE": "float",
-			"DEFAULT": 0.01,
-			"MIN": 0.0,
-			"MAX": 0.1
-		},
-		{
-			"NAME": "seed",
-			"LABEL": "Seed",
-			"TYPE": "float",
-			"DEFAULT": 0.345,
-			"MIN": 0.0,
-			"MAX": 1.0
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Stylize",
+        "Blur"
+    ],
+    "CREDIT": "geeks3d",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.01,
+            "LABEL": "Magnitude",
+            "MAX": 0.1,
+            "MIN": 0,
+            "NAME": "magnitude",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.345,
+            "LABEL": "Seed",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "seed",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 /*
 

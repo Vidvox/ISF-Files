@@ -1,80 +1,81 @@
 /*{
-	"DESCRIPTION": "Does a fast faked data-mosh style",
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "update_keyframe",
-			"TYPE": "bool",
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "update_rate",
-			"TYPE": "float",
-			"MIN": 0.01,
-			"MAX": 1.0,
-			"DEFAULT": 0.95
-		},
-		{
-			"NAME": "sharpen",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 10.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "blur",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "posterize",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "mode",
-			"VALUES": [
-				0,
-				1,
-				2
-			],
-			"LABELS": [
-				"relative",
-				"absolute",
-				"difference"
-			],
-			"DEFAULT": 0,
-			"TYPE": "long"
-		}
-	],
-	"PASSES": [
-		{
-			"TARGET":"keyFrameBuffer1",
-			"PERSISTENT": true,
-			"WIDTH": "$WIDTH/16.0",
-			"HEIGHT": "$HEIGHT/16.0"
-		},
-		{
-			"TARGET":"keyFrameBuffer2",
-			"PERSISTENT": true,
-			"WIDTH": "$WIDTH",
-			"HEIGHT": "$HEIGHT"
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Feedback",
+        "Glitch"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Does a fast faked data-mosh style",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "update_keyframe",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0.95,
+            "MAX": 1,
+            "MIN": 0.01,
+            "NAME": "update_rate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "sharpen",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "blur",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "posterize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "relative",
+                "absolute",
+                "difference"
+            ],
+            "NAME": "mode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "HEIGHT": "$HEIGHT/16.0",
+            "PERSISTENT": true,
+            "TARGET": "keyFrameBuffer1",
+            "WIDTH": "$WIDTH/16.0"
+        },
+        {
+            "HEIGHT": "$HEIGHT",
+            "PERSISTENT": true,
+            "TARGET": "keyFrameBuffer2",
+            "WIDTH": "$WIDTH"
+        }
+    ]
+}
+*/
 
 #if __VERSION__ <= 120
 varying vec2 left_coord;
