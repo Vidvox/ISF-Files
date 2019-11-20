@@ -44,8 +44,7 @@
             "TYPE": "point2D"
         }
     ],
-    "ISFVSN": "2",
-    "VSN": null
+    "ISFVSN": "2"
 }
 */
 

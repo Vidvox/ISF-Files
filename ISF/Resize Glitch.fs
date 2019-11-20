@@ -4,7 +4,6 @@
         "Geometry Adjustment"
     ],
     "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "NAME": "inputImage",

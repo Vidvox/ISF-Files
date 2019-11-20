@@ -5,7 +5,6 @@
         "Tile Effect"
     ],
     "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "NAME": "inputImage",
@@ -56,8 +55,7 @@
             "TYPE": "point2D"
         }
     ],
-    "ISFVSN": "2",
-    "VSN": null
+    "ISFVSN": "2"
 }
 */
 

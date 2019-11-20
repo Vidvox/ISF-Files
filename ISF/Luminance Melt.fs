@@ -37,8 +37,7 @@
             "TYPE": "bool"
         }
     ],
-    "ISFVSN": "2",
-    "VSN": null
+    "ISFVSN": "2"
 }
 */
 

@@ -3,7 +3,6 @@
         "Geometry"
     ],
     "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "DEFAULT": 15,
@@ -120,8 +119,7 @@
             "TYPE": "bool"
         }
     ],
-    "ISFVSN": "2",
-    "VSN": null
+    "ISFVSN": "2"
 }
 */
 

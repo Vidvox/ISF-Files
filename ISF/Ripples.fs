@@ -3,7 +3,6 @@
         "Distortion Effect"
     ],
     "CREDIT": "by carter rosenberg",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "NAME": "inputImage",
@@ -67,8 +66,7 @@
             ]
         }
     ],
-    "ISFVSN": "2",
-    "VSN": null
+    "ISFVSN": "2"
 }
 */
 

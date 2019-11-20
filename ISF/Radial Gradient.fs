@@ -4,7 +4,6 @@
         "Utility"
     ],
     "CREDIT": "by Carter Rosenberg",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "DEFAULT": 0.1,

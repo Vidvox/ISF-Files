@@ -4,7 +4,6 @@
         "Feedback"
     ],
     "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "NAME": "inputImage",

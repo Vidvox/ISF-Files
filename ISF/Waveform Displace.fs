@@ -54,8 +54,7 @@
         {
             "DESCRIPTION": "Renderpass 0"
         }
-    ],
-    "VSN": null
+    ]
 }
 */
 

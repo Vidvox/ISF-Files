@@ -2,7 +2,6 @@
     "CATEGORIES": [
         "Animation"
     ],
-    "CREDIT": null,
     "DESCRIPTION": "",
     "INPUTS": [
         {

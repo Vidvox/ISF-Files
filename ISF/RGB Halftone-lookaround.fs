@@ -4,7 +4,6 @@
         "Stylize"
     ],
     "CREDIT": "by zoidberg",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "NAME": "inputImage",

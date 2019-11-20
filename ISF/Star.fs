@@ -3,7 +3,6 @@
         "Geometry"
     ],
     "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "DEFAULT": 0.25,

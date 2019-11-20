@@ -3,7 +3,6 @@
         "Color"
     ],
     "CREDIT": "by VIDVOX",
-    "DESCRIPTION": null,
     "INPUTS": [
         {
             "DEFAULT": 0.5,
@@ -73,8 +72,7 @@
             "TYPE": "color"
         }
     ],
-    "ISFVSN": "2",
-    "VSN": null
+    "ISFVSN": "2"
 }
 */
 
