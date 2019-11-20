@@ -1,67 +1,65 @@
-/*
-{
-  "CATEGORIES" : [
-    "icalvin102", "Synthesis"
-  ],
-	"DESCRIPTION" : "Generates a radial audiospectrogram from fft-input",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "audioFFT",
-      "TYPE" : "audioFFT",
-      "LABEL" : "AudioFFT"
-    },
-    {
-      "NAME" : "size",
-      "TYPE" : "float",
-      "MAX" : 0.05,
-      "DEFAULT" : 0.001,
-      "MIN" : 1.0,
-      "LABEL" : "Size"
-    },
-    {
-      "NAME" : "feedbackOpacity",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.99,
-      "LABEL" : "Feedback Opacity",
-      "MIN" : 0.7
-    },
-    {
-      "NAME" : "low",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "LABEL" : "Lowest Frequency",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "high",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "LABEL" : "Heighest Frequency",
-      "MIN" : 0
-    }
-  ],
-  "PASSES" : [
-  	{
-	  	"PERSISTENT" : true,
-			"WIDTH" : "1",
-			"HEIGHT" : "1",
-			"TARGET" : "time",
-			"FLOAT" : true
-		},
-		{
-      "TARGET" : "buff",
-      "PERSISTENT" : true,
-      "FLOAT" : true
-    },
-    {
-
-    }
-  ],
-  "CREDIT" : "icalvin102 (calvin@icalvin.de)"
+/*{
+    "CATEGORIES": [
+        "Audiovisualizer"
+    ],
+    "CREDIT": "icalvin102 (calvin@icalvin.de)",
+    "DESCRIPTION": "Generates a radial audiospectrogram from fft-input",
+    "INPUTS": [
+        {
+            "LABEL": "AudioFFT",
+            "NAME": "audioFFT",
+            "TYPE": "audioFFT"
+        },
+        {
+            "DEFAULT": 0.001,
+            "LABEL": "Size",
+            "MAX": 0.05,
+            "MIN": 1,
+            "NAME": "size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.99,
+            "LABEL": "Feedback Opacity",
+            "MAX": 1,
+            "MIN": 0.7,
+            "NAME": "feedbackOpacity",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Lowest Frequency",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "low",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Heighest Frequency",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "high",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "FLOAT": true,
+            "HEIGHT": "1",
+            "PERSISTENT": true,
+            "TARGET": "time",
+            "WIDTH": "1"
+        },
+        {
+            "FLOAT": true,
+            "PERSISTENT": true,
+            "TARGET": "buff"
+        },
+        {
+        }
+    ]
 }
 */
 

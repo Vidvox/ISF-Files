@@ -1,24 +1,27 @@
 /*{
-	"DESCRIPTION": "CRT Displacement, emulating the look of curved CRT Displays",
-	"CREDIT": "by vade",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"v002", "Retro", "Distortion Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "Amount",
-			"TYPE": "float",
-			"DEFAULT": 0.5,
-			"MIN": 0.0,
-			"MAX": 1.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Distortion Effect",
+        "Retro",
+        "v002"
+    ],
+    "CREDIT": "by vade",
+    "DESCRIPTION": "CRT Displacement, emulating the look of curved CRT Displays",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "Amount",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 void main (void) 
 { 

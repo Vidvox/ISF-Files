@@ -1,54 +1,53 @@
-/*
-{
-  "CATEGORIES" : [
-    "Abstract", "Synthesis", "Geometry"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "width",
-      "TYPE" : "float",
-      "DEFAULT" : 0.25
-    },
-    {
-      "NAME" : "offset",
-      "TYPE" : "float",
-      "DEFAULT" : 0
-    },
-    {
-      "NAME" : "vertical",
-      "TYPE" : "bool",
-      "DEFAULT" : 0
-    },
-    {
-      "NAME" : "color1",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "NAME" : "color2",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "splitPos",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "VIDVOX",
+    "INPUTS": [
+        {
+            "DEFAULT": 0.25,
+            "NAME": "width",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "offset",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "vertical",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "NAME": "color1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "NAME": "color2",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "splitPos",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

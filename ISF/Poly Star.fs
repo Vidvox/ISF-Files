@@ -1,64 +1,64 @@
-/*
-{
-  "CATEGORIES" : [
-    "Pattern", "Geometry"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "pointCount",
-      "TYPE" : "float",
-      "MAX" : 20,
-      "DEFAULT" : 5,
-      "MIN" : 3,
-      "LABEL" : "Point Count"
-    },
-    {
-      "NAME" : "buldge",
-      "TYPE" : "float",
-      "MAX" : 10,
-      "DEFAULT" : 5,
-      "MIN" : 0,
-      "LABEL" : "Buldge Amount"
-    },
-    {
-      "NAME" : "pointRadiusInside",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "LABEL" : "Radius Inside",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "pointRadiusOutside",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "LABEL" : "Radius Outside",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "pointRotation",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "LABEL" : "Rotation",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "starColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        1,
-        1,
-        1
-      ],
-      "LABEL" : "Star Color"
-    }
-  ],
-  "CREDIT" : ""
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "DEFAULT": 5,
+            "LABEL": "Point Count",
+            "MAX": 20,
+            "MIN": 3,
+            "NAME": "pointCount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 5,
+            "LABEL": "Buldge Amount",
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "buldge",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Radius Inside",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "pointRadiusInside",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Radius Outside",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "pointRadiusOutside",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Rotation",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "pointRotation",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "LABEL": "Star Color",
+            "NAME": "starColor",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": null
 }
 */
 

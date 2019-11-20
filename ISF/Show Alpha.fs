@@ -1,17 +1,17 @@
-/*
-{
-  "CATEGORIES" : [
-    "Utility"
-  ],
-  "DESCRIPTION" : "Maps the alpha to grayscale",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Color Effect",
+        "Utility"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Maps the alpha to grayscale",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

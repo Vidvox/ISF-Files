@@ -1,55 +1,51 @@
-/*
-{
-  "CATEGORIES" : [
-    "Blur",
-    "Glitch",
-    "Color Effect"
-  ],
-  "DESCRIPTION" : "Applies a blur to the saturation levels of pixels.",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "bleedLevel",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "depth",
-      "TYPE" : "float",
-      "MAX" : 10,
-      "DEFAULT" : 2,
-      "MIN" : 1
-    },
-    {
-      "NAME" : "gainLevel",
-      "TYPE" : "float",
-      "MAX" : 4,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "smaller",
-      "WIDTH" : "max(floor($WIDTH*0.02),1.0)",
-      "HEIGHT" : "max(floor($HEIGHT*0.02),1.0)"
-    },
-    {
-      "TARGET" : "small",
-      "WIDTH" : "max(floor($WIDTH*0.25),1.0)",
-      "HEIGHT" : "max(floor($HEIGHT*0.25),1.0)"
-    },
-    {
-
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Color Effect"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Applies a blur to the saturation levels of pixels.",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "bleedLevel",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 2,
+            "MAX": 10,
+            "MIN": 1,
+            "NAME": "depth",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 4,
+            "MIN": 0,
+            "NAME": "gainLevel",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "HEIGHT": "max(floor($HEIGHT*0.02),1.0)",
+            "TARGET": "smaller",
+            "WIDTH": "max(floor($WIDTH*0.02),1.0)"
+        },
+        {
+            "HEIGHT": "max(floor($HEIGHT*0.25),1.0)",
+            "TARGET": "small",
+            "WIDTH": "max(floor($WIDTH*0.25),1.0)"
+        },
+        {
+        }
+    ]
 }
 */
 

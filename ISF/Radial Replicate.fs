@@ -1,59 +1,58 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment", "Tile Effect", "Kaleidoscope"
-  ],
-  "DESCRIPTION" : "Repllcates a radial slice of an image",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "postRotateAngle",
-      "TYPE" : "float",
-      "MAX" : 360,
-      "DEFAULT" : 0,
-      "LABEL" : "Post Rotate Angle",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "numberOfDivisions",
-      "TYPE" : "float",
-      "MAX" : 360,
-      "DEFAULT" : 12,
-      "MIN" : 1,
-      "LABEL" : "Number Of Divisions"
-    },
-    {
-      "NAME" : "preRotateAngle",
-      "TYPE" : "float",
-      "MAX" : 180,
-      "DEFAULT" : 0,
-      "MIN" : -180,
-      "LABEL" : "Pre Rotate Angle"
-    },
-    {
-      "MIN" : 0,
-      "IDENTITY" : 0,
-      "DEFAULT" : 0,
-      "LABEL" : "Radius Start",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "NAME" : "centerRadiusStart"
-    },
-    {
-      "MIN" : 0,
-      "IDENTITY" : 0,
-      "DEFAULT" : 1,
-      "LABEL" : "Radius End",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "NAME" : "centerRadiusEnd"
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Kaleidoscope"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Repllcates a radial slice of an image",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Post Rotate Angle",
+            "MAX": 360,
+            "MIN": 0,
+            "NAME": "postRotateAngle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 12,
+            "LABEL": "Number Of Divisions",
+            "MAX": 360,
+            "MIN": 1,
+            "NAME": "numberOfDivisions",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Pre Rotate Angle",
+            "MAX": 180,
+            "MIN": -180,
+            "NAME": "preRotateAngle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "IDENTITY": 0,
+            "LABEL": "Radius Start",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "centerRadiusStart",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "IDENTITY": 0,
+            "LABEL": "Radius End",
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "centerRadiusEnd",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

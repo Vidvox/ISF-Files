@@ -1,66 +1,65 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment", "Stylize"
-  ],
-  "DESCRIPTION" : "Performs three different rotations",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "angle1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "angle2",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "angle3",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "angle4",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "radius1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.15,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "radius2",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.15,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "radius3",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.15,
-      "MIN" : 0
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": "Performs three different rotations",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle4",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.15,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "radius1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.15,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "radius2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.15,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "radius3",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

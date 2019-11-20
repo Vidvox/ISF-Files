@@ -1,80 +1,79 @@
-/*
-{
-  "CATEGORIES" : [
-    "Generator"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "pt1",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0,
-        0
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "pt2",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        1
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "pt3",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        1,
-        0
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "fillColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "NAME" : "bgColor",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  ],
-  "CREDIT" : "by Carter Rosenberg"
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "by Carter Rosenberg",
+    "INPUTS": [
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt1",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                1
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt2",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt3",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "NAME": "fillColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                0
+            ],
+            "NAME": "bgColor",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Glitch",
-        "Distortion Effect", "Distortion"
+        "Distortion Effect"
     ],
     "CREDIT": "by VIDVOX",
     "DESCRIPTION": "Shifts pixels up and down",

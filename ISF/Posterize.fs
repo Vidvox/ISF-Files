@@ -1,34 +1,35 @@
 /*{
-	"DESCRIPTION": "Posterizes an image",
-	"CREDIT": "VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Stylize", "Retro"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "gamma",
-			"LABEL": "Gamma",
-			"TYPE": "float",
-			"DEFAULT": 1.25,
-			"MIN": 0.5,
-			"MAX": 2.0
-		},
-		{
-			"NAME": "numColors",
-			"LABEL": "Quality",
-			"TYPE": "float",
-			"DEFAULT": 6.0,
-			"MIN": 3.0,
-			"MAX": 32.0
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Retro",
+        "Stylize"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Posterizes an image",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1.25,
+            "LABEL": "Gamma",
+            "MAX": 2,
+            "MIN": 0.5,
+            "NAME": "gamma",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 6,
+            "LABEL": "Quality",
+            "MAX": 32,
+            "MIN": 3,
+            "NAME": "numColors",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 void main()	{
 	

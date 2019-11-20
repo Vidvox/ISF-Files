@@ -1,86 +1,86 @@
 /*{
-	"DESCRIPTION": "",
-	"CREDIT": "VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Synthesis", "Geometry"
-	],
-	"INPUTS": [
-		{
-			"NAME": "lineCount",
-			"LABEL": "Line Count",
-			"TYPE": "float",
-			"MIN": 1.0,
-			"MAX": 60.0,
-			"DEFAULT": 15.0
-		},
-		{
-			"NAME": "lineWidth",
-			"LABEL": "Max Line Width",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.25,
-			"DEFAULT": 0.025
-		},
-		{
-			"NAME": "randomSeed",
-			"LABEL": "Random Seed",
-			"TYPE": "float",
-			"MIN": 0.01,
-			"MAX": 1.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "wobbleAmount",
-			"LABEL": "Wobble Amount",
-			"TYPE": "float",
-			"MIN": 0.00,
-			"MAX": 0.1,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "hueRange",
-			"LABEL": "Hue Range",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.2
-		},
-		{
-			"NAME": "colorSaturation",
-			"LABEL": "Saturation",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 1.0
-		},
-		{
-			"NAME": "randomizeBrightness",
-			"LABEL": "Randomize Brightness",
-			"TYPE": "bool",
-			"DEFAULT": true
-		},
-		{
-			"NAME": "randomizeWidth",
-			"LABEL": "Randomize Width",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "randomizeAllPoints",
-			"LABEL": "Randomize Points",
-			"TYPE": "bool",
-			"DEFAULT": false
-		},
-		{
-			"NAME": "randomizeAlpha",
-			"LABEL": "Randomize Alpha",
-			"TYPE": "bool",
-			"DEFAULT": false
-		}
-	]
-	
-}*/
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "DEFAULT": 15,
+            "LABEL": "Line Count",
+            "MAX": 60,
+            "MIN": 1,
+            "NAME": "lineCount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.025,
+            "LABEL": "Max Line Width",
+            "MAX": 0.25,
+            "MIN": 0,
+            "NAME": "lineWidth",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "Random Seed",
+            "MAX": 1,
+            "MIN": 0.01,
+            "NAME": "randomSeed",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Wobble Amount",
+            "MAX": 0.1,
+            "MIN": 0,
+            "NAME": "wobbleAmount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.2,
+            "LABEL": "Hue Range",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "hueRange",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Saturation",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "colorSaturation",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": true,
+            "LABEL": "Randomize Brightness",
+            "NAME": "randomizeBrightness",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Randomize Width",
+            "NAME": "randomizeWidth",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Randomize Points",
+            "NAME": "randomizeAllPoints",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": false,
+            "LABEL": "Randomize Alpha",
+            "NAME": "randomizeAlpha",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 vec3 rgb2hsv(vec3 c)	{
 	vec4 K = vec4(0.0, -1.0 / 3.0, 2.0 / 3.0, -1.0);

@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Generator"
+        "Geometry"
     ],
     "CREDIT": "by VIDVOX",
     "DESCRIPTION": null,

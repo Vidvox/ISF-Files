@@ -1,73 +1,73 @@
-/*
-{
-  "CATEGORIES" : [
-    "Glitch",
-    "Geometry Adjustment"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "randomFrequency",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "glitchNow",
-      "TYPE" : "event"
-    },
-    {
-      "NAME" : "levelX",
-      "TYPE" : "float",
-      "MAX" : 10,
-      "DEFAULT" : 2,
-      "MIN" : 0.01
-    },
-    {
-      "NAME" : "levelY",
-      "TYPE" : "float",
-      "MAX" : 10,
-      "DEFAULT" : 2,
-      "MIN" : 0.01
-    },
-    {
-      "NAME" : "center",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "randomizeWidth",
-      "TYPE" : "bool",
-      "DEFAULT" : true
-    },
-    {
-      "NAME" : "randomizeHeight",
-      "TYPE" : "bool",
-      "DEFAULT" : true
-    },
-    {
-      "NAME" : "randomizeCenter",
-      "TYPE" : "bool",
-      "DEFAULT" : true
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Glitch",
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "randomFrequency",
+            "TYPE": "float"
+        },
+        {
+            "NAME": "glitchNow",
+            "TYPE": "event"
+        },
+        {
+            "DEFAULT": 2,
+            "MAX": 10,
+            "MIN": 0.01,
+            "NAME": "levelX",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 2,
+            "MAX": 10,
+            "MIN": 0.01,
+            "NAME": "levelY",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "center",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": true,
+            "NAME": "randomizeWidth",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": true,
+            "NAME": "randomizeHeight",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": true,
+            "NAME": "randomizeCenter",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Glitch", "Noise"
+    "Noise", "Glitch"
   ],
   "DESCRIPTION" : "Pixels that change become noise until they match the input again",
   "ISFVSN" : "2",

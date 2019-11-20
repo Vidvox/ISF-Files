@@ -1,37 +1,39 @@
 /*{
-	"CREDIT": "by v002",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"v002", "Film"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "vignette",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "vignetteEdge",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "vignetteMix",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Film",
+        "v002"
+    ],
+    "CREDIT": "by v002",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "vignette",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "vignetteEdge",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "vignetteMix",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 //	Based on v002 vignette – https://github.com/v002/v002-Film-Effects/

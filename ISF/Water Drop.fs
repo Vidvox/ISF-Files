@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Dissolve"
+        "Distortion"
     ],
     "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/WaterDrop.glsl",
     "DESCRIPTION": "",

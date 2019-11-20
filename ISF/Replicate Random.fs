@@ -1,34 +1,32 @@
-/*
-{
-  "CATEGORIES" : [
-    "Glitch",
-    "Stylize",
-    "Pattern"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "randomSeed",
-      "TYPE" : "float"
-    },
-    {
-      "NAME" : "repetitions",
-      "TYPE" : "float",
-      "MAX" : 15,
-      "DEFAULT" : 5,
-      "MIN" : 1
-    },
-    {
-      "NAME" : "randomizeOpacity",
-      "TYPE" : "bool"
-    }
-  ],
-  "CREDIT" : ""
+/*{
+    "CATEGORIES": [
+        "Glitch",
+        "Tile Effect"
+    ],
+    "CREDIT": "",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "randomSeed",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 5,
+            "MAX": 15,
+            "MIN": 1,
+            "NAME": "repetitions",
+            "TYPE": "float"
+        },
+        {
+            "NAME": "randomizeOpacity",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

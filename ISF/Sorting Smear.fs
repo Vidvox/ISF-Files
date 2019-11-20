@@ -1,55 +1,56 @@
-/*
-{
-  "CATEGORIES" : [
-    "Glitch"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "resetInput",
-      "TYPE" : "event",
-      "LABEL" : "Flush Buffer"
-    },
-    {
-      "NAME" : "adaptLevel",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.25,
-      "LABEL" : "Adapt Rate",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "sortRate",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1.0,
-      "LABEL" : "Sort Rate",
-      "MIN" : 0
-    },
- 	{
-      "NAME" : "horizontalSort",
-      "TYPE" : "bool",
-      "DEFAULT" : 1,
-      "LABEL" : "H Sort"
-    },
- 	{
-      "NAME" : "verticalSort",
-      "TYPE" : "bool",
-      "DEFAULT" : 1,
-      "LABEL" : "V Sort"
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "lastRender",
-      "PERSISTENT" : true
-    }
-  ],
-  "CREDIT" : "by VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Glitch",
+        "Feedback"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "LABEL": "Flush Buffer",
+            "NAME": "resetInput",
+            "TYPE": "event"
+        },
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "Adapt Rate",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "adaptLevel",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Sort Rate",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "sortRate",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "H Sort",
+            "NAME": "horizontalSort",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "V Sort",
+            "NAME": "verticalSort",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "PERSISTENT": true,
+            "TARGET": "lastRender"
+        }
+    ]
 }
 */
 

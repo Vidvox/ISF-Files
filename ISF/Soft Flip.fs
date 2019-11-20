@@ -1,58 +1,56 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment",
-    "Stylize"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "angle",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : -0.25,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "centerPt",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "lineWidth",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "flipH",
-      "TYPE" : "bool",
-      "DEFAULT" : 1
-    },
-    {
-      "NAME" : "flipV",
-      "TYPE" : "bool",
-      "DEFAULT" : 1
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": -0.25,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "angle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "centerPt",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0.1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "lineWidth",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "flipH",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "flipV",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

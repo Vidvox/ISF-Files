@@ -1,50 +1,49 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment", "Distortion Effect"
-  ],
-  "DESCRIPTION" : "Maps video onto a sphere",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "imageScale",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "LABEL" : "Image Scale",
-      "MIN" : 0.125
-    },
-    {
-      "NAME" : "radiusScale",
-      "TYPE" : "float",
-      "MAX" : 1.9990000000000001,
-      "DEFAULT" : 1,
-      "LABEL" : "Radius Scale",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "pointInput",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0,
-        0
-      ],
-      "LABEL" : "Rotate",
-      "MIN" : [
-        0,
-        0
-      ]
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Maps video onto a sphere",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Image Scale",
+            "MAX": 1,
+            "MIN": 0.125,
+            "NAME": "imageScale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Radius Scale",
+            "MAX": 1.999,
+            "MIN": 0,
+            "NAME": "radiusScale",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "LABEL": "Rotate",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pointInput",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

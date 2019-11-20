@@ -4,7 +4,6 @@
 	"ISFVSN": "2",
 	"CATEGORIES": [
 		"Noise",
-		"Synthesis",
 		"Color"
 	],
 	"INPUTS": [

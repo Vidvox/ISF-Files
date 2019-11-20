@@ -1,78 +1,78 @@
-/*
-{
-  "CATEGORIES" : [
-    "Abstract", "Geometry"
-  ],
-  "KEYWORDS" : [
-    "Abstract", "Geometric"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "saturation",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "LABEL" : "Saturation",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "brightness",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "LABEL" : "Brightness",
-      "MIN" : 0
-    },
-    {
-      "NAME" : "mixAmount",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "LABEL" : "Mix Amount",
-      "MIN" : 0
-    },
-	{
-		"NAME": "maskShapeMode",
-		"LABEL": "Mask Shape Mode",
-		"TYPE": "long",
-		"VALUES": [
-			0,
-			1,
-			2,
-			3,
-			4
-		],
-		"LABELS": [
-			"Random",
-			"Rectangle",
-			"Triangle",
-			"Circle",
-			"Diamond"
-		],
-		"DEFAULT": 0
-	},
-    {
-      "NAME" : "anchorToBottom",
-      "TYPE" : "bool",
-      "DEFAULT" : 0,
-      "LABEL" : "Anchor To Bottom"
-    },
-    {
-      "NAME" : "resetImage",
-      "TYPE" : "event",
-      "LABEL" : "Reset"
-    }
-  ],
-  "PASSES" : [
-    {
-      "TARGET" : "lastState",
-      "PERSISTENT" : true,
-      "DESCRIPTION" : "Holds the last render state for drawing over"
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "DEFAULT": 0.5,
+            "LABEL": "Saturation",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "saturation",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Brightness",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "brightness",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABEL": "Mix Amount",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "mixAmount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Mask Shape Mode",
+            "LABELS": [
+                "Random",
+                "Rectangle",
+                "Triangle",
+                "Circle",
+                "Diamond"
+            ],
+            "NAME": "maskShapeMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Anchor To Bottom",
+            "NAME": "anchorToBottom",
+            "TYPE": "bool"
+        },
+        {
+            "LABEL": "Reset",
+            "NAME": "resetImage",
+            "TYPE": "event"
+        }
+    ],
+    "ISFVSN": "2",
+    "KEYWORDS": [
+        "Abstract",
+        "Geometric"
+    ],
+    "PASSES": [
+        {
+            "DESCRIPTION": "Holds the last render state for drawing over",
+            "PERSISTENT": true,
+            "TARGET": "lastState"
+        }
+    ]
 }
 */
 

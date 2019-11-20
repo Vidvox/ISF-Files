@@ -1,30 +1,31 @@
-/*
-{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Geometry Adjustment", "Stylize"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "magnitude",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 2.0,
-			"DEFAULT": 0.0
-		},
-		{
-			"NAME": "intensity",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 10.0,
-			"DEFAULT": 1.0
-		}
-	]
+/*{
+    "CATEGORIES": [
+        "Glitch",
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "magnitude",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 10,
+            "MIN": 0,
+            "NAME": "intensity",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

@@ -1,23 +1,26 @@
 /*{
-	"CREDIT": "by v002",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Film", "v002", "Color Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "amount",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Color Adjustment",
+        "v002",
+        "Film"
+    ],
+    "CREDIT": "by v002",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "amount",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 //	Based on v002 bleach bypass – https://github.com/v002/v002-Film-Effects/
 

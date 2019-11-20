@@ -1,56 +1,55 @@
-/*
-{
-  "CATEGORIES" : [
-    "Abstract", "Geometry"
-  ],
-  "DESCRIPTION" : "Creates a Truchet Tile pattern",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "tSize",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "MIN" : 0,
-      "LABEL" : "Size"
-    },
-    {
-      "NAME" : "nSeed",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.35,
-      "LABEL" : "Noise Seed",
-      "MIN" : 0
-    },
-    {
-      "NAME": "color1",
-      "LABEL": "Color 1",
-      "TYPE": "color",
-      "DEFAULT": [
-        1.0,
-        1.0,
-        1.0,
-        1.0
-      ]
-    },
-    {
-      "NAME": "color2",
-      "LABEL": "Color 2",
-      "TYPE": "color",
-      "DEFAULT": [
-        0.0,
-        0.0,
-        0.0,
-        1.0
-      ]
-    },
-    {
-      "NAME" : "lineMode",
-      "TYPE" : "bool",
-      "DEFAULT" : 0
-    }
-  ],
-  "CREDIT" : "pjkarlik"
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "pjkarlik",
+    "DESCRIPTION": "Creates a Truchet Tile pattern",
+    "INPUTS": [
+        {
+            "DEFAULT": 0.1,
+            "LABEL": "Size",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "tSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.35,
+            "LABEL": "Noise Seed",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "nSeed",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "LABEL": "Color 1",
+            "NAME": "color1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "LABEL": "Color 2",
+            "NAME": "color2",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "lineMode",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

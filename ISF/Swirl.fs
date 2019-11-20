@@ -1,28 +1,27 @@
-/*
-{
-  "CATEGORIES" : [
-    "Dissolve", "Distortion"
-  ],
-  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/Swirl.glsl",
-  "DESCRIPTION": "",
-  "INPUTS" : [
-    {
-      "NAME" : "startImage",
-      "TYPE" : "image"
-    },
-    {
-      "TYPE" : "image",
-      "NAME" : "endImage"
-    },
-    {
-      "TYPE" : "float",
-      "MIN" : 0,
-      "NAME" : "progress",
-      "MAX" : 1,
-      "DEFAULT" : 0
-    }
-  ],
-  "ISFVSN" : "2"
+/*{
+    "CATEGORIES": [
+        "Distortion"
+    ],
+    "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/Swirl.glsl",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "startImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "endImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "progress",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

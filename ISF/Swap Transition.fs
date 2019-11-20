@@ -1,6 +1,7 @@
 /*{
     "CATEGORIES": [
-        "Wipe", "Stylize"
+        "Wipe",
+        "Retro"
     ],
     "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/swap.glsl",
     "DESCRIPTION": "",

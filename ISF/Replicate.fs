@@ -1,76 +1,74 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment",
-    "Stylize", "Tile Effect"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "startSize",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0.5,
-      "MIN" : 0,
-      "IDENTITY" : 1
-    },
-    {
-      "NAME" : "startOpacity",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "startCenter",
-      "TYPE" : "point2D"
-    },
-    {
-      "NAME" : "startPadding",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.25,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "endSize",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0.25,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "endOpacity",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "endCenter",
-      "TYPE" : "point2D"
-    },
-    {
-      "NAME" : "endPadding",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "repetitions",
-      "TYPE" : "float",
-      "MAX" : 15,
-      "DEFAULT" : 5,
-      "MIN" : 1
-    }
-  ],
-  "CREDIT" : ""
+/*{
+    "CATEGORIES": [
+        "Tile Effect"
+    ],
+    "CREDIT": "",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "IDENTITY": 1,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "startSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "startOpacity",
+            "TYPE": "float"
+        },
+        {
+            "NAME": "startCenter",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "startPadding",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "endSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "endOpacity",
+            "TYPE": "float"
+        },
+        {
+            "NAME": "endCenter",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0.1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "endPadding",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 5,
+            "MAX": 15,
+            "MIN": 1,
+            "NAME": "repetitions",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

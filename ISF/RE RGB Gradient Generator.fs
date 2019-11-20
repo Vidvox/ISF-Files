@@ -1,264 +1,265 @@
-/*
-{
-  "CATEGORIES" : [
-    "Color", "Utility", "Synthesis"
-  ],
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "lookupImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "frequency1",
-      "TYPE" : "float",
-      "MAX" : 16,
-      "DEFAULT" : 1,
-      "MIN" : 0.5
-    },
-    {
-      "NAME" : "phase1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "amplitude1",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : -2
-    },
-    {
-      "NAME" : "offset1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "angle1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "NAME" : "curve1",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "LABELS" : [
-        "Ramp",
-        "Triangle",
-        "Sine",
-        "Exponential",
-        "Look Up Table"
-      ]
-    },
-    {
-      "NAME" : "mixLevel1",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "startColor1",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "endColor1",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "frequency2",
-      "TYPE" : "float",
-      "MAX" : 16,
-      "DEFAULT" : 1,
-      "MIN" : 0.5
-    },
-    {
-      "NAME" : "phase2",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "amplitude2",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : -2
-    },
-    {
-      "NAME" : "offset2",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "angle2",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.75,
-      "MIN" : 0
-    },
-    {
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "NAME" : "curve2",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "LABELS" : [
-        "Ramp",
-        "Triangle",
-        "Sine",
-        "Exponential",
-        "Look Up Table"
-      ]
-    },
-    {
-      "NAME" : "mixLevel2",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "startColor2",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "endColor2",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "frequency3",
-      "TYPE" : "float",
-      "MAX" : 16,
-      "DEFAULT" : 2,
-      "MIN" : 0.5
-    },
-    {
-      "NAME" : "phase3",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "amplitude3",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : -2
-    },
-    {
-      "NAME" : "offset3",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "angle3",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4
-      ],
-      "NAME" : "curve3",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "LABELS" : [
-        "Ramp",
-        "Triangle",
-        "Sine",
-        "Exponential",
-        "Look Up Table"
-      ]
-    },
-    {
-      "NAME" : "mixLevel3",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : -1
-    },
-    {
-      "NAME" : "startColor3",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "endColor3",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        1,
-        1
-      ]
-    }
-  ],
-  "PASSES" : [
-    {
-      "FLOAT" : true
-    }
-  ],
-  "CREDIT" : "by Carter Rosenberg"
+/*{
+    "CATEGORIES": [
+        "Color",
+        "Utility"
+    ],
+    "CREDIT": "by Carter Rosenberg",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "NAME": "lookupImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 16,
+            "MIN": 0.5,
+            "NAME": "frequency1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "phase1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": -2,
+            "NAME": "amplitude1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "offset1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "Ramp",
+                "Triangle",
+                "Sine",
+                "Exponential",
+                "Look Up Table"
+            ],
+            "NAME": "curve1",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "mixLevel1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "NAME": "startColor1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0,
+                0,
+                1
+            ],
+            "NAME": "endColor1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 16,
+            "MIN": 0.5,
+            "NAME": "frequency2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "phase2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": -2,
+            "NAME": "amplitude2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "offset2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.75,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "Ramp",
+                "Triangle",
+                "Sine",
+                "Exponential",
+                "Look Up Table"
+            ],
+            "NAME": "curve2",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "mixLevel2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "NAME": "startColor2",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                1,
+                0,
+                1
+            ],
+            "NAME": "endColor2",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 2,
+            "MAX": 16,
+            "MIN": 0.5,
+            "NAME": "frequency3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "phase3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": -2,
+            "NAME": "amplitude3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "offset3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angle3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "Ramp",
+                "Triangle",
+                "Sine",
+                "Exponential",
+                "Look Up Table"
+            ],
+            "NAME": "curve3",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": -1,
+            "NAME": "mixLevel3",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "NAME": "startColor3",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                1,
+                1
+            ],
+            "NAME": "endColor3",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2",
+    "PASSES": [
+        {
+            "FLOAT": true
+        }
+    ]
 }
 */
 

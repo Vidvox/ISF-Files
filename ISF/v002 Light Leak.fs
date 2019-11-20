@@ -1,41 +1,44 @@
 /*{
-	"CREDIT": "by v002",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Film", "v002"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "leakImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "amount",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.5,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "length",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.5
-		},
-		{
-			"NAME": "angle",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 360.0,
-			"DEFAULT": 0.0
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Film",
+        "Stylize",
+        "v002"
+    ],
+    "CREDIT": "by v002",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "leakImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1.5,
+            "MIN": 0,
+            "NAME": "amount",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "length",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 360,
+            "MIN": 0,
+            "NAME": "angle",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 // rotation matrix

@@ -1,54 +1,54 @@
 /*{
-	"DESCRIPTION": "Moves the vertex points to the specified locations without correction",
-	"CREDIT": "VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch","Geometry Adjustment"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		},
-		{
-			"NAME": "topleft",
-			"LABEL": "Top Left",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.0,
-				1.0
-			]
-		},
-		{
-			"NAME": "bottomleft",
-			"LABEL": "Bottom Left",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				0.0,
-				0.0
-			]
-		},
-		{
-			"NAME": "topright",
-			"LABEL": "Top Right",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				1.0,
-				1.0
-			]
-		},
-
-		{
-			"NAME": "bottomright",
-			"LABEL": "Bottom Right",
-			"TYPE": "point2D",
-			"DEFAULT": [
-				1.0,
-				0.0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Moves the vertex points to the specified locations without correction",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": [
+                0,
+                1
+            ],
+            "LABEL": "Top Left",
+            "NAME": "topleft",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "LABEL": "Bottom Left",
+            "NAME": "bottomleft",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1
+            ],
+            "LABEL": "Top Right",
+            "NAME": "topright",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0
+            ],
+            "LABEL": "Bottom Right",
+            "NAME": "bottomright",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 void main()

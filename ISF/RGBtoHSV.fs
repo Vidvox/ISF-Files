@@ -1,17 +1,18 @@
 /*{
-	"DESCRIPTION": "swizzles RGBA to BGRA and vice versa",
-	"CREDIT": "by zoidberg",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Glitch","Color Effect"
-	],
-	"INPUTS": [
-		{
-			"NAME": "inputImage",
-			"TYPE": "image"
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Color Effect"
+    ],
+    "CREDIT": "by zoidberg",
+    "DESCRIPTION": "swizzles RGBA to BGRA and vice versa",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 

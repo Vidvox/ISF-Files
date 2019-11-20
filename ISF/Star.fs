@@ -1,50 +1,52 @@
 /*{
-	"CREDIT": "by VIDVOX",
-	"ISFVSN": "2",
-	"CATEGORIES": [
-		"Synthesis", "Geometry"
-	],
-	"INPUTS": [
-		{
-			"NAME": "size",
-			"LABEL": "Size",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 1.0,
-			"DEFAULT": 0.25
-		},
-		{
-			"NAME": "bordersize",
-			"LABEL": "Stroke Width",
-			"TYPE": "float",
-			"MIN": 0.0,
-			"MAX": 0.1,
-			"DEFAULT": 0.01
-		},
-		{
-			"NAME": "color1",
-			"LABEL": "Fill Color",
-			"TYPE": "color",
-			"DEFAULT": [
-				1.0,
-				0.6,
-				0.75,
-				1.0
-			]
-		},
-		{
-			"NAME": "color2",
-			"LABEL": "Stroke Color",
-			"TYPE": "color",
-			"DEFAULT": [
-				0.0,
-				0.0,
-				0.0,
-				1.0
-			]
-		}
-	]
-}*/
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "by VIDVOX",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "DEFAULT": 0.25,
+            "LABEL": "Size",
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "size",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.01,
+            "LABEL": "Stroke Width",
+            "MAX": 0.1,
+            "MIN": 0,
+            "NAME": "bordersize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0.6,
+                0.75,
+                1
+            ],
+            "LABEL": "Fill Color",
+            "NAME": "color1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "LABEL": "Stroke Color",
+            "NAME": "color2",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 //	Adapted from https://glsl.io/transition/d1f891c5585fc40b55ea

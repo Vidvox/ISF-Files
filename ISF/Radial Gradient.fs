@@ -1,57 +1,61 @@
 /*{
-  "CREDIT": "by Carter Rosenberg",
-  "CATEGORIES": [
-    "Pattern", "Utility"
-  ],
-  "INPUTS": [
-    {
-      "NAME": "radius1",
-      "TYPE": "float",
-      "DEFAULT": 0.1
-    },
-    {
-      "NAME": "radius2",
-      "TYPE": "float",
-      "DEFAULT": 0.25
-    },
-    {
-      "NAME": "startColor",
-      "TYPE": "color",
-      "DEFAULT": [
-        1,
-        0.75,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME": "endColor",
-      "TYPE": "color",
-      "DEFAULT": [
-        0,
-        0.25,
-        0.75,
-        1
-      ]
-    },
-    {
-      "NAME": "location",
-      "TYPE": "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    }
-  ]
-}*/
+    "CATEGORIES": [
+        "Color",
+        "Utility"
+    ],
+    "CREDIT": "by Carter Rosenberg",
+    "DESCRIPTION": null,
+    "INPUTS": [
+        {
+            "DEFAULT": 0.1,
+            "NAME": "radius1",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.25,
+            "NAME": "radius2",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0.75,
+                0,
+                1
+            ],
+            "NAME": "startColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0.25,
+                0.75,
+                1
+            ],
+            "NAME": "endColor",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "location",
+            "TYPE": "point2D"
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 

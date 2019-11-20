@@ -1,70 +1,72 @@
 /*{
-  "DESCRIPTION": "Power curves distortions with shifting",
-  "CREDIT": "",
-  "CATEGORIES": [
-    "Distortion Effect", "Distortion"
-  ],
-  "INPUTS": [
-    {
-      "NAME": "inputImage",
-      "TYPE": "image"
-    },
-    {
-      "NAME": "power_x",
-      "TYPE": "float",
-      "DEFAULT": 1,
-      "MIN": 0.25,
-      "MAX": 4
-    },
-    {
-      "NAME": "power_y",
-      "TYPE": "float",
-      "DEFAULT": 1,
-      "MIN": 0.25,
-      "MAX": 4
-    },
-    {
-      "NAME": "shift_x",
-      "TYPE": "float",
-      "DEFAULT": 0,
-      "MIN": 0,
-      "MAX": 1
-    },
-    {
-      "NAME": "shift_y",
-      "TYPE": "float",
-      "DEFAULT": 0,
-      "MIN": 0,
-      "MAX": 1
-    },
-    {
-      "NAME": "mode_x",
-      "TYPE": "long",
-      "VALUES": [
-        0,
-        1
-      ],
-      "LABELS": [
-        "Style 1",
-        "Style 2"
-      ],
-      "DEFAULT": 1
-    },
-    {
-      "NAME": "mode_y",
-      "TYPE": "long",
-      "VALUES": [
-        0,
-        1
-      ],
-      "LABELS": [
-        "Style 1",
-        "Style 2"
-      ],
-      "DEFAULT": 1
-    }
-  ]
-}*/
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "",
+    "DESCRIPTION": "Power curves distortions with shifting",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 4,
+            "MIN": 0.25,
+            "NAME": "power_x",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 4,
+            "MIN": 0.25,
+            "NAME": "power_y",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "shift_x",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "shift_y",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "LABELS": [
+                "Style 1",
+                "Style 2"
+            ],
+            "NAME": "mode_x",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "LABELS": [
+                "Style 1",
+                "Style 2"
+            ],
+            "NAME": "mode_y",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1
+            ]
+        }
+    ],
+    "ISFVSN": "2"
+}
+*/
 
 
 const float pi = 3.14159265359;

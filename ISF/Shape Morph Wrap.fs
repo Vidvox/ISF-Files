@@ -1,171 +1,171 @@
-/*
-{
-  "CATEGORIES" : [
-    "Distortion Effect", "Tile Effect", "Geometry Adjustment"
-  ],
-  "DESCRIPTION" : "Wraps an image into a shape that is created by morphing two primitive shapes together",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "mixPoint",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "LABELS" : [
-        "Circle",
-        "Triangle",
-        "Rect",
-        "Pentagram",
-        "Hexagon",
-        "Star1",
-        "Star2",
-        "Heart",
-        "Rays"
-      ],
-      "NAME" : "shape1",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
-    },
-    {
-      "LABELS" : [
-        "Circle",
-        "Triangle",
-        "Rect",
-        "Pentagram",
-        "Hexagon",
-        "Star1",
-        "Star2",
-        "Heart",
-        "Rays"
-      ],
-      "NAME" : "shape2",
-      "TYPE" : "long",
-      "DEFAULT" : 1,
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ]
-    },
-    {
-      "NAME" : "shapeWobble",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "MAX" : 1,
-      "NAME" : "preRotateAngle",
-      "TYPE" : "float",
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "MAX" : 1,
-      "NAME" : "angleShift",
-      "TYPE" : "float",
-      "DEFAULT" : 0.75,
-      "MIN" : 0
-    },
-    {
-      "LABELS" : [
-        "None",
-        "Extend",
-        "Repeat",
-        "Reflect"
-      ],
-      "NAME" : "repeatStyle",
-      "TYPE" : "long",
-      "DEFAULT" : 0,
-      "VALUES" : [
-        0,
-        1,
-        2,
-        3
-      ]
-    },
-    {
-      "NAME" : "repeatDecay",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resultSize",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resultWidth",
-      "TYPE" : "float",
-      "MAX" : 2,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resultAngle",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0.5,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "resultCenter",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        0.5
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "mirrorX",
-      "TYPE" : "bool",
-      "DEFAULT" : 1
-    },
-    {
-      "NAME" : "mirrorY",
-      "TYPE" : "bool",
-      "DEFAULT" : 0
-    }
-  ],
-  "ISFVSN" : "2",
-  "VSN" : "1",
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Distortion Effect",
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Wraps an image into a shape that is created by morphing two primitive shapes together",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "mixPoint",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "Circle",
+                "Triangle",
+                "Rect",
+                "Pentagram",
+                "Hexagon",
+                "Star1",
+                "Star2",
+                "Heart",
+                "Rays"
+            ],
+            "NAME": "shape1",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "DEFAULT": 1,
+            "LABELS": [
+                "Circle",
+                "Triangle",
+                "Rect",
+                "Pentagram",
+                "Hexagon",
+                "Star1",
+                "Star2",
+                "Heart",
+                "Rays"
+            ],
+            "NAME": "shape2",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7,
+                8
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "shapeWobble",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "preRotateAngle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.75,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "angleShift",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0,
+            "LABELS": [
+                "None",
+                "Extend",
+                "Repeat",
+                "Reflect"
+            ],
+            "NAME": "repeatStyle",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2,
+                3
+            ]
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "repeatDecay",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "resultSize",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 1,
+            "MAX": 2,
+            "MIN": 0,
+            "NAME": "resultWidth",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": 0.5,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "resultAngle",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                0.5
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "resultCenter",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 1,
+            "NAME": "mirrorX",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "NAME": "mirrorY",
+            "TYPE": "bool"
+        }
+    ],
+    "ISFVSN": "2",
+    "VSN": "1"
 }
 */
 

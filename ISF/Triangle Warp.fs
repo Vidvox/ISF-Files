@@ -1,40 +1,39 @@
-/*
-{
-  "CATEGORIES" : [
-    "Geometry Adjustment", "Distortion Effect"
-  ],
-  "DESCRIPTION" : "Warps an image to fit in a triangle by fitting the height of the image to the height of a triangle",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "peakPoint",
-      "TYPE" : "point2D",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0.5,
-        1
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "distortX",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Distortion Effect"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Warps an image to fit in a triangle by fitting the height of the image to the height of a triangle",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": [
+                0.5,
+                1
+            ],
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "peakPoint",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "distortX",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

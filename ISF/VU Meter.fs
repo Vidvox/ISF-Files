@@ -1,50 +1,49 @@
-/*
-{
-  "CATEGORIES" : [
-    "Synthesis"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "audioLevel",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "color1",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0.0,
-        1.0,
-        0.0,
-        1.0
-      ]
-    },
-    {
-      "NAME" : "color2",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1.0,
-        1.0,
-        0.0,
-        1.0
-      ]
-    },
-    {
-      "NAME" : "color3",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1.0,
-        0.0,
-        0.0,
-        1
-      ]
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Geometry"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "DEFAULT": 1,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "audioLevel",
+            "TYPE": "float"
+        },
+        {
+            "DEFAULT": [
+                0,
+                1,
+                0,
+                1
+            ],
+            "NAME": "color1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                0,
+                1
+            ],
+            "NAME": "color2",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0,
+                0,
+                1
+            ],
+            "NAME": "color3",
+            "TYPE": "color"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 
