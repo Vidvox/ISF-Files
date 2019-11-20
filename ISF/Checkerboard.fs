@@ -16,6 +16,14 @@
       "DEFAULT" : [
         0,
         0
+      ],
+      "MIN" : [
+      	0,
+      	0
+      ],
+      "MAX" : [
+      	1,
+      	1
       ]
     },
     {
@@ -73,10 +81,10 @@ void main() {
 	if (size == 0.0)	{
 		out_color = color1;
 	}
-	else if ((mod(((gl_FragCoord.x+offset.x) / size),2.0) < 2.0 * splitPos.x)&&(mod(((gl_FragCoord.y+offset.y) / size),2.0) > 2.0 * splitPos.y))	{
+	else if ((mod(((gl_FragCoord.x+(offset.x*RENDERSIZE.x)) / size),2.0) < 2.0 * splitPos.x)&&(mod(((gl_FragCoord.y+(offset.y*RENDERSIZE.y)) / size),2.0) > 2.0 * splitPos.y))	{
 		out_color = color1;
 	}
-	else if ((mod(((gl_FragCoord.x+offset.x) / size),2.0) > 2.0 * splitPos.x)&&(mod(((gl_FragCoord.y+offset.y) / size),2.0) < 2.0 * splitPos.y))	{
+	else if ((mod(((gl_FragCoord.x+(offset.x*RENDERSIZE.x)) / size),2.0) > 2.0 * splitPos.x)&&(mod(((gl_FragCoord.y+(offset.y*RENDERSIZE.y)) / size),2.0) < 2.0 * splitPos.y))	{
 		out_color = color1;
 	}
 	
