@@ -1,4 +1,8 @@
+#if __VERSION__ <= 120
 varying vec2 translated_coord;
+#else
+out vec2 translated_coord;
+#endif
 
 const float pi = 3.14159265359;
 

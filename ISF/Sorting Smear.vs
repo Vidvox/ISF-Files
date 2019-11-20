@@ -1,12 +1,14 @@
+#if __VERSION__ <= 120
 varying vec2 left_coord;
 varying vec2 right_coord;
 varying vec2 above_coord;
 varying vec2 below_coord;
-
-varying vec2 lefta_coord;
-varying vec2 righta_coord;
-varying vec2 leftb_coord;
-varying vec2 rightb_coord;
+#else
+out vec2 left_coord;
+out vec2 right_coord;
+out vec2 above_coord;
+out vec2 below_coord;
+#endif
 
 
 void main()

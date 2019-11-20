@@ -105,13 +105,13 @@ void main()
 		//	Figure out which section I'm in and draw the appropriate buffer there
 		vec2 tex = isf_FragNormCoord;
 		vec4 color = vec4(0.0);
-		//	TL – buffer1
+		//	TL – buffer1
 		if ((tex.x < 0.5) && (tex.y > 0.5))	{
 			tex.x = tex.x * 2.0;
 			tex.y = (tex.y - 0.5) * 2.0;
 			color = IMG_NORM_PIXEL(inputImage, tex);
 		}
-		//	TR – buffer2
+		//	TR – buffer2
 		else if ((tex.x > 0.5) && (tex.y > 0.5))	{
 			tex.x = (tex.x - 0.5) * 2.0;
 			tex.y = (tex.y - 0.5) * 2.0;
@@ -121,7 +121,7 @@ void main()
 			color.r = mod(color.r + hueShift, 1.0);
 			color.rgb = hsv2rgb(color.rgb);
 		}
-		//	BR – buffer2
+		//	BR – buffer2
 		else if ((tex.x < 0.5) && (tex.y < 0.5))	{
 			tex = tex * 2.0;
 			

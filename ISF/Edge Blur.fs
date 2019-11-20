@@ -71,6 +71,8 @@
 	]
 }*/
 
+#if __VERSION__ <= 120
+varying vec2		texOffsets[5];
 
 varying vec2 left_coord;
 varying vec2 right_coord;
@@ -81,8 +83,19 @@ varying vec2 lefta_coord;
 varying vec2 righta_coord;
 varying vec2 leftb_coord;
 varying vec2 rightb_coord;
+#else
+in vec2		texOffsets[5];
+in vec2 left_coord;
+in vec2 right_coord;
+in vec2 above_coord;
+in vec2 below_coord;
 
-varying vec2		texOffsets[5];
+in vec2 lefta_coord;
+in vec2 righta_coord;
+in vec2 leftb_coord;
+in vec2 rightb_coord;
+#endif
+
 
 float gray(vec4 n)
 {

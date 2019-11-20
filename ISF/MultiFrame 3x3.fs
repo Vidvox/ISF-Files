@@ -173,14 +173,14 @@ void main()
 		//	Figure out which section I'm in and draw the appropriate buffer there
 		vec2 tex = isf_FragNormCoord;
 		vec4 color = vec4(0.0);
-		//	TL – input
+		//	TL – input
 		if (tex.y > 0.667)	{
 			if (tex.x < 0.333)	{
 				tex.x = tex.x * 3.0;
 				tex.y = (tex.y - 0.667) * 3.0;
 				color = IMG_NORM_PIXEL(inputImage, tex);
 			}
-			//	TM – buffer1
+			//	TM – buffer1
 			else if ((tex.x > 0.333) && (tex.x < 0.667))	{
 				tex.x = (tex.x - 0.333) * 3.0;
 				tex.y = (tex.y - 0.667) * 3.0;
@@ -190,7 +190,7 @@ void main()
 				color.r = mod(color.r + 1.0 * hueShift, 1.0);
 				color.rgb = hsv2rgb(color.rgb);
 			}
-			//	TL – buffer2
+			//	TL – buffer2
 			else	{
 				tex.x = (tex.x - 0.667) * 3.0;
 				tex.y = (tex.y - 0.667) * 3.0;
@@ -211,7 +211,7 @@ void main()
 				color.r = mod(color.r + 3.0 * hueShift, 1.0);
 				color.rgb = hsv2rgb(color.rgb);
 			}
-			//	TM – buffer1
+			//	TM – buffer1
 			else if ((tex.x > 0.333) && (tex.x < 0.667))	{
 				tex.x = (tex.x - 0.333) * 3.0;
 				tex.y = (tex.y - 0.333) * 3.0;
@@ -221,7 +221,7 @@ void main()
 				color.r = mod(color.r + 4.0 * hueShift, 1.0);
 				color.rgb = hsv2rgb(color.rgb);
 			}
-			//	TL – buffer2
+			//	TL – buffer2
 			else	{
 				tex.x = (tex.x - 0.667) * 3.0;
 				tex.y = (tex.y - 0.333) * 3.0;
@@ -241,7 +241,7 @@ void main()
 				color.r = mod(color.r + 6.0 * hueShift, 1.0);
 				color.rgb = hsv2rgb(color.rgb);
 			}
-			//	TM – buffer1
+			//	TM – buffer1
 			else if ((tex.x > 0.333) && (tex.x < 0.667))	{
 				tex.x = (tex.x - 0.333) * 3.0;
 				tex.y = tex.y * 3.0;
@@ -251,7 +251,7 @@ void main()
 				color.r = mod(color.r + 7.0 * hueShift, 1.0);
 				color.rgb = hsv2rgb(color.rgb);
 			}
-			//	TL – buffer2
+			//	TL – buffer2
 			else	{
 				tex.x = (tex.x - 0.667) * 3.0;
 				tex.y = tex.y * 3.0;

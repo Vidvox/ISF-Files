@@ -593,7 +593,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 	vec3		outColor = rgb2hsv(inColor.rgb);
 	float		variation = 0.3236;	//	1/5 the golden ratio
 	
-	//	Basic complimentary – saturation and brightness variations on two fixed 180 degree opposite hues
+	//	Basic complimentary – saturation and brightness variations on two fixed 180 degree opposite hues
 	if (colorMode == 0)	{
 		if (mod(index, 2.0) >= 1.0)	{
 			outColor.r = outColor.r + 0.5;
@@ -613,7 +613,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 			outColor.b = outColor.b - floor(outColor.b);
 		}
 	}
-	//	Split complimentary – saturation and brightness variations on a 3 fixed 120 degree hues
+	//	Split complimentary – saturation and brightness variations on a 3 fixed 120 degree hues
 	else if (colorMode == 1)	{
 		float divisor = 3.0;
 		float ratio = 0.45;
@@ -636,7 +636,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 			outColor.b = outColor.b - floor(outColor.b);
 		}
 	}
-	//	Compound complimentary – a combination of shades, complimentary and analogous colors with slight shifts
+	//	Compound complimentary – a combination of shades, complimentary and analogous colors with slight shifts
 	else if (colorMode == 2)	{
 		if (mod(index, 3.0) >= 2.0)	{
 			outColor.r = outColor.r + 0.5;
@@ -661,7 +661,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 			outColor.g = outColor.g - floor(outColor.g);
 		}
 	}
-	//	Spectrum – hue shifts based on number of colors with minor saturation shifts
+	//	Spectrum – hue shifts based on number of colors with minor saturation shifts
 	else if (colorMode == 3)	{
 		outColor.r = outColor.r + index * 1.0 / float(colorCount);
 		if (mod(index, 3.0) >= 2.0)	{
@@ -673,7 +673,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 			//outColor.g = outColor.g - floor(outColor.g);
 		}
 	}
-	//	Shades – saturation and brightness variations on a single fixed hue
+	//	Shades – saturation and brightness variations on a single fixed hue
 	else if (colorMode == 4)	{
 		if (mod(index, 2.0) >= 1.0)	{
 			outColor.b = outColor.b - (index * variation) / float(colorCount-1);
@@ -697,7 +697,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 			outColor.g = outColor.g - floor(outColor.g);
 		}
 	}
-	//	Analogous – small hue and saturation shifts 
+	//	Analogous – small hue and saturation shifts 
 	else if (colorMode == 5)	{
 
 		outColor.r = outColor.r + variation * index * 1.0 / float(colorCount - 1); 		
@@ -712,7 +712,7 @@ vec4 relatedColorForMode(vec4 inColor, int colorMode, float index, int colorCoun
 			}
 		}
 	}
-	//	Compound Analogous – similar to analogous but with negative hue shifts
+	//	Compound Analogous – similar to analogous but with negative hue shifts
 	else if (colorMode == 6)	{
 		if (mod(index, 3.0) >= 1.0)	{
 			outColor.r = outColor.r + variation * index * 1.0 / float(colorCount - 1); 

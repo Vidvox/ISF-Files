@@ -53,7 +53,7 @@ Any dead cell with exactly three live neighbours becomes a live cell, as if by r
 
 
 
-
+#if __VERSION__ <= 120
 varying vec2 left_coord;
 varying vec2 right_coord;
 varying vec2 above_coord;
@@ -63,6 +63,17 @@ varying vec2 lefta_coord;
 varying vec2 righta_coord;
 varying vec2 leftb_coord;
 varying vec2 rightb_coord;
+#else
+in vec2 left_coord;
+in vec2 right_coord;
+in vec2 above_coord;
+in vec2 below_coord;
+
+in vec2 lefta_coord;
+in vec2 righta_coord;
+in vec2 leftb_coord;
+in vec2 rightb_coord;
+#endif
 
 
 

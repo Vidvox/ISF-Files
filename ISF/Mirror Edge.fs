@@ -40,8 +40,11 @@
 }
 */
 
-
+#if __VERSION__ <= 120
 varying vec2 translated_coord;
+#else
+in vec2 translated_coord;
+#endif
 
 
 void main() {

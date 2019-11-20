@@ -70,8 +70,11 @@
 
 //	original blur implementation as v002.blur in QC by anton marini and tom butterworth, ported by zoidberg
 
-
+#if __VERSION__ <= 120
 varying vec2		texOffsets[5];
+#else
+in vec2		texOffsets[5];
+#endif
 
 
 void main() {

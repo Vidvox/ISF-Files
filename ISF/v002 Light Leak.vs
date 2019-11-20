@@ -1,9 +1,14 @@
 
+#if __VERSION__ <= 120
 varying mat2 rotmat;
+#else
+out mat2 rotmat;
+#endif
 
 void main()
 {
 	isf_vertShaderInit();
+
 	// setup basic rotation matrix here
 	float theta = radians(angle); 
 

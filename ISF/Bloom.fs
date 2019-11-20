@@ -67,8 +67,11 @@
 	]
 }*/
 
-
+#if __VERSION__ <= 120
 varying vec2		texOffsets[5];
+#else
+in vec2		texOffsets[5];
+#endif
 
 
 void main() {

@@ -54,7 +54,7 @@
 */
 
 
-//	A simple three pass blur – first reduce the size, then do a weighted blur, then do the same thing 
+//	A simple three pass blur – first reduce the size, then do a weighted blur, then do the same thing 
 //	but  we are only going to blur the saturation
 
 
@@ -62,7 +62,7 @@
 //	https://bavc.github.io/avaa/artifacts/oversaturation.html
 
 
-
+#if __VERSION__ <= 120
 varying vec2 left_coord;
 varying vec2 right_coord;
 varying vec2 above_coord;
@@ -72,6 +72,17 @@ varying vec2 lefta_coord;
 varying vec2 righta_coord;
 varying vec2 leftb_coord;
 varying vec2 rightb_coord;
+#else
+in vec2 left_coord;
+in vec2 right_coord;
+in vec2 above_coord;
+in vec2 below_coord;
+
+in vec2 lefta_coord;
+in vec2 righta_coord;
+in vec2 leftb_coord;
+in vec2 rightb_coord;
+#endif
 
 
 

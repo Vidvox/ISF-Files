@@ -1,4 +1,9 @@
+#if __VERSION__ <= 120
 varying vec2		texOffsets[3];
+#else
+out vec2		texOffsets[3];
+#endif
+
 const float radius = 10.0;
 
 void main(void)	{

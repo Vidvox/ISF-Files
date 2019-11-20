@@ -1,4 +1,8 @@
+#if __VERSION__ <= 120
 varying vec2		texOffsets[5];
+#else
+out vec2		texOffsets[5];
+#endif
 
 void main(void)	{
 	//	load the main shader stuff

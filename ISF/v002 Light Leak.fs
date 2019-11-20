@@ -39,13 +39,16 @@
 
 
 // rotation matrix
+#if __VERSION__ <= 120
 varying mat2 rotmat;
+#else
+in mat2 rotmat;
+#endif
 
 
 
 void main (void) 
 {
-
 	// normalized point 0 - 1 texcoords
 	vec2 point = isf_FragNormCoord;
 	// our normal image.

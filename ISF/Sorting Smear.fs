@@ -53,11 +53,17 @@
 }
 */
 
-
+#if __VERSION__ <= 120
 varying vec2 left_coord;
 varying vec2 right_coord;
 varying vec2 above_coord;
 varying vec2 below_coord;
+#else
+in vec2 left_coord;
+in vec2 right_coord;
+in vec2 above_coord;
+in vec2 below_coord;
+#endif
 
 
 
