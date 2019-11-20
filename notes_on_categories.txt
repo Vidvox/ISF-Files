@@ -1,0 +1,54 @@
+Dissolve: A transition in which the pixels progress from one image to the next by using a blending operation between the start and end
+
+Distortion: A transition in which the pixels progress from one image to the next by using a combination of blending and geometry adjustment or other warping operations between the start and end.
+
+Wipe: A transition where one shot replaces another, typically with some kind of clearly-defined shape or border
+
+
+
+
+Animation: (generators, maybe filters) elements of the image or scene are manipulated to give the appearance of motion / movement.
+
+Audio Visualizer: (gen + filters) Any ISF that uses audio-type inputs to generate or modify an image
+
+Blur: (filters) The dominant effect of the resource blends parts of the image together to create an out-of-focus quality.
+
+Color: (gen) The primary function of the resource is to synthesize color or colors (including gradients)
+
+Color Adjustment: (filters only) The colors of the image are modified, but not changed or replaced entirely
+
+Color Effect: (filters only) the colors of the image are altered or utterly modified in a manner considered more severe or extreme than a simple adjustment
+
+Distortion Effect: (filters only) Manipulates the location of pixels within an image in a manner that distorts the image’s original proportions, typically keeping some semblance of the original order of visual information.
+
+Feedback: (gen + filters) Uses an internal video feedback process where each new frame of video is the result of one or more previous frames.
+
+Film: (filters, maybe some generators) An aesthetic commonly associated with film as a media type (technical or cultural)
+
+Geometry: (gen) A generator that synthesizes geometric forms
+
+Geometry Adjustment: (filter) geometry is a rotation/translation and generally tries to keep the same proportions- even if stuff may get cut up and moved around
+
+Glitch: (gen + filter) Any resource that gives the impression that the technical process for creating or modifying an image is partly broken
+
+Halftone Effect: (filter) Any resource that modifies an image in a manner consistent with one of the halftone processes
+
+Kaleidoscope: (filter) Any resource that modifies the input image in a kaleidoscopic manner (typically replication, with slicing and geometric distortions)
+
+Masking: (filter) Any effect that modfiies the alpha channel (and typically only or predominantly the alpha channel) of an input image with the goal of later replacement or composition
+
+Noise: (any) Any resource that uses randomness to determine the primary visual effect
+
+Pattern: (gen)- Any resource that creates a tileable image or repeating design
+
+Retro: (any)- Any resource that gives the impression that it uses an outdated technical process for generating or manipulating or combining the images
+
+Sharpen: (filter)- Any resource that does the inverse of blur (sharper, more granular, with higher contrast/more discrete edges)
+
+Stylize: (filter) typically involves altering the aesthetic of the underlying image to potentially achieve a desired look or feel.
+
+Tile effect: (filter) a resource that generates a repeating pattern out of an input image without significantly altering the input image
+
+Utility: (gen + filter) Any ISF whose primary function is utilitarian in nature- clocks, test cards, histograms, color adjustment, white point adjustment, layer mask (but not chroma/luma mask).  Resources that aren’t necsesarily used to adjust the artistic aesthetic, but are used to prep images for other filters that may have more stringent input requirements.  “Photoshop style filters”.
+
+Wipe: (trans) Transitions where one shot replaces another by traveling from one side of the frame to another or with a special shape/clearly defined border.
