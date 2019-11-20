@@ -1,8 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Visualizer",
-    "Time"
+    "Animation", "Utility"
   ],
   "DESCRIPTION" : "Shows the current time of day or time since the composition started",
   "ISFVSN" : "2",

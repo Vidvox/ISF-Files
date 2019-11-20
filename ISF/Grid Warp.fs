@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Utility"
+    "Animation"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

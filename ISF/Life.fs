@@ -3,7 +3,7 @@
 	"CREDIT": "VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Generative System", "Synthesis"
+		"Noise"
 	],
 	"INPUTS": [
 		{

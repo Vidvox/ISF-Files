@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Visualizer", "Synthesis"
+    "Audio Visualizer"
   ],
   "ISFVSN": "2",
   "DESCRIPTION" : "Visualizes an FFT analysis image with custom set colors for frequency domain",

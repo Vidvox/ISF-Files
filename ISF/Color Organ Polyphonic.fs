@@ -1,8 +1,6 @@
 /*
 {
   "CATEGORIES" : [
-    "Instrument",
-    "Synthesis",
     "Color"
   ],
   "DESCRIPTION" : "",

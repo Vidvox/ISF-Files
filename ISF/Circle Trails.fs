@@ -1,6 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Particles"
+        "Animation"
     ],
     "CREDIT": null,
     "DESCRIPTION": "",

@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Visualizer"
+    "Animation"
   ],
   "DESCRIPTION" : "Draw images one pixel at a time",
   "ISFVSN" : "2",

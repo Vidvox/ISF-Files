@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Pattern"
+    "Pattern", "Color"
   ],
   "DESCRIPTION" : "Draws basic graph paper pattern",
   "ISFVSN" : "2",

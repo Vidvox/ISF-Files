@@ -3,7 +3,7 @@
 	"CREDIT": "by VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Glitch", "Retro", "Video"
+		"Glitch", "Retro"
 	],
 	"INPUTS": [
 		{

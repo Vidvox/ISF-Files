@@ -3,8 +3,7 @@
 	"CREDIT": "by VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Noise",
-		"Color"
+		"Noise"
 	],
 	"INPUTS": [
 		{

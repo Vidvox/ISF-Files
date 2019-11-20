@@ -1,5 +1,6 @@
 /*{
     "CATEGORIES": [
+    	"Kaleidoscope",
         "Stylize",
         "Tile Effect"
     ],

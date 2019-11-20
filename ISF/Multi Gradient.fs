@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Gradient"
+    "Color"
   ],
   "ISFVSN" : "2",
   "INPUTS" : [

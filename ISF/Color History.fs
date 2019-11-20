@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Visualizer"
+    "Color"
   ],
   "DESCRIPTION" : "Displays Data Over Time",
   "ISFVSN" : "2",
