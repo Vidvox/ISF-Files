@@ -1,107 +1,107 @@
-/*
-{
-  "CATEGORIES" : [
-    "Masking", "Geometry"
-  ],
-  "DESCRIPTION" : "",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "inputImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "pt1",
-      "TYPE" : "point2D",
-      "LABEL" : "Bottom left",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0,
-        0
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "pt2",
-      "TYPE" : "point2D",
-      "LABEL" : "Top left",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        1,
-        0
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "pt3",
-      "TYPE" : "point2D",
-      "LABEL" : "Top right",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        1,
-        1
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "pt4",
-      "TYPE" : "point2D",
-      "LABEL" : "Bottom right",
-      "MAX" : [
-        1,
-        1
-      ],
-      "DEFAULT" : [
-        0,
-        1
-      ],
-      "MIN" : [
-        0,
-        0
-      ]
-    },
-    {
-      "NAME" : "invertMask",
-      "TYPE" : "bool",
-      "DEFAULT" : 0,
-      "LABEL" : "Invert Mask"
-    },
-	{
-		"NAME": "maskApplyMode",
-		"LABEL": "Apply Mask",
-		"TYPE": "long",
-		"VALUES": [
-			0,
-			1,
-			2
-		],
-		"LABELS": [
-			"Apply Mask",
-			"Set Alpha",
-			"Show Mask"
-		],
-		"DEFAULT": 0
-	}
-  ],
-  "CREDIT" : ""
+/*{
+    "CATEGORIES": [
+        "Masking",
+        "Geometry Adjustment"
+    ],
+    "CREDIT": "",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "inputImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0
+            ],
+            "LABEL": "Bottom left",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt1",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                0
+            ],
+            "LABEL": "Top left",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt2",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1
+            ],
+            "LABEL": "Top right",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt3",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": [
+                0,
+                1
+            ],
+            "LABEL": "Bottom right",
+            "MAX": [
+                1,
+                1
+            ],
+            "MIN": [
+                0,
+                0
+            ],
+            "NAME": "pt4",
+            "TYPE": "point2D"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Invert Mask",
+            "NAME": "invertMask",
+            "TYPE": "bool"
+        },
+        {
+            "DEFAULT": 0,
+            "LABEL": "Apply Mask",
+            "LABELS": [
+                "Apply Mask",
+                "Set Alpha",
+                "Show Mask"
+            ],
+            "NAME": "maskApplyMode",
+            "TYPE": "long",
+            "VALUES": [
+                0,
+                1,
+                2
+            ]
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

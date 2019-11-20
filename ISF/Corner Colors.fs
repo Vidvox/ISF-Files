@@ -1,60 +1,59 @@
-/*
-{
-  "CATEGORIES" : [
-    "Gradient", "Color"
-  ],
-  "DESCRIPTION" : "Generates a gradient that fades between four different colors.",
-  "ISFVSN" : "2",
-  "INPUTS" : [
-    {
-      "NAME" : "color1",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        0,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "color2",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        1,
-        0,
-        1
-      ]
-    },
-    {
-      "NAME" : "color3",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        0,
-        0,
-        1,
-        1
-      ]
-    },
-    {
-      "NAME" : "color4",
-      "TYPE" : "color",
-      "DEFAULT" : [
-        1,
-        1,
-        1,
-        1
-      ]
-    },
-    {
-      "NAME" : "rotationAngle",
-      "TYPE" : "float",
-      "MAX" : 1,
-      "DEFAULT" : 0,
-      "MIN" : 0
-    }
-  ],
-  "CREDIT" : "VIDVOX"
+/*{
+    "CATEGORIES": [
+        "Color"
+    ],
+    "CREDIT": "VIDVOX",
+    "DESCRIPTION": "Generates a gradient that fades between four different colors.",
+    "INPUTS": [
+        {
+            "DEFAULT": [
+                1,
+                0,
+                0,
+                1
+            ],
+            "NAME": "color1",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                1,
+                0,
+                1
+            ],
+            "NAME": "color2",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                0,
+                0,
+                1,
+                1
+            ],
+            "NAME": "color3",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": [
+                1,
+                1,
+                1,
+                1
+            ],
+            "NAME": "color4",
+            "TYPE": "color"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "rotationAngle",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 

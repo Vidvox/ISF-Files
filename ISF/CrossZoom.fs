@@ -1,32 +1,31 @@
-/*
-{
-  "DESCRIPTION": "",
-  "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/CrossZoom.glsl",
-  "ISFVSN" : "2",
-  "CATEGORIES" : [
-    "Transition"
-  ],
-  "INPUTS" : [
-    {
-      "NAME" : "startImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "endImage",
-      "TYPE" : "image"
-    },
-    {
-      "NAME" : "progress",
-      "TYPE" : "float",
-      "DEFAULT" : 0,
-      "MAX" : 1,
-      "MIN" : 0
-    },
-    {
-      "NAME" : "strength",
-      "TYPE" : "float"
-    }
-  ]
+/*{
+    "CATEGORIES": [
+        "Dissolve"
+    ],
+    "CREDIT": "Automatically converted from https://www.github.com/gl-transitions/gl-transitions/tree/master/CrossZoom.glsl",
+    "DESCRIPTION": "",
+    "INPUTS": [
+        {
+            "NAME": "startImage",
+            "TYPE": "image"
+        },
+        {
+            "NAME": "endImage",
+            "TYPE": "image"
+        },
+        {
+            "DEFAULT": 0,
+            "MAX": 1,
+            "MIN": 0,
+            "NAME": "progress",
+            "TYPE": "float"
+        },
+        {
+            "NAME": "strength",
+            "TYPE": "float"
+        }
+    ],
+    "ISFVSN": "2"
 }
 */
 
