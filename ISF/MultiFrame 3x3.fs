@@ -3,7 +3,7 @@
 	"ISFVSN": "2",
 	"CREDIT": "by VIDVOX",
 	"CATEGORIES": [
-		"Stylize", "Tile Effect"
+		"Tile Effect", "Stylize"
 	],
 	"INPUTS": [
 		{

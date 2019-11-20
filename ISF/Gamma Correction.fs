@@ -2,7 +2,7 @@
 	"CREDIT": "by zoidberg",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Color Adjustment"
+		"Color Adjustment", "Utility"
 	],
 	"INPUTS": [
 		{

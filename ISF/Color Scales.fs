@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Color", "Pattern", "Synthesis"
+    "Color"
   ],
   "DESCRIPTION" : "",
   "ISFVSN" : "2",

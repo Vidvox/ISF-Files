@@ -3,7 +3,7 @@
   "CATEGORIES" : [
     "Blur",
     "Retro",
-    "Video"
+    "Glitch"
   ],
   "DESCRIPTION" : "This does a feedback motion blur based on the brightness of pixels to create an analog recording comet trails effect",
   "ISFVSN" : "2",
