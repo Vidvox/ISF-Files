@@ -86,6 +86,7 @@ void main()
 	color_shift.b = color_magnitude*col_r.b*max(1.0,sin(texCoord.y*1.2)*2.5)*rand(vec2(TIME,0.0342));
 	color_shift.r = color_magnitude*col_l.r*max(1.0,sin(texCoord.y*1.2)*2.5)*rand(vec2(TIME,0.5253));
 	color_shift.g = color_magnitude*col_g.g*max(1.0,sin(texCoord.y*1.2)*2.5)*rand(vec2(TIME,0.1943));
+ 	color_shift.a = 0.0;
 
 	//	if doing add maths
 	if (mode == 0)	{
