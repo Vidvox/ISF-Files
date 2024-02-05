@@ -72,6 +72,8 @@ void main()	{
 		pt.y /= 2.0*sqrt(pow(radius,2.0)-pow((pt.x-0.5),2.0));
 		pt.y += 0.5;
 		inputPixelColor = IMG_NORM_PIXEL(inputImage,pt);
+	} else {
+		inputPixelColor = vec4(0.0);
 	}
 	
 	gl_FragColor = inputPixelColor;
