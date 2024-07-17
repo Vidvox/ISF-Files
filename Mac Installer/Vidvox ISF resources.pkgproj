@@ -458,6 +458,16 @@
 		</dict>
 		<key>PACKAGE_SCRIPTS</key>
 		<dict>
+			<key>POSTINSTALL_PATH</key>
+			<dict>
+				<key>PATH_TYPE</key>
+				<integer>0</integer>
+			</dict>
+			<key>PREINSTALL_PATH</key>
+			<dict>
+				<key>PATH_TYPE</key>
+				<integer>0</integer>
+			</dict>
 			<key>RESOURCES</key>
 			<array/>
 		</dict>
@@ -513,6 +523,13 @@
 				<string>build</string>
 				<key>PATH_TYPE</key>
 				<integer>1</integer>
+			</dict>
+			<key>CERTIFICATE</key>
+			<dict>
+				<key>NAME</key>
+				<string>Developer ID Installer: Vidvox, LLC (KH97KZU7A7)</string>
+				<key>PATH</key>
+				<string>/Users/testadmin/Library/Keychains/login.keychain</string>
 			</dict>
 			<key>EXCLUDED_FILES</key>
 			<array>
