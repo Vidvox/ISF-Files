@@ -25,7 +25,7 @@
       "NAME" : "rangeFFT",
       "TYPE" : "float",
       "MAX" : 1,
-      "DEFAULT" : 0.9,
+      "DEFAULT" : 1.0,
       "MIN" : 0
     },
     {
