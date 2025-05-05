@@ -1,7 +1,7 @@
 /*
 {
   "CATEGORIES" : [
-    "Glitch", "Distortion Effect"
+    "Glitch", "Distortion Effect", "v002"
   ],
   "DESCRIPTION" : "Emulates classic analog video interference, distortion and sync issues.",
   "ISFVSN" : "2",

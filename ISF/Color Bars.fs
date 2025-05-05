@@ -3,7 +3,7 @@
 	"CREDIT": "VIDVOX",
 	"ISFVSN": "2",
 	"CATEGORIES": [
-		"Utility"
+		"Utility", "Test Pattern"
 	],
 	"INPUTS": [
 		{

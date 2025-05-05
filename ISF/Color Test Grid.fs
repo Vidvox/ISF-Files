@@ -1,7 +1,6 @@
 /*{
     "CATEGORIES": [
-        "Color",
-        "Utility"
+        "Color", "Utility", "Test Pattern"
     ],
     "CREDIT": "VIDVOX",
     "DESCRIPTION": "",
