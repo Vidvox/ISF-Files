@@ -1,5 +1,4 @@
 /*{
-	"DESCRIPTION": "",
 	"CREDIT": "by VIDVOX",
 	"ISFVSN": "2",
 	"DESCRIPTION": "adapted from https://github.com/neilmendoza/ofxPostProcessing/blob/master/src/GodRaysPass.cpp",
